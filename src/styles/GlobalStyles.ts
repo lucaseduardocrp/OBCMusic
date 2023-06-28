@@ -57,8 +57,8 @@ const GlobalStyles = createGlobalStyle`
 
   @media (max-width: 26.563rem) {
     :root{
-      --2xl: 1.8rem;
-      --5xl: 4.4rem;
+      --2xl: 1.6rem;
+      --5xl: 4.2rem;
     }
   }
 `;

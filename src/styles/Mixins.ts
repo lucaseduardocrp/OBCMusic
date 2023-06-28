@@ -16,10 +16,10 @@ export const Title = css`
 
 export const Paragraph = css`
   font-size: var(--base);
-  font-weight: 700;
+  font-weight: 500;
   font-family: ${({theme}) => theme.fonts.text};
   color: ${({theme}) => theme.colors.white};
-  line-height: 1.8;
+  line-height: 1.6;
 `;
 
 

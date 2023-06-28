@@ -8,8 +8,9 @@ export const HomeSection = styled.section`
   flex-direction: column;
   gap: 4rem;
   height: 100vh;
+  padding-top: 0;
   text-align: center;
-  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/HomeBackground.png);
+  background: linear-gradient(180deg, transparent 100%, black 100%), url(/HomeBackground.png);
   background-position: center;
   background-size: cover;
 
@@ -20,7 +21,7 @@ export const HomeSection = styled.section`
   >p{
     ${Paragraph};
     font-size: var(--2xl);
-    padding: 0 8rem;
+    padding: 0 10rem;
   }
 
   .ButtonsContainer{
@@ -33,4 +34,18 @@ export const HomeSection = styled.section`
       padding: 0;
     }
   }
+  
+  @media (max-width: 26.563rem) {
+    padding-top: 8rem;
+
+    .ButtonsContainer{
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+`;
+
+export const TimerContainer = styled.div`
+  height: 40vh;
+  background: linear-gradient(180deg, black 100%, black 100%);
 `;

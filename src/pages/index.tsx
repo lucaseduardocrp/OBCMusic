@@ -17,7 +17,6 @@ export default function Home() {
           </Button>
         </div>
       </HomeSection>
-      <section></section>
     </Container>
   )
 }
