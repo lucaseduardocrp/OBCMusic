@@ -16,7 +16,9 @@ export const HeaderContainer = styled.header`
   @media (max-width: 90rem) {
     padding: 3.2rem 4%;
   }
-  `;
+`;
+
+//-----------------------------------
 
 export const Navlinks = styled.ul`
   ${FlexCSS};
@@ -52,6 +54,8 @@ export const Navlinks = styled.ul`
     display: none;
   }
 `;
+
+//-----------------------------------
 
 export const MobileMenu = styled.div`
   display: none;

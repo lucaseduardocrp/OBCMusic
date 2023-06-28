@@ -2,7 +2,6 @@ import Image from "next/image";
 import { HeaderContainer, MobileMenu, Navlinks } from "./styles";
 import Link from "next/link";
 import Button from "@/components/Button";
-import BurgerMenu from "@/components/BurgerMenu";
 import { useState } from "react";
 
 export default function Header() {
@@ -17,8 +16,8 @@ export default function Header() {
       <nav>
         <Image src={'/Logo.png'} alt="Onebitmusic" width={153.46} height={29} />
 
-        <MobileMenu onClick={handleMenu}>
-          <BurgerMenu className={!active ? '.menuActive' : ''} />
+        <MobileMenu>
+
         </MobileMenu>
 
         <Navlinks className={!active ? '' : 'close'}>
