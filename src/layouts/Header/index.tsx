@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HeaderContainer, MobileMenu, Navlinks } from "./styles";
+import { HeaderContainer, MobileMenu } from "./styles";
 import Link from "next/link";
 import Button from "@/components/Button";
 import { useState } from "react";
@@ -16,11 +16,14 @@ export default function Header() {
       <nav>
         <Image src={'/Logo.png'} alt="Onebitmusic" width={153.46} height={29} />
 
-        <MobileMenu>
-
+        <MobileMenu onClick={handleMenu}>
+          {!active ? 
+            (<Image src={'/MenuIcon.svg'} alt="MobileMenu" width={30} height={30} />) :
+            (<Image src={'/CloseIcon.svg'} alt="CloseMobileMenu" width={30} height={30} />)
+          }
         </MobileMenu>
 
-        <Navlinks className={!active ? '' : 'close'}>
+        <ul className={active ? 'Navlinks' : 'Navlinks Close'}>
           <li>
             <Link href={'/'}>INÍCIO</Link>
           </li>
@@ -35,7 +38,7 @@ export default function Header() {
           </li>
           
           <Button background="White" href="/ticket">COMPRAR INGRESSOS</Button>
-        </Navlinks>
+        </ul>
       </nav>
     </HeaderContainer>
   )
