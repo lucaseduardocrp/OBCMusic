@@ -1,14 +1,27 @@
 import Image from "next/image";
-import { HeaderContainer, Navlinks } from "./styles";
+import { HeaderContainer, MobileMenu, Navlinks } from "./styles";
 import Link from "next/link";
+import Button from "@/components/Button";
+import BurgerMenu from "@/components/BurgerMenu";
+import { useState } from "react";
 
 export default function Header() {
+  const [active, setActive] = useState(false);
+
+  const handleMenu = () => {
+    setActive(!active)
+  }
+
   return (
     <HeaderContainer>
       <nav>
         <Image src={'/Logo.png'} alt="Onebitmusic" width={153.46} height={29} />
 
-        <Navlinks>
+        <MobileMenu onClick={handleMenu}>
+          <BurgerMenu className={!active ? '.menuActive' : ''} />
+        </MobileMenu>
+
+        <Navlinks className={!active ? '' : 'close'}>
           <li>
             <Link href={'/'}>INÍCIO</Link>
           </li>
@@ -21,6 +34,8 @@ export default function Header() {
           <li>
             <Link href={'/contact'}>CONTATO</Link>
           </li>
+          
+          <Button background="White" href="/ticket">COMPRAR INGRESSOS</Button>
         </Navlinks>
       </nav>
     </HeaderContainer>
