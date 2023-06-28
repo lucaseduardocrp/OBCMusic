@@ -10,9 +10,9 @@ const GlobalStyles = createGlobalStyle`
     --2xl: 2.4rem;
     --3xl: 3.4rem;
     --4xl: 4.8rem;
-    --5xl: 6rem;
+    --5xl: 7.2rem;
   }
-  s
+  
   *{
     margin: 0;
     padding: 0;
@@ -45,6 +45,20 @@ const GlobalStyles = createGlobalStyle`
   @media (max-width: 90rem) {
     section{
       padding: 3.2rem 4%;
+    }
+  }
+
+  @media (max-width: 64rem) {
+    :root{
+      --2xl: 2rem;
+      --5xl: 5rem;
+    }
+  }
+
+  @media (max-width: 26.563rem) {
+    :root{
+      --2xl: 1.8rem;
+      --5xl: 4.4rem;
     }
   }
 `;

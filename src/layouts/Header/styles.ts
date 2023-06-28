@@ -2,7 +2,7 @@ import { FlexCSS } from './../../styles/Mixins';
 import { css, styled } from "styled-components";
 
 export const HeaderContainer = styled.header`
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 9.8rem;
   padding: 3.2rem 20%;
