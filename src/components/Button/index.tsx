@@ -4,7 +4,7 @@ import { Container } from "./styles";
 interface ButtonProps {
   children: ReactNode,
   href: string,
-  background: 'Red' | 'Black' | 'White',
+  background: 'Red' | 'Black' | 'Transparent' | 'White',
   color?: 'White',
 }
 

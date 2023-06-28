@@ -21,7 +21,7 @@ export const HeaderContainer = styled.header`
     a{
       ${({ theme }) => css`
         font-family: ${theme.fonts.headlines};
-        font-size: ${theme.sizes.sm};
+        font-size: var(--sm);
         font-weight: 600;
       `}
     }
