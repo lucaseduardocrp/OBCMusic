@@ -21,7 +21,7 @@ export default function Home() {
       </HomeSection>
       
       <AboutSection>
-
+        
       </AboutSection>
     </Container>
   )
