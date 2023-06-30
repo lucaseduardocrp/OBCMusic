@@ -2,8 +2,9 @@ export const themes = {
   colors: {
     white: '#ffffff',
     dark: '#222222',
-    primary: '#F64348',
     gray: '#464646',
+    primary: '#F64348',
+    paragraph: '#F9F9F9',
   },
 
   fonts:{

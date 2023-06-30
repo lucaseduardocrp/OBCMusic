@@ -9,10 +9,10 @@ type ContainerProps = {
 export const Container = styled.a<ContainerProps>`
   ${({ theme, background, color }) => css`
     ${FlexCSS};
+    display: inline-flex;
     gap: 1.2rem;
     padding: 1.8rem 3.4rem;
     border-radius: 0.8rem;
-  
     ${ButtonText};
 
     background-color: ${

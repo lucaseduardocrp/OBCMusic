@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { Paragraph } from "./Mixins";
 
 const GlobalStyles = createGlobalStyle`
   :root{
@@ -37,6 +38,10 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: 100%;
     padding: 6rem 20%;
+  }
+
+  p{
+    ${Paragraph}
   }
 
   b{

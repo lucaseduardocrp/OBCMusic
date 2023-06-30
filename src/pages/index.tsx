@@ -2,6 +2,9 @@ import Button from "@/components/Button";
 import { Container, HomeSection, AboutSection } from "./styles";
 import PlayIcon from "@/components/Icons/PlayIcon";
 import TimerCount from "@/components/TimerCount";
+import Image from "next/image";
+import { aboutUsText } from "@/modules/aboutUsText";
+import RightArrow from "@/components/Icons/RightArrow";
 
 export default function Home() {
   return (
@@ -21,7 +24,22 @@ export default function Home() {
       </HomeSection>
       
       <AboutSection>
-        
+        {aboutUsText.map((index, key) =>
+          <div className="about-container" key={key}>
+            <Image 
+              src={index.src}
+              alt={index.title} 
+              width={index.width} 
+              height={index.height}
+              quality={100}
+            />
+            <div className="text">
+              <h2>{index.title}</h2>
+              <p>{index.description}</p>
+              <Button href="" background="White">{index.buttonText} <RightArrow /></Button>
+            </div>
+          </div>
+        )}
       </AboutSection>
     </Container>
   )
