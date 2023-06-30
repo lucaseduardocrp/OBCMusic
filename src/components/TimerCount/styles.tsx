@@ -6,7 +6,7 @@ export const Container = styled.div`
   span{
     @font-face {
       font-family: timerFont;
-      src: url(/Timerstyledfont-Regular.otf);
+      src: url(/fonts/Timerstyledfont-Regular.otf);
     }
     font-family: timerFont;
     font-size: var(--timer-size);

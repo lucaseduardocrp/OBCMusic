@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     --3xl: 3.4rem;
     --4xl: 4.8rem;
     --5xl: 6.8rem;
-    --timer-size: 12rem;
+    --timer-size: 12.5rem;
   }
   
   *{
