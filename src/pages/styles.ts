@@ -96,29 +96,9 @@ export const AboutSection = styled.section`
 //------------------PROGRAMMING SECTION------------------
 
 export const ProgrammingSection = styled.section`
-  height: 100vh;
   background: ${({theme}) => theme.colors.blueGradient}; 
 
   h2{
     ${Title}
-  }
-
-  .filter-container{
-    .filter-bar{
-      width: 30rem;
-      margin-bottom: 4rem;
-
-      h3{
-        font-size: var(--2xl);
-        font-weight: 800;
-        line-height: 1.8;
-      }
-      h4{
-        font-size: var(--base);
-        font-weight: 700;
-        padding-bottom: 2rem;
-        border-bottom: 0.5rem solid ${({theme}) => theme.colors.black};
-      }
-    }
   }
 `;

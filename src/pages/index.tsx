@@ -7,6 +7,7 @@ import { aboutUsText } from "@/modules/aboutUsText";
 import RightArrow from "@/components/Icons/RightArrow";
 import Schedule from "@/components/Schedule";
 import FilterContextProvider from "@/context/filter-context";
+import FilterBar from "@/components/FilterBar";
 
 export default function Home() {
   return (
@@ -47,17 +48,12 @@ export default function Home() {
       <FilterContextProvider>
         <ProgrammingSection>
           <h2>Nossa programação</h2>
+
           <div className="filter-container">
-            <ul className="filter-bar">
-              <li>
-                <h3>Dia 01</h3>
-              </li>
-              <li>
-                <h4>23 Setembro</h4>
-              </li>
-            </ul>
-            <Schedule />
+            <FilterBar />
           </div>
+          <Schedule />
+
         </ProgrammingSection>
       </FilterContextProvider>
     </Container>
