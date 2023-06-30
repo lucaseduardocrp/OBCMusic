@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Container, Grid } from './styles';
+import { Programming } from '@/modules/Programming';
 
 export default function Schedule() {
   return (
@@ -10,23 +11,27 @@ export default function Schedule() {
         <p>Artistas</p>
       </div>
 
-      <Grid>
-        <p>11:00 AM to 12:00 PM</p>
-        <p>
-          Desfrute de uma performance emocionante com Yui Ronald, um artista solo que encanta o público com sua voz cativante e letras inspiradoras. Prepare-se    para uma noite de músicas envolventes e momentos emocionantes. 
-        </p>
-        <div className="artist-container">
-          <Image src={'/Yui.png'} alt='Yui' width={56} height={56} />
-          <div className='artist-info'>
-            <p>Yui Ronald</p>
-            <span>Both 2F12</span>
+      {Programming.map((item, index) =>
+        <Grid key={index}>
+          <p>{item.hour}</p>
+          <p>{item.description}</p>
+          
+            {item.artists.map((artist) => (
+              <div className="artist-container" key={artist.id}>
+                <Image src={artist.image} alt={artist.name} width={56} height={56} />
+                <div className='artist-info'>
+                  <p>{artist.name}</p>
+                  <span>{artist.id}</span>
+                </div>
+              </div>
+            ))}
+
+          <div className="preview-container">
+            <p>{item.preview}</p>
+            <Image src={item.icon} alt={item.preview} width={24} height={24}/>
           </div>
-        </div>
-        <div className="preview-container">
-          <p>Previa</p>
-          <Image src={'/svg/Icons-Play.svg'} alt='Play Icon' width={24} height={24}/>
-        </div>
-      </Grid>
+          </Grid>
+        )}
     </Container>
   )
 }
