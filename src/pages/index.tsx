@@ -23,7 +23,6 @@ export default function Home() {
       <AboutSection>
 
       </AboutSection>
-      
     </Container>
   )
 }

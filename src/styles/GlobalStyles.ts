@@ -66,7 +66,7 @@ const GlobalStyles = createGlobalStyle`
     :root{
       --2xl: 1.6rem;
       --5xl: 4.2rem;
-      --timer-size: 3rem;
+      --timer-size: 4.6rem;
     }
   }
 `;

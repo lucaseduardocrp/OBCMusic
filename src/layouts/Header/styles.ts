@@ -2,12 +2,10 @@ import { FlexCSS } from './../../styles/Mixins';
 import { css, styled } from "styled-components";
 
 export const HeaderContainer = styled.header`
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 9.8rem;
-  padding: 3.2rem 20%;
-  background-color: transparent;
-  backdrop-filter: blur(1rem);
+  padding: 2.2rem 20%;
+  background: transparent;
 
   nav{
     ${FlexCSS};

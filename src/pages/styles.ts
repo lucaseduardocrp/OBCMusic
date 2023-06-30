@@ -6,8 +6,8 @@ export const Container = styled.div``;
 export const HomeSection = styled.section`
   ${FlexCSS}
   height: 100%;
-  padding-top: 20rem;
   flex-direction: column;
+  padding-top: 18rem;
   gap: 4rem;
   text-align: center;
   background: linear-gradient(180deg, transparent 100%, black 100%), url(/HomeBackground.png);
