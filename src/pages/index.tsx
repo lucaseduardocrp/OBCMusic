@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
-import { Container, HomeSection } from "./styles";
+import { Container, HomeSection, AboutSection } from "./styles";
 import PlayIcon from "@/components/Icons/PlayIcon";
+import TimerCount from "@/components/TimerCount";
 
 export default function Home() {
   return (
@@ -16,7 +17,13 @@ export default function Home() {
             <PlayIcon width="56" height="56"/> Assistir Video
           </Button>
         </div>
+        <TimerCount defaultTime={518400}/>
       </HomeSection>
+      
+      <AboutSection>
+
+      </AboutSection>
+      
     </Container>
   )
 }

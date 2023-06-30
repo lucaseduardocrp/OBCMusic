@@ -5,10 +5,10 @@ export const Container = styled.div``;
 
 export const HomeSection = styled.section`
   ${FlexCSS}
+  height: 100%;
+  padding-top: 20rem;
   flex-direction: column;
   gap: 4rem;
-  height: 100vh;
-  padding-top: 0;
   text-align: center;
   background: linear-gradient(180deg, transparent 100%, black 100%), url(/HomeBackground.png);
   background-position: center;
@@ -20,7 +20,7 @@ export const HomeSection = styled.section`
   }
   >p{
     ${Paragraph};
-    font-size: var(--2xl);
+    font-size: var(--xl);
     padding: 0 10rem;
   }
 
@@ -45,7 +45,7 @@ export const HomeSection = styled.section`
   }
 `;
 
-export const TimerContainer = styled.div`
-  height: 40vh;
-  background: linear-gradient(180deg, black 100%, black 100%);
+export const AboutSection = styled.section`
+  height: 100vh;
+  background: ${({theme}) => theme.colors.gray};
 `;

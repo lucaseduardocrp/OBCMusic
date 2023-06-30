@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
   height: 9.8rem;
   padding: 3.2rem 20%;
   background-color: transparent;
+  backdrop-filter: blur(1rem);
 
   nav{
     ${FlexCSS};
