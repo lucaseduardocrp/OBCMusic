@@ -14,12 +14,12 @@ export const HomeSection = styled.section`
   background-position: center;
   background-size: cover;
 
-  >h1{
+  h1{
     ${Title};
     padding-bottom: 0;
     font-size: var(--5xl);
   }
-  >p{
+  p{
     ${Paragraph};
     font-size: var(--xl);
     padding: 0 10rem;

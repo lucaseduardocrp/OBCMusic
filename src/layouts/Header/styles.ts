@@ -3,6 +3,7 @@ import { css, styled } from "styled-components";
 
 export const HeaderContainer = styled.header`
   position: absolute;
+  z-index: 1000;
   width: 100%;
   padding: 2.2rem 20%;
   background: transparent;
