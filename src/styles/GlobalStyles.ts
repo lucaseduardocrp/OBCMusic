@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { Paragraph } from "./Mixins";
+import { Paragraph, Title } from "./Mixins";
 
 const GlobalStyles = createGlobalStyle`
   :root{
@@ -11,8 +11,8 @@ const GlobalStyles = createGlobalStyle`
     --2xl: 2.4rem;
     --3xl: 3.4rem;
     --4xl: 4.8rem;
-    --5xl: 6.8rem;
-    --timer-size: 12.5rem;
+    --5xl: 7.2rem;
+    --timer-size: 13rem;
   }
   
   *{
@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
   html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    font-family: ${({ theme }) => theme.fonts.text };
+    font-family: ${({ theme }) => theme.fonts.headlines};
   }
   
   body{
@@ -37,7 +37,7 @@ const GlobalStyles = createGlobalStyle`
   section{
     width: 100%;
     height: 100%;
-    padding: 6rem 20%;
+    padding: 16rem 20%;
   }
 
   p{

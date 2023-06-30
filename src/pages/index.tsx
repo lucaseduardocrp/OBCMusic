@@ -1,10 +1,12 @@
 import Button from "@/components/Button";
-import { Container, HomeSection, AboutSection } from "./styles";
+import { Container, HomeSection, AboutSection, ProgrammingSection } from "./styles";
 import PlayIcon from "@/components/Icons/PlayIcon";
 import TimerCount from "@/components/TimerCount";
 import Image from "next/image";
 import { aboutUsText } from "@/modules/aboutUsText";
 import RightArrow from "@/components/Icons/RightArrow";
+import Schedule from "@/components/Schedule";
+import FilterContextProvider from "@/context/filter-context";
 
 export default function Home() {
   return (
@@ -41,6 +43,23 @@ export default function Home() {
           </div>
         )}
       </AboutSection>
+
+      <FilterContextProvider>
+        <ProgrammingSection>
+          <h2>Nossa programação</h2>
+          <div className="filter-container">
+            <ul className="filter-bar">
+              <li>
+                <h3>Dia 01</h3>
+              </li>
+              <li>
+                <h4>23 Setembro</h4>
+              </li>
+            </ul>
+            <Schedule />
+          </div>
+        </ProgrammingSection>
+      </FilterContextProvider>
     </Container>
   )
 }

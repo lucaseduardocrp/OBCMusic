@@ -12,6 +12,7 @@ export const Title = css`
   font-family: ${({theme}) => theme.fonts.headlines};
   color: ${({theme}) => theme.colors.white};
   line-height: 1.3;
+  padding-bottom: 6rem;
 `;
 
 export const Paragraph = css`

@@ -16,6 +16,7 @@ export const HomeSection = styled.section`
 
   >h1{
     ${Title};
+    padding-bottom: 0;
     font-size: var(--5xl);
   }
   >p{
@@ -57,7 +58,7 @@ export const AboutSection = styled.section`
     .text{
       h2{
         ${Title}
-        margin-bottom: 3.2rem;
+        padding-bottom: 3.2rem;
       }
 
       p{
@@ -88,6 +89,36 @@ export const AboutSection = styled.section`
     .about-container img{
       width: 44rem;
       height: 40rem;
+    }
+  }
+`;
+
+//------------------PROGRAMMING SECTION------------------
+
+export const ProgrammingSection = styled.section`
+  height: 100vh;
+  background: ${({theme}) => theme.colors.blueGradient}; 
+
+  h2{
+    ${Title}
+  }
+
+  .filter-container{
+    .filter-bar{
+      width: 30rem;
+      margin-bottom: 4rem;
+
+      h3{
+        font-size: var(--2xl);
+        font-weight: 800;
+        line-height: 1.8;
+      }
+      h4{
+        font-size: var(--base);
+        font-weight: 700;
+        padding-bottom: 2rem;
+        border-bottom: 0.5rem solid ${({theme}) => theme.colors.black};
+      }
     }
   }
 `;
