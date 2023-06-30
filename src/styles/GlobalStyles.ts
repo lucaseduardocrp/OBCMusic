@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     --3xl: 3.4rem;
     --4xl: 4.8rem;
     --5xl: 6.8rem;
-    --timer-size: 14rem;
+    --timer-size: 12rem;
   }
   
   *{
@@ -46,7 +46,6 @@ const GlobalStyles = createGlobalStyle`
   @media (max-width: 90rem) {
     :root{
       --5xl: 6.2rem;
-      --timer-size: 12rem;
     }
     
     section{
@@ -58,7 +57,7 @@ const GlobalStyles = createGlobalStyle`
     :root{
       --2xl: 2rem;
       --5xl: 5rem;
-      --timer-size: 5rem;
+      --timer-size: 6rem;
     }
   }
 
@@ -66,7 +65,7 @@ const GlobalStyles = createGlobalStyle`
     :root{
       --2xl: 1.6rem;
       --5xl: 4.2rem;
-      --timer-size: 4.6rem;
+      --timer-size: 4rem;
     }
   }
 `;

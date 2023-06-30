@@ -1,4 +1,3 @@
-import { FlexCSS } from "@/styles/Mixins";
 import { styled } from "styled-components";
 
 export const Container = styled.div`
@@ -11,7 +10,7 @@ export const Container = styled.div`
     }
     font-family: timerFont;
     font-size: var(--timer-size);
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: #acacac;
     -webkit-text-stroke-width: 0.1rem;    
   }
 `;
