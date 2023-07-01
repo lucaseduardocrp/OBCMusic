@@ -13,10 +13,12 @@ export const TicketsInformations = [
         item: 'Preço acessível',
       },
     ],
-    
+
+    emphasis: false,
     btnBG: 'Transparent',
     color: 'Black',
     btnBorder: 'Black',
+    cardBorderTop: 'Black',
   },
   {
     title: 'Padrao',
@@ -33,9 +35,11 @@ export const TicketsInformations = [
       },
     ],
     
+    emphasis: false,
     btnBG: 'Black',
     color: 'White',
     btnBorder: 'Transparent',
+    cardBorderTop: 'Black',
   },
   {
     title: 'VIP',
@@ -51,8 +55,11 @@ export const TicketsInformations = [
         item: 'Experiência VIP',
       },
     ],
+    
+    emphasis: false,
     btnBG: 'Transparent',
     color: 'Red',
     btnBorder: 'Red',
+    cardBorderTop: 'Red',
   },
 ]
