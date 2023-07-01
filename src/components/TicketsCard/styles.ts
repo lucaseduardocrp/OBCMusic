@@ -3,15 +3,18 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   ${FlexCSS}
+  gap: 3rem;
+
+.card-container{
+  ${FlexCSS}
   flex-direction: column;
   gap: 3rem;
   padding: 3rem;
   width: 37rem;
   text-align: center;
-
   background: ${({theme}) => theme.colors.white};
   border-radius: 2rem;
-
+ 
   .text-container{
     h1, h3{
       font-size: var(--2xl);
@@ -32,4 +35,5 @@ export const Container = styled.div`
       color: ${({theme}) => theme.colors.black};
     }
   }
+}
 `;

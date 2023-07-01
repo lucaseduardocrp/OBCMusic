@@ -101,6 +101,7 @@ export const ProgrammingSection = styled.section`
 //------------------TICKET SECTION------------------
 
 export const TicketsSection = styled.section`
+  padding-top: 0;  
   ${FlexCSS}
   flex-direction: column;
   background: ${({theme}) => theme.colors.gray}; 

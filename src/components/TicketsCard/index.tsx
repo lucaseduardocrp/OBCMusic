@@ -1,19 +1,23 @@
 import Button from "../Button";
 import { Container } from "./styles";
 
+import { TicketsInformations } from "@/modules/Tickets-Informations";
+
 export default function TicketsCard() {
   return (
     <Container>
-      <div className="text-container">
-        <h3>Basico</h3>
-        <h1>R$100</h1>
-      </div>
-      <ul>
-        <li><p>Acesso aos shows digitais</p></li>
-        <li><p>Experiência musical imersiva</p></li>
-        <li><p>Preço acessível</p></li>
-      </ul>
-      <Button href="" background="Transparent"  >Saber mais</Button>
+      {TicketsInformations.map((item, key) => 
+        <div className="card-container" key={key}>
+          <div className="text-container">
+            <h3>{item.title}</h3>
+            <h1>{item.price}</h1>
+          </div>
+          <ul>
+            <li>{item.list.map((listItem, key) => <p key={key}>{listItem.item}</p>)}</li>
+          </ul>
+          <Button href="" background={item.btnBG} border={item.btnBorder} color={item.color} >Saber mais</Button>
+        </div>
+      )}
     </Container>
   )
 }

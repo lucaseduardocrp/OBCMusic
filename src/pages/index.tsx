@@ -60,6 +60,7 @@ export default function Home() {
 
       <TicketsSection>
         <h2>Escolha o tipo de ingresso</h2>
+        
         <TicketsCard />
       </TicketsSection>
     </Container>

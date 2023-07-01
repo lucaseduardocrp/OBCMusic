@@ -4,10 +4,11 @@ import { styled } from "styled-components";
 
 type ContainerProps = {
   background?: 'Red' | 'Black' | 'Transparent' | 'White',
+  border?: 'Red' | 'Black',
 }
 
 export const Container = styled.a<ContainerProps>`
-  ${({ theme, background, color }) => css`
+  ${({ theme, background, color, border }) => css`
     ${FlexCSS};
     display: inline-flex;
     gap: 1.2rem;
@@ -20,8 +21,10 @@ export const Container = styled.a<ContainerProps>`
       background === 'Black' ? theme.colors.dark : 
       background === 'Transparent' ? 'transparent' : theme.colors.white
     };
+
+    border: ${border === 'Black' ? `0.1rem solid ${theme.colors.black}` : border === 'Red' ? `${theme.colors.primary}` : 'transparent'};
     
-    color: ${color === 'White' ? theme.colors.white : theme.colors.dark};
+    color: ${color === 'White' ? theme.colors.white : color === 'Red' ? theme.colors.primary : theme.colors.dark};
 
     transition: all .30s ease;
 
