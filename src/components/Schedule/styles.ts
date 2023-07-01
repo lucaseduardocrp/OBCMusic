@@ -13,6 +13,7 @@ export const Container = styled.div`
     grid-template-columns: 1fr 2fr 1fr 1fr;
     padding: 4rem;
     gap: 3rem;
+    border-bottom: 0.1rem solid ${({theme}) => theme.colors.gray100};
 
     p{
       font-size: var(--2xl);
@@ -27,28 +28,28 @@ export const Grid = styled.div`
   padding: 4rem;
   gap: 3rem;
 
-  &:nth-child(even){
+  &:nth-child(odd){
     border-top: 0.1rem solid ${({theme}) => theme.colors.gray100};
     border-bottom: 0.1rem solid ${({theme}) => theme.colors.gray100};
   }
 
   .artist-container .artist-box{
-      ${FlexCSS}
-      justify-content: start;
-      gap: 1rem;
-      margin-bottom: 3.2rem;
+    ${FlexCSS}
+    justify-content: start;
+    gap: 1rem;
+    margin-bottom: 3.2rem;
       
-      .artist-info{
-        p{
-          font-weight: 700;
-        }
-        span{
-          ${Paragraph}
-          font-weight: 400;
-          color: ${({theme}) => theme.colors.gray100};
-        }
+    .artist-info{
+      p{
+        font-weight: 700;
+      }
+      span{
+        ${Paragraph}
+        font-weight: 400;
+        color: ${({theme}) => theme.colors.gray100};
       }
     }
+  }
 
   .preview-container{
     ${FlexCSS}

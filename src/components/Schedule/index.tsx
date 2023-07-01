@@ -17,15 +17,15 @@ export default function Schedule() {
           <p>{item.description}</p>
           
           <div className="artist-container">
-            {item.artists.map((artist) => (
-              <div className="artist-box" key={artist.id}>
-                <Image src={artist.image} alt={artist.name} width={56} height={56} />
-                <div className='artist-info'>
-                  <p>{artist.name}</p>
-                  <span>{artist.id}</span>
+              {item.artists.map((artist) => (
+                <div className="artist-box" key={artist.id}>
+                  <Image src={artist.image} alt={artist.name} width={56} height={56} />
+                  <div className='artist-info'>
+                    <p>{artist.name}</p>
+                    <span>{artist.id}</span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
 
           <div className="preview-container">
