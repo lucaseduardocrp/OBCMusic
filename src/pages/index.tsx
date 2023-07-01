@@ -6,7 +6,8 @@ import {
   ProgrammingSection,
   TicketsSection,
   PartnerCompaniesSection,
-  ReportsSection   
+  ReportsSection,
+  GalerySection,   
 } from "./styles";
 
 import PlayIcon from "@/components/Icons/PlayIcon";
@@ -20,6 +21,7 @@ import FilterBar from "@/components/FilterBar";
 import TicketsCard from "@/components/TicketsCard";
 import CompaniesGrid from "@/components/CompaniesGrid";
 import SlideMensager from "@/components/SlideMensager";
+import GaleryCarousel from "@/components/GaleryCarousel";
 
 export default function Home() {
   return (
@@ -86,6 +88,11 @@ export default function Home() {
         
         <SlideMensager />
       </ReportsSection>
+
+      <GalerySection>
+        <h2>Galeria de Momentos Compartilhados</h2>
+        <GaleryCarousel />
+      </GalerySection>
      
     </Container>
   )

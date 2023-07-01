@@ -121,3 +121,10 @@ export const ReportsSection = styled.section`
   overflow: hidden;
   position: relative;
 `;
+
+//------------------GALERY CAROUSEL SECTION------------------
+
+export const GalerySection = styled.section`
+  background: url(/GaleryBG.svg);
+  background-color: ${({theme}) => theme.colors.gray};
+`;
