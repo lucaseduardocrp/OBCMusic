@@ -3,11 +3,18 @@ import { styled } from "styled-components";
 
 export const FlexContainer = styled.div`
   ${FlexCSS}
+  justify-content: start;
   gap: 3rem;
+  overflow: auto;  
 `;
 
 export const Container = styled.div`
   text-align: center;
+
+  &:nth-child(odd){
+    opacity: 40%;
+    margin-top: 2.6rem;
+  }
 
   .people-reports{
     margin-top: -0.5rem;
