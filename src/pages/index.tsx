@@ -1,5 +1,5 @@
 import Button from "@/components/Button";
-import { Container, HomeSection, AboutSection, ProgrammingSection } from "./styles";
+import { Container, HomeSection, AboutSection, ProgrammingSection, TicketsSection } from "./styles";
 import PlayIcon from "@/components/Icons/PlayIcon";
 import TimerCount from "@/components/TimerCount";
 import Image from "next/image";
@@ -8,6 +8,7 @@ import RightArrow from "@/components/Icons/RightArrow";
 import Schedule from "@/components/Schedule";
 import FilterContextProvider from "@/context/filter-context";
 import FilterBar from "@/components/FilterBar";
+import TicketsCard from "@/components/TicketsCard";
 
 export default function Home() {
   return (
@@ -56,6 +57,11 @@ export default function Home() {
 
         </ProgrammingSection>
       </FilterContextProvider>
+
+      <TicketsSection>
+        <h2>Escolha o tipo de ingresso</h2>
+        <TicketsCard />
+      </TicketsSection>
     </Container>
   )
 }

@@ -57,7 +57,6 @@ export const AboutSection = styled.section`
     
     .text{
       h2{
-        ${Title}
         padding-bottom: 3.2rem;
       }
 
@@ -97,8 +96,12 @@ export const AboutSection = styled.section`
 
 export const ProgrammingSection = styled.section`
   background: ${({theme}) => theme.colors.blueGradient}; 
+`;
 
-  h2{
-    ${Title}
-  }
+//------------------TICKET SECTION------------------
+
+export const TicketsSection = styled.section`
+  ${FlexCSS}
+  flex-direction: column;
+  background: ${({theme}) => theme.colors.gray}; 
 `;

@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
     --xl: 2rem;
     --2xl: 2.4rem;
     --3xl: 3.4rem;
-    --4xl: 4.8rem;
+    --4xl: 6rem;
     --5xl: 7.2rem;
     --timer-size: 13rem;
   }
@@ -38,6 +38,10 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: 100%;
     padding: 16rem 20%;
+  }
+
+  h2{
+    ${Title}
   }
 
   p{
