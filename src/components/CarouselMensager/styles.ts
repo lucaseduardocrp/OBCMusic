@@ -3,18 +3,30 @@ import { styled } from "styled-components";
 
 export const FlexContainer = styled.div`
   ${FlexCSS}
-  justify-content: start;
+  justify-content: center;
   gap: 3rem;
-  overflow: auto;  
+
+  .active{
+    opacity: 1;
+    margin-top: 0;
+  }
+
+.card-left {
+  transform: translateX(-125%) scale(0.8);
+}
+
+.card-right {
+  transform: translateX(125%) scale(0.8);
+}
 `;
 
 export const Container = styled.div`
   text-align: center;
-
-  &:nth-child(odd){
-    opacity: 40%;
-    margin-top: 2.6rem;
-  }
+  position: absolute;
+  bottom: 0rem;
+  opacity: 40%;
+  margin-top: 2.6rem;
+  transition: 500ms;
 
   .people-reports{
     margin-top: -0.5rem;

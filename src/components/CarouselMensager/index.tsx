@@ -23,17 +23,27 @@ export default function CarouselMensager() {
 
   return (
     <FlexContainer>
-      {PeopleReports.map((item, id) =>  {
+      {PeopleReports.map((item, i) =>  {
         const indexLeft = mod(index - 1, PeopleReports.length);
         const indexRight = mod(index + 1, PeopleReports.length);
 
+        let className = 'active'
+
+        if (i === index){
+          className = 'active';
+        } else if (i === indexRight) {
+          className = 'active card-right'
+        } else if (i === indexLeft) {
+          className = 'active card-left'
+        } else className = ''
+
         return(
-          <Container key={id}>
+          <Container key={item.name} className={className}>
             <Mensager>
               <div className="quoteOpen">
                 <QuotesOpenIcon />
               </div>
-              <Text key={id}>
+              <Text key={item.people}>
                 {item.description}
               </Text>
               <div className="quoteClose">

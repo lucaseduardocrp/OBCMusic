@@ -83,10 +83,8 @@ export default function Home() {
 
       <ReportsSection>
         <h2>Relatos</h2>
-        
-        <div className="carousel-container">
-          <CarouselMensager />
-        </div>
+  
+        <CarouselMensager />
       </ReportsSection>
      
     </Container>
