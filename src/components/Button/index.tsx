@@ -6,6 +6,7 @@ interface ButtonProps {
   href: string,
   background: 'Red' | 'Black' | 'Transparent' | 'White',
   color?: 'White',
+  
 }
 
 export default function Button({href, children, background, color}: ButtonProps) {
