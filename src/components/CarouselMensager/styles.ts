@@ -5,27 +5,31 @@ export const FlexContainer = styled.div`
   ${FlexCSS}
   justify-content: center;
   gap: 3rem;
+  width: 100%;
+  height: 50vh;
 
   .active{
     opacity: 1;
-    margin-top: 0;
   }
 
-.card-left {
-  transform: translateX(-125%) scale(0.8);
-}
+  .card-left {
+    transform: translateX(-125%) scale(0.8);
+    opacity: 0.4;
+  }
 
-.card-right {
-  transform: translateX(125%) scale(0.8);
-}
+  .card-right {
+    transform: translateX(125%) scale(0.8);
+    opacity: 0.4;
+  }
+
+  @media (max-width: 26.563rem){
+    margin-top: 8rem;
+  }
 `;
 
 export const Container = styled.div`
   text-align: center;
   position: absolute;
-  bottom: 0rem;
-  opacity: 40%;
-  margin-top: 2.6rem;
   transition: 500ms;
 
   .people-reports{
@@ -64,18 +68,22 @@ export const Mensager = styled.div`
     right: 3rem;
   }
 
-  @media (max-width: 48rem){
-    width: 34rem;
-    padding: 2rem;
+  @media (max-width: 90rem) {
+    width: 100%;
+    height: 100%;
 
-  .quoteOpen{
-    top: 1rem;
-    left: 1rem;
-  }
-  .quoteClose{
-    bottom: 1rem;
-    right: 1rem;
-  }
+    .quoteOpen{
+      top: 1rem;
+      left: 1rem;
+    }
+    .quoteClose{
+      bottom: 1rem;
+      right: 1rem;
+    }
+  };
+
+  @media (max-width: 48rem){
+    padding: 4rem;
   }
 `;
 

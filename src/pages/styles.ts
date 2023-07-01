@@ -117,15 +117,7 @@ export const PartnerCompaniesSection = styled.section`
 //------------------REPORTS SECTION------------------
 
 export const ReportsSection = styled.section`
-  ${FlexCSS}
-  justify-content: start;
-  flex-direction: column;
-  position: relative;
-  height: 100vh;
+  text-align: center;
   overflow: hidden;
-
-  .carousel-container{
-    max-width: 140rem;
-    overflow: hidden;
-  }
+  position: relative;
 `;

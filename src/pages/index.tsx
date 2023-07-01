@@ -83,7 +83,7 @@ export default function Home() {
 
       <ReportsSection>
         <h2>Relatos</h2>
-  
+        
         <CarouselMensager />
       </ReportsSection>
      
