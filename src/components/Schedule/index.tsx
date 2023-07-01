@@ -16,8 +16,9 @@ export default function Schedule() {
           <p>{item.hour}</p>
           <p>{item.description}</p>
           
+          <div className="artist-container">
             {item.artists.map((artist) => (
-              <div className="artist-container" key={artist.id}>
+              <div className="artist-box" key={artist.id}>
                 <Image src={artist.image} alt={artist.name} width={56} height={56} />
                 <div className='artist-info'>
                   <p>{artist.name}</p>
@@ -25,6 +26,7 @@ export default function Schedule() {
                 </div>
               </div>
             ))}
+          </div>
 
           <div className="preview-container">
             <p>{item.preview}</p>
