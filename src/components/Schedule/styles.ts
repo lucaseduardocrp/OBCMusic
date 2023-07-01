@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: transparent;
   border: 0.1rem solid ${({theme}) => theme.colors.gray100};
   border-radius: 2.4rem;
@@ -61,6 +61,6 @@ export const Grid = styled.div`
   }
 
   @media (max-width: 64rem) {
-    grid-template-rows: auto;
+    grid-template-columns: 1fr;
   }
 `;
