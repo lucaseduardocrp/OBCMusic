@@ -5,7 +5,7 @@ import { Container, Mensager, Text, FlexContainer } from "./styles";
 import { PeopleReports } from "@/modules/PeopleReports";
 import { useEffect, useState } from "react";
 
-export default function CarouselMensager() {
+export default function SlideMensager() {
   const [index, setIndex] = useState(0);
 
   const mod = (n: number, m: number) => {

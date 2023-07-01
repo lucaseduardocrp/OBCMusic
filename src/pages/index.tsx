@@ -19,7 +19,7 @@ import FilterContextProvider from "@/context/filter-context";
 import FilterBar from "@/components/FilterBar";
 import TicketsCard from "@/components/TicketsCard";
 import CompaniesGrid from "@/components/CompaniesGrid";
-import CarouselMensager from "@/components/CarouselMensager";
+import SlideMensager from "@/components/SlideMensager";
 
 export default function Home() {
   return (
@@ -84,7 +84,7 @@ export default function Home() {
       <ReportsSection>
         <h2>Relatos</h2>
         
-        <CarouselMensager />
+        <SlideMensager />
       </ReportsSection>
      
     </Container>
