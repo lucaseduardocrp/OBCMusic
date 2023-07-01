@@ -33,6 +33,7 @@ export const CardContainer = styled.div<Props>`
         font-size: var(--2xl);
         font-family: ${theme.fonts.headlines};
         font-weight: 800;
+        color: ${emphasis === true && theme.colors.primary};
       }
       
       h1{
@@ -42,7 +43,7 @@ export const CardContainer = styled.div<Props>`
     }
 
     ul li p{
-      color: ${theme.colors.black};
+      color: ${emphasis === true ? theme.colors.primary : theme.colors.black};
       margin-bottom: 1.5rem;
     }
   `}

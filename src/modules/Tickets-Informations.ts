@@ -56,7 +56,7 @@ export const TicketsInformations = [
       },
     ],
     
-    emphasis: false,
+    emphasis: true,
     btnBG: 'Transparent',
     color: 'Red',
     btnBorder: 'Red',
