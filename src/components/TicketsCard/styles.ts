@@ -28,12 +28,9 @@ export const Container = styled.div`
     }
   }
 
-  ul li{
+  ul li p{
+    color: ${({theme}) => theme.colors.black};
     margin-bottom: 1.5rem;
-
-    p{
-      color: ${({theme}) => theme.colors.black};
-    }
   }
 }
 `;
