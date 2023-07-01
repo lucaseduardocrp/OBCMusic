@@ -8,6 +8,7 @@ export const themes = {
     primary: '#F64348',
     paragraph: '#F9F9F9',
     blueGradient: 'linear-gradient(180deg, #48474c 50%, #464646 100%)',
+    blackOpacity: 'rgba(0,0,0,0.15)',
   },
 
   fonts:{

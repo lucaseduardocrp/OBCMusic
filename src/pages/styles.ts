@@ -8,6 +8,7 @@ export const HomeSection = styled.section`
   height: 100%;
   flex-direction: column;
   padding-top: 18rem;
+  padding-bottom: 14rem;
   gap: 4rem;
   text-align: center;
   background: linear-gradient(180deg, transparent 100%, black 100%), url(/HomeBackground.png);
@@ -110,5 +111,11 @@ export const TicketsSection = styled.section`
 //------------------PARTNER COMPANIES SECTION------------------
 
 export const PartnerCompaniesSection = styled.section`
+  text-align: center;
+`;
+
+//------------------REPORTS SECTION------------------
+
+export const ReportsSection = styled.section`
   text-align: center;
 `;
