@@ -15,7 +15,8 @@ export const TicketsInformations = [
     ],
     
     btnBG: 'Transparent',
-    btnBorder: 'border',
+    color: 'Black',
+    btnBorder: 'Black',
   },
   {
     title: 'Padrao',
@@ -34,6 +35,7 @@ export const TicketsInformations = [
     
     btnBG: 'Black',
     color: 'White',
+    btnBorder: 'Transparent',
   },
   {
     title: 'VIP',

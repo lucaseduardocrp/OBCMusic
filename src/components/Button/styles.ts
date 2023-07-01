@@ -22,7 +22,7 @@ export const Container = styled.a<ContainerProps>`
       background === 'Transparent' ? 'transparent' : theme.colors.white
     };
 
-    border: ${border === 'Black' ? `0.1rem solid ${theme.colors.black}` : border === 'Red' ? `${theme.colors.primary}` : 'transparent'};
+    border: 0.1rem solid ${border === 'Black' ? `${theme.colors.black}` : border === 'Red' ? `${theme.colors.primary}` : 'transparent'};
     
     color: ${color === 'White' ? theme.colors.white : color === 'Red' ? theme.colors.primary : theme.colors.dark};
 
