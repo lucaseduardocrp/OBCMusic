@@ -1,6 +1,8 @@
+import Image from "next/image";
 import QuotesCloseIcon from "../Icons/QuotesCloseIcon";
 import QuotesOpenIcon from "../Icons/QuotesOpenIcon";
-import { Container, Mensager } from "./styles";
+import { Container, Mensager, Text } from "./styles";
+import { PeopleReports } from "@/modules/PeopleReports";
 
 export default function CarouselMensager() {
   return (
@@ -9,15 +11,22 @@ export default function CarouselMensager() {
         <div className="quoteOpen">
           <QuotesOpenIcon />
         </div>
-          <div className="text">
-            <p>
-              Através dos shows digitais e da tecnologia de realidade virtual da OneBitMusic, pude mergulhar em um universo musical fascinante. Os visuais deslumbrantes, a qualidade do áudio e a interatividade oferecida pela plataforma me deixaram maravilhado. A OneBitMusic realmente entende como proporcionar experiências musicais únicas e memoráveis.
-            </p>
-          </div>
+          {PeopleReports.map((item, id) => 
+            <Text key={id}>
+              {item.description}
+            </Text>
+          )}
           <div className="quoteClose">
             <QuotesCloseIcon />
           </div>
       </Mensager>
+      {PeopleReports.map((item, id) => 
+        <div className="people-reports" key={id}>
+          <Image src={item.people} alt={item.name} width={120} height={120} />
+          <h4>{item.name}</h4>
+          <span>{item.local}</span>
+        </div>
+      )}
     </Container>
   )
 }
