@@ -106,3 +106,9 @@ export const TicketsSection = styled.section`
   flex-direction: column;
   background: ${({theme}) => theme.colors.gray}; 
 `;
+
+//------------------PARTNER COMPANIES SECTION------------------
+
+export const PartnerCompaniesSection = styled.section`
+  text-align: center;
+`;

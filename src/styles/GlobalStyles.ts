@@ -37,7 +37,8 @@ const GlobalStyles = createGlobalStyle`
   section{
     width: 100%;
     height: 100%;
-    padding: 16rem 20%;
+    padding: 10rem 20%;
+    background-color: ${({theme}) => theme.colors.gray};
   }
 
   h2{

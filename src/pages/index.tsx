@@ -1,5 +1,5 @@
 import Button from "@/components/Button";
-import { Container, HomeSection, AboutSection, ProgrammingSection, TicketsSection } from "./styles";
+import { Container, HomeSection, AboutSection, ProgrammingSection, TicketsSection, PartnerCompaniesSection } from "./styles";
 import PlayIcon from "@/components/Icons/PlayIcon";
 import TimerCount from "@/components/TimerCount";
 import Image from "next/image";
@@ -9,6 +9,7 @@ import Schedule from "@/components/Schedule";
 import FilterContextProvider from "@/context/filter-context";
 import FilterBar from "@/components/FilterBar";
 import TicketsCard from "@/components/TicketsCard";
+import CompaniesGrid from "@/components/CompaniesGrid";
 
 export default function Home() {
   return (
@@ -63,6 +64,13 @@ export default function Home() {
         
         <TicketsCard />
       </TicketsSection>
+
+      <PartnerCompaniesSection>
+        <h2>Nossos investidores</h2>
+        <CompaniesGrid />
+        <Button href="" background="White">Se torne um Investidor</Button>
+      </PartnerCompaniesSection>
+     
     </Container>
   )
 }
