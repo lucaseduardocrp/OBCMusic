@@ -11,6 +11,7 @@ export const Container = styled.div`
   gap: 3rem;
   padding: 3rem;
   width: 37rem;
+  height: 40rem;
   text-align: center;
   background: ${({theme}) => theme.colors.white};
   border-radius: 2rem;
@@ -31,6 +32,14 @@ export const Container = styled.div`
   ul li p{
     color: ${({theme}) => theme.colors.black};
     margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 90rem){
+  flex-wrap: wrap;
+
+  .card-container{
+    width: 34rem;
   }
 }
 `;
