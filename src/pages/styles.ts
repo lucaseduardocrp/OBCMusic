@@ -117,5 +117,6 @@ export const PartnerCompaniesSection = styled.section`
 //------------------REPORTS SECTION------------------
 
 export const ReportsSection = styled.section`
-  text-align: center;
+  ${FlexCSS}
+  flex-direction: column;
 `;

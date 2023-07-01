@@ -1,3 +1,4 @@
+import { FlexCSS } from "@/styles/Mixins";
 import { styled } from "styled-components";
 
 export const Container = styled.div`
@@ -5,8 +6,11 @@ export const Container = styled.div`
 `;
 
 export const Mensager = styled.div`
+  width: 77rem;
+  height: 23rem;
+  ${FlexCSS}
   background: ${({theme}) => theme.colors.blackOpacity};
-  padding: 6rem;
+  padding: 3rem;
   width: 70rem;
   position: relative;
 
