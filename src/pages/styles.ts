@@ -119,4 +119,9 @@ export const PartnerCompaniesSection = styled.section`
 export const ReportsSection = styled.section`
   ${FlexCSS}
   flex-direction: column;
+  overflow-x: hidden;
+
+  .carousel-container{
+    overflow-x: auto;
+  }
 `;
