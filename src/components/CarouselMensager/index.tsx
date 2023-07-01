@@ -1,15 +1,15 @@
 import Image from "next/image";
 import QuotesCloseIcon from "../Icons/QuotesCloseIcon";
 import QuotesOpenIcon from "../Icons/QuotesOpenIcon";
-import { Container, Mensager, Text } from "./styles";
+import { Container, Mensager, Text, FlexContainer } from "./styles";
 import { PeopleReports } from "@/modules/PeopleReports";
 
 export default function CarouselMensager() {
   return (
-    <Container>
+    <FlexContainer>
       {PeopleReports.map((item, id) => 
-        <>
-          <Mensager key={id}>
+        <Container key={id}>
+          <Mensager>
             <div className="quoteOpen">
               <QuotesOpenIcon />
             </div>
@@ -25,8 +25,8 @@ export default function CarouselMensager() {
             <h4>{item.name}</h4>
             <span>{item.local}</span>
           </div>
-        </>
+        </Container>
       )}
-    </Container>
+    </FlexContainer>
   )
 }

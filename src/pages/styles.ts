@@ -119,5 +119,4 @@ export const PartnerCompaniesSection = styled.section`
 export const ReportsSection = styled.section`
   ${FlexCSS}
   flex-direction: column;
-  height: 100vh;
 `;

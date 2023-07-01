@@ -1,6 +1,11 @@
 import { FlexCSS, Paragraph, Title } from "@/styles/Mixins";
 import { styled } from "styled-components";
 
+export const FlexContainer = styled.div`
+  ${FlexCSS}
+  gap: 3rem;
+`;
+
 export const Container = styled.div`
   text-align: center;
 
@@ -24,6 +29,7 @@ export const Mensager = styled.div`
   background: ${({theme}) => theme.colors.blackOpacity};
   padding: 6rem;
   width: 70rem;
+  height: 23rem;
   position: relative;
 
   .quoteOpen, .quoteClose{
