@@ -126,5 +126,12 @@ export const ReportsSection = styled.section`
 
 export const GalerySection = styled.section`
   background: url(/GaleryBG.svg);
+  background-repeat: no-repeat;
   background-color: ${({theme}) => theme.colors.gray};
+
+  .grid-container{
+    ${FlexCSS}
+    align-items: start;
+    gap: 3rem;
+  }
 `;

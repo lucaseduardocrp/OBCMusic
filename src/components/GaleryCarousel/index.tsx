@@ -1,18 +1,31 @@
 import Image from "next/image";
-import { Container } from "./styles";
+import { Container, IconContainer } from "./styles";
+import { GaleryInfos } from "@/modules/GaleryInfos";
+import HeartIcon from "../Icons/HeartIcon";
+import MensageIcon from "../Icons/MensageIcon";
 
 export default function GaleryCarousel() {
   return (
-    <Container>
-      <Image src={''} alt="" width={370} height={370} />
-      <div className="heart-icon">
+    <>
+      {GaleryInfos.map((item, id) => 
+        <Container key={id}>
+          <Image src={item.image} alt={item.title} width={370} height={370} />
+          <IconContainer>
+            <div className="feedback">
+              <HeartIcon />
+              <h5>{item.like}</h5>
+            </div>
 
-      </div>
-      <div className="mensager-icon">
-
-      </div>
-      <p></p>
-      <span></span>
-    </Container>
+            <div className="feedback">
+              <MensageIcon />
+              <h5>{item.comment}</h5>
+            </div>
+          </IconContainer>    
+    
+          <p>{item.title}</p>
+          <span>{item.description}</span>
+        </Container>
+      )}
+    </>
   )
 }
