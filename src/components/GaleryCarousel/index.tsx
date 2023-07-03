@@ -8,21 +8,23 @@ import ArrowRightIcon from "../Icons/ArrowRightIcon";
 import { useRef } from "react";
 
 export default function GaleryCarousel() {
-  const carousel = useRef<any>();
+  const carousel = useRef<any>(null);
   
   const handleLeft = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault()
-    carousel.current.scrollRight -= carousel.current.offsetWidth;
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    console.log(carousel.current.offsetWidth)
   }
 
   const handleRight = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault()
-    carousel.current.scrollRight += carousel.current.offsetWidth;
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
+    console.log(carousel.current.offsetWidth)
+
   }
 
   return (
-    <Carousel>
-      <div className="carousel-container" ref={carousel}>
+    <Carousel ref={carousel}>
         {GaleryInfos.map((item, id) =>
           <Container key={id}>
             <Image src={item.image} alt={item.title} width={370} height={370} />
@@ -40,7 +42,6 @@ export default function GaleryCarousel() {
             <span>{item.description}</span>
           </Container>
         )}
-      </div>
       <div className="buttons-container">
         <button className="arrow-left" onClick={handleLeft}><ArrowLeftIcon /></button>
         <button className="arrow-right" onClick={handleRight}><ArrowRightIcon /></button>

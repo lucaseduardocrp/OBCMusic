@@ -2,15 +2,16 @@ import { FlexCSS, Paragraph } from "@/styles/Mixins";
 import { styled } from "styled-components";
 
 export const Carousel = styled.div`
-
-.carousel-container{
   ${FlexCSS}
   align-items: start;
   justify-content: start;
   gap: 3rem;
   width: 100%;
   overflow: auto;
-}
+
+  &::-webkit-scrollbar{
+    width: 0;
+  }
 
 .buttons-container{
   ${FlexCSS}
@@ -18,7 +19,7 @@ export const Carousel = styled.div`
 
   .arrow-left, .arrow-right{
     position: absolute;
-    top: 40%;
+    top: 42%;
   }
   .arrow-left{
     left: 11rem;
@@ -39,6 +40,12 @@ export const Carousel = styled.div`
     &:hover{
       opacity: 0.8;
     }
+  }
+}
+
+@media (max-width: 64rem){
+  .buttons-container button{
+    display: none;
   }
 }
 `;
