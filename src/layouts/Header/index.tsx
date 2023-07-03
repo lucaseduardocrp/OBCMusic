@@ -13,7 +13,9 @@ export default function Header() {
   return (
     <HeaderContainer>
       <nav>
-        <Image src={'/Logo.png'} alt="Onebitmusic" width={153.46} height={29} />
+        <a href="#home">
+          <Image src={'/Logo.png'} alt="Onebitmusic" width={153.46} height={29} />
+        </a>
 
         <MobileMenu onClick={handleMenu}>
           {!active ? 

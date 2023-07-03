@@ -173,8 +173,8 @@ export const ContactSection = styled.section`
   @media (max-width: 48rem){
     grid-template-columns: 1fr;
 
-    .left-container{
-      padding: 6rem 4%;
+    .left-container, .right-container{
+      padding: 8rem 4%;
     }
   }
 `;

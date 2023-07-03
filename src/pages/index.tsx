@@ -129,8 +129,7 @@ export default function Home() {
           <Form />
           <Image src={'/Shape.svg'} alt="Abstract Image" width={72} height={48} />
         </div>
-      </ContactSection>
-     
+      </ContactSection>     
     </Container>
   )
 }
