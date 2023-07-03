@@ -129,11 +129,14 @@ export const GalerySection = styled.section`
   background: url(/GaleryBG.svg);
   background-repeat: no-repeat;
   background-color: ${({theme}) => theme.colors.gray};
-  overflow: auto;
-  padding-left: 15.7rem;
-  padding-right: 15.7rem;
-
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
   position: relative;
+
+  h2{
+    padding: 6rem 20%;
+  }
 `;
 
 export const ContactSection = styled.section`

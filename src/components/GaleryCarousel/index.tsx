@@ -5,21 +5,19 @@ import HeartIcon from "../Icons/HeartIcon";
 import MensageIcon from "../Icons/MensageIcon";
 import ArrowLeftIcon from "../Icons/ArrowLeftIcon";
 import ArrowRightIcon from "../Icons/ArrowRightIcon";
-import { MutableRefObject, useRef } from "react";
+import { useRef } from "react";
 
 export default function GaleryCarousel() {
-  const carousel = useRef<MutableRefObject>(null);
+  const carousel = useRef<any>();
   
-  const handleLeft = (e) => {
-    e.preventDefaul()
+  const handleLeft = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault()
     carousel.current.scrollRight -= carousel.current.offsetWidth;
-    console.log(carousel.current.offsetWidth)
   }
 
-  const handleRight = (e) => {
-    e.preventDefaul()
+  const handleRight = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault()
     carousel.current.scrollRight += carousel.current.offsetWidth;
-
   }
 
   return (
