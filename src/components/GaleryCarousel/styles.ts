@@ -35,3 +35,34 @@ export const IconContainer = styled.div`
     }
   }
 `;
+
+export const Carousel = styled.div`
+
+.carousel-container{
+  ${FlexCSS}
+  align-items: start;
+  gap: 3rem;
+}
+
+.buttons-container{
+  ${FlexCSS}
+  justify-content: space-between;
+
+  .arrow-left, .arrow-right{
+    position: absolute;
+  }
+  .arrow-right{
+    right: 15.7rem;
+  }
+  
+  button{
+    ${FlexCSS}
+    background: ${({theme}) => theme.colors.white};
+    width: 5.6rem;
+    height: 5.6rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+`;

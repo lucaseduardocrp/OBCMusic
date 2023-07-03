@@ -120,6 +120,7 @@ export const ReportsSection = styled.section`
   text-align: center;
   overflow: hidden;
   position: relative;
+  height: 90vh;
 `;
 
 //------------------GALERY CAROUSEL SECTION------------------
@@ -128,12 +129,9 @@ export const GalerySection = styled.section`
   background: url(/GaleryBG.svg);
   background-repeat: no-repeat;
   background-color: ${({theme}) => theme.colors.gray};
-
-  .grid-container{
-    ${FlexCSS}
-    align-items: start;
-    gap: 3rem;
-  }
+  overflow: auto;
+  padding-left: 15.7rem;
+  padding-right: 15.7rem;
 `;
 
 export const ContactSection = styled.section`
