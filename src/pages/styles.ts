@@ -39,12 +39,14 @@ export const HomeSection = styled.section`
   
   @media (max-width: 90rem) {      
     .home-text{
-      padding: 12rem 4% 0; 
+      padding: 22rem 4% 0; 
     }
   }
 
   @media (max-width: 64rem) {
     .home-text{
+      padding: 12rem 4% 0;
+
       >p{
         padding: 0;
       }

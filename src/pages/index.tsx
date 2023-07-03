@@ -33,7 +33,7 @@ export default function Home() {
     <Container>
       <HomeSection id="home">
         <div className="home-text">
-          <h1>A Sua Melhor Experiência <b>Musical Digital</b></h1>
+          <h1>A Sua Melhor Experiência <br /> <b>Musical Digital</b></h1>
           <p>
             Prepare-se para uma experiência incrível e envolvente, onde a arte se une à performance para criar momentos inesquecíveis. Nossos shows artísticos são projetados para encantar, inspirar e transportar você para um mundo de criatividade e expressão.
           </p>
