@@ -1,0 +1,7 @@
+<svg width="224" height="232" viewBox="0 0 224 232" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 232C15 116.572 108.572 23 224 23V23V232H15V232Z" fill="#F9F9F9"/>
+<circle cx="60" cy="60" r="60" fill="#464646"/>
+<g style="mix-blend-mode:overlay">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M60.0001 120C93.1371 120 120 93.1373 120 60.0002C120 56.9603 119.774 53.9731 119.338 51.0547C90.6082 67.7083 66.2106 91.0079 48.2487 118.85C52.0488 119.604 55.9782 120 60.0001 120Z" fill="#464646"/>
+</g>
+</svg>

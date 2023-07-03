@@ -135,3 +135,37 @@ export const GalerySection = styled.section`
     gap: 3rem;
   }
 `;
+
+export const ContactSection = styled.section`
+  padding: 0;
+
+  .left-container{
+    max-width: 84.5rem;
+    height: 66.2rem;
+    padding: 12rem 8rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 4rem;
+    background: ${({theme}) => theme.colors.dark};
+    position: relative;
+
+
+    img{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+`;
+
+export const ContactContainer = styled.div`
+  ${FlexCSS}
+  gap: 0.8rem;
+
+  h5{
+    ${Paragraph}
+    font-family: ${({theme}) => theme.fonts.headlines};
+    font-weight: 700;
+  }
+`;

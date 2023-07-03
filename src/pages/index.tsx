@@ -7,7 +7,9 @@ import {
   TicketsSection,
   PartnerCompaniesSection,
   ReportsSection,
-  GalerySection,   
+  GalerySection,
+  ContactSection,
+  ContactContainer,   
 } from "./styles";
 
 import PlayIcon from "@/components/Icons/PlayIcon";
@@ -22,6 +24,8 @@ import TicketsCard from "@/components/TicketsCard";
 import CompaniesGrid from "@/components/CompaniesGrid";
 import SlideMensager from "@/components/SlideMensager";
 import GaleryCarousel from "@/components/GaleryCarousel";
+import PhoneIcon from "@/components/Icons/PhoneIcon";
+import LetterIcon from "@/components/Icons/LetterIcon";
 
 export default function Home() {
   return (
@@ -96,6 +100,32 @@ export default function Home() {
           <GaleryCarousel />
         </div>
       </GalerySection>
+
+      <ContactSection>
+        <div className="left-container">
+          <h2>Nos contate</h2>
+
+          <ContactContainer>
+            <PhoneIcon />
+            <h5>+55 99823-3232</h5>
+          </ContactContainer>
+
+          <ContactContainer>
+            <LetterIcon />
+            <h5>contato@onebitmusic.com</h5>
+          </ContactContainer>
+
+          <Image 
+            src={'/FormImage.svg'} 
+            alt="Abstract Image" 
+            width={224} 
+            height={232}
+          />
+        </div>
+        <div className="right-container">
+          
+        </div>
+      </ContactSection>
      
     </Container>
   )
