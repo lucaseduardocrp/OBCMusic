@@ -12,10 +12,18 @@ export default function Footer() {
 
       <RightContent>
         <SocialMedia>
-          <FacebookIcon />
-          <TwitterIcon />
-          <LinkedInIcon />
-          <InstagramIcon />
+          <a href="#">
+            <FacebookIcon />
+          </a>
+          <a href="#">
+            <TwitterIcon />
+          </a>
+          <a href="#">
+            <LinkedInIcon />
+          </a>
+          <a href="#">
+            <InstagramIcon />
+          </a>
         </SocialMedia>
 
         <p>© onebitcode.com, 2023 </p>

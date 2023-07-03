@@ -98,7 +98,7 @@ export default function Home() {
         <h2>Galeria de Momentos Compartilhados</h2>
 
         <div className="grid-container">
-          {/* <GaleryCarousel /> */}
+          <GaleryCarousel />
         </div>
       </GalerySection>
 
