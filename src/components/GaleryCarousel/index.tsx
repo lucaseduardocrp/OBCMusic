@@ -5,11 +5,26 @@ import HeartIcon from "../Icons/HeartIcon";
 import MensageIcon from "../Icons/MensageIcon";
 import ArrowLeftIcon from "../Icons/ArrowLeftIcon";
 import ArrowRightIcon from "../Icons/ArrowRightIcon";
+import { MutableRefObject, useRef } from "react";
 
 export default function GaleryCarousel() {
+  const carousel = useRef<MutableRefObject>(null);
+  
+  const handleLeft = (e) => {
+    e.preventDefaul()
+    carousel.current.scrollRight -= carousel.current.offsetWidth;
+    console.log(carousel.current.offsetWidth)
+  }
+
+  const handleRight = (e) => {
+    e.preventDefaul()
+    carousel.current.scrollRight += carousel.current.offsetWidth;
+
+  }
+
   return (
     <Carousel>
-      <div className="carousel-container">
+      <div className="carousel-container" ref={carousel}>
         {GaleryInfos.map((item, id) =>
           <Container key={id}>
             <Image src={item.image} alt={item.title} width={370} height={370} />
@@ -29,8 +44,8 @@ export default function GaleryCarousel() {
         )}
       </div>
       <div className="buttons-container">
-        <button className="arrow-left"><ArrowLeftIcon /></button>
-        <button className="arrow-right"><ArrowRightIcon /></button>
+        <button className="arrow-left" onClick={handleLeft}><ArrowLeftIcon /></button>
+        <button className="arrow-right" onClick={handleRight}><ArrowRightIcon /></button>
       </div>
     </Carousel>
   )

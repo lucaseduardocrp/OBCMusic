@@ -2,7 +2,7 @@ import { FlexCSS } from "@/styles/Mixins";
 import { css, styled } from "styled-components";
 
 type Props = { 
-  borderTop: 'Black',
+  bordertop: 'Black',
   emphasis: boolean,
 }
 
@@ -16,7 +16,7 @@ export const Container = styled.div`
 `;
 
 export const CardContainer = styled.div<Props>`
-  ${({theme, borderTop, emphasis}) => css`
+  ${({theme, bordertop, emphasis}) => css`
     ${FlexCSS}
     flex-direction: column;
     gap: 3rem;
@@ -26,7 +26,7 @@ export const CardContainer = styled.div<Props>`
     text-align: center;
     background: ${theme.colors.white};
     border-radius: 2rem;
-    border-top: 0.5rem solid ${borderTop === 'Black' ? theme.colors.black : theme.colors.primary};
+    border-top: 0.5rem solid ${bordertop === 'Black' ? theme.colors.black : theme.colors.primary};
   
     .text-container{
       h1, h3{

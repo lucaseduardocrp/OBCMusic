@@ -1,6 +1,42 @@
 import { FlexCSS, Paragraph } from "@/styles/Mixins";
 import { styled } from "styled-components";
 
+export const Carousel = styled.div`
+  overflow: auto;
+
+.carousel-container{
+  ${FlexCSS}
+  align-items: start;
+  gap: 3rem;
+}
+
+.buttons-container{
+  ${FlexCSS}
+  justify-content: space-between;
+
+  .arrow-left, .arrow-right{
+    position: absolute;
+    top: 38%;
+  }
+  .arrow-left{
+    left: 11rem;
+  }
+  .arrow-right{
+    right: 11rem;
+  }
+  
+  button{
+    ${FlexCSS}
+    background: ${({theme}) => theme.colors.white};
+    width: 5.6rem;
+    height: 5.6rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+`;
+
 export const Container = styled.div`
   width: 37rem;
 
@@ -34,35 +70,4 @@ export const IconContainer = styled.div`
       color: ${({theme}) => theme.colors.textColor};
     }
   }
-`;
-
-export const Carousel = styled.div`
-
-.carousel-container{
-  ${FlexCSS}
-  align-items: start;
-  gap: 3rem;
-}
-
-.buttons-container{
-  ${FlexCSS}
-  justify-content: space-between;
-
-  .arrow-left, .arrow-right{
-    position: absolute;
-  }
-  .arrow-right{
-    right: 15.7rem;
-  }
-  
-  button{
-    ${FlexCSS}
-    background: ${({theme}) => theme.colors.white};
-    width: 5.6rem;
-    height: 5.6rem;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-}
 `;

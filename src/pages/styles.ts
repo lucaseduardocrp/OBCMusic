@@ -132,6 +132,8 @@ export const GalerySection = styled.section`
   overflow: auto;
   padding-left: 15.7rem;
   padding-right: 15.7rem;
+
+  position: relative;
 `;
 
 export const ContactSection = styled.section`
