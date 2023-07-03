@@ -2,12 +2,14 @@ import { FlexCSS, Paragraph } from "@/styles/Mixins";
 import { styled } from "styled-components";
 
 export const Carousel = styled.div`
-  overflow: auto;
 
 .carousel-container{
   ${FlexCSS}
   align-items: start;
+  justify-content: start;
   gap: 3rem;
+  width: 100%;
+  overflow: auto;
 }
 
 .buttons-container{
@@ -33,6 +35,10 @@ export const Carousel = styled.div`
     border: none;
     border-radius: 50%;
     cursor: pointer;
+
+    &:hover{
+      opacity: 0.8;
+    }
   }
 }
 `;
