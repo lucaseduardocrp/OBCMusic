@@ -152,8 +152,7 @@ export const ContactSection = styled.section`
     background: ${({theme}) => theme.colors.dark};
     position: relative;
 
-
-    img{
+    >img{
       position: absolute;
       bottom: 0;
       right: 0;
@@ -162,6 +161,21 @@ export const ContactSection = styled.section`
 
   .right-container{
     padding: 12rem 8rem;
+    position: relative;
+
+    >img{
+      position: absolute;
+      bottom: 0;
+      right: 5.6rem;
+    }
+  }
+
+  @media (max-width: 48rem){
+    grid-template-columns: 1fr;
+
+    .left-container{
+      padding: 6rem 4%;
+    }
   }
 `;
 

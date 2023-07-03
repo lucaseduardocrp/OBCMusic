@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { HeaderContainer, MobileMenu } from "./styles";
-import Link from "next/link";
 import Button from "@/components/Button";
 import { useState } from "react";
 
@@ -25,19 +24,19 @@ export default function Header() {
 
         <ul className={active ? 'Navlinks' : 'Navlinks Close'}>
           <li>
-            <Link href={'/'}>INÍCIO</Link>
+            <a href='#home'>INÍCIO</a>
           </li>
           <li>
-            <Link href={'/artists'}>ARTISTAS</Link>
+            <a href='#artists'>ARTISTAS</a>
           </li>
           <li>
-            <Link href={'/schedule'}>PROGRAMAÇÃO</Link>
+            <a href='#schedule'>PROGRAMAÇÃO</a>
           </li>
           <li>
-            <Link href={'/contact'}>CONTATO</Link>
+            <a href='#contact'>CONTATO</a>
           </li>
           
-          <Button background="White" href="/ticket">COMPRAR INGRESSOS</Button>
+          <Button background="White" href="#ticket">COMPRAR INGRESSOS</Button>
         </ul>
       </nav>
     </HeaderContainer>

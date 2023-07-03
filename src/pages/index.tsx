@@ -31,7 +31,7 @@ import Form from "@/components/Form";
 export default function Home() {
   return (
     <Container>
-      <HomeSection>
+      <HomeSection id="home">
         <h1>A Sua Melhor Experiência <b>Musical Digital</b></h1>
         <p>
           Prepare-se para uma experiência incrível e envolvente, onde a arte se une à performance para criar momentos inesquecíveis. Nossos shows artísticos são projetados para encantar, inspirar e transportar você para um mundo de criatividade e expressão.
@@ -45,7 +45,7 @@ export default function Home() {
         <TimerCount defaultTime={518400}/>
       </HomeSection>
       
-      <AboutSection>
+      <AboutSection id="artists">
         {aboutUsText.map((index, key) =>
           <div className="about-container" key={key}>
             <Image 
@@ -65,7 +65,7 @@ export default function Home() {
       </AboutSection>
 
       <FilterContextProvider>
-        <ProgrammingSection>
+        <ProgrammingSection id="schedule">
           <h2>Nossa programação</h2>
 
           <div className="filter-container">
@@ -76,7 +76,7 @@ export default function Home() {
         </ProgrammingSection>
       </FilterContextProvider>
 
-      <TicketsSection>
+      <TicketsSection id="ticket">
         <h2>Escolha o tipo de ingresso</h2>
         
         <TicketsCard />
@@ -98,13 +98,14 @@ export default function Home() {
         <h2>Galeria de Momentos Compartilhados</h2>
 
         <div className="grid-container">
-          <GaleryCarousel />
+          {/* <GaleryCarousel /> */}
         </div>
       </GalerySection>
 
-      <ContactSection>
+      <ContactSection id="contact">
         <div className="left-container">
           <h2>Nos contate</h2>
+
 
           <ContactContainer>
             <PhoneIcon />
@@ -123,9 +124,10 @@ export default function Home() {
             height={232}
           />
         </div>
-        
+
         <div className="right-container">
           <Form />
+          <Image src={'/Shape.svg'} alt="Abstract Image" width={72} height={48} />
         </div>
       </ContactSection>
      
