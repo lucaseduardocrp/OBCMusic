@@ -18,7 +18,7 @@ export const Carousel = styled.div`
 
   .arrow-left, .arrow-right{
     position: absolute;
-    top: 38%;
+    top: 40%;
   }
   .arrow-left{
     left: 11rem;
