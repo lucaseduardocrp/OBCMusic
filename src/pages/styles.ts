@@ -137,6 +137,8 @@ export const GalerySection = styled.section`
 `;
 
 export const ContactSection = styled.section`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   padding: 0;
 
   .left-container{
@@ -156,6 +158,10 @@ export const ContactSection = styled.section`
       bottom: 0;
       right: 0;
     }
+  }
+
+  .right-container{
+    padding: 12rem 8rem;
   }
 `;
 

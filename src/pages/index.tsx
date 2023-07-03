@@ -26,6 +26,7 @@ import SlideMensager from "@/components/SlideMensager";
 import GaleryCarousel from "@/components/GaleryCarousel";
 import PhoneIcon from "@/components/Icons/PhoneIcon";
 import LetterIcon from "@/components/Icons/LetterIcon";
+import Form from "@/components/Form";
 
 export default function Home() {
   return (
@@ -122,8 +123,9 @@ export default function Home() {
             height={232}
           />
         </div>
+        
         <div className="right-container">
-          
+          <Form />
         </div>
       </ContactSection>
      
