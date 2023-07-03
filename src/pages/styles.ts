@@ -7,33 +7,47 @@ export const HomeSection = styled.section`
   ${FlexCSS}
   height: 100%;
   flex-direction: column;
-  padding-top: 18rem;
-  padding-bottom: 14rem;
+  padding: 0 0 14rem;
   gap: 4rem;
   text-align: center;
   background: linear-gradient(180deg, transparent 100%, black 100%), url(/HomeBackground.png);
   background-position: center;
   background-size: cover;
 
-  h1{
-    ${Title};
-    padding-bottom: 0;
-    font-size: var(--5xl);
-  }
-  p{
-    ${Paragraph};
-    font-size: var(--xl);
-    padding: 0 10rem;
-  }
-
-  .ButtonsContainer{
-    ${FlexCSS};
+  .home-text{
+    ${FlexCSS}
+    flex-direction: column;
     gap: 4rem;
+    padding: 18rem 20% 0;
+
+    h1{
+      ${Title};
+      padding-bottom: 0;
+      font-size: var(--5xl);
+    }
+    p{
+      ${Paragraph};
+      font-size: var(--xl);
+      padding: 0 10rem;
+    }
+  
+    .ButtonsContainer{
+      ${FlexCSS};
+      gap: 4rem;
+    }
+  }
+  
+  @media (max-width: 90rem) {      
+    .home-text{
+      padding: 12rem 4% 0; 
+    }
   }
 
   @media (max-width: 64rem) {
-    >p{
-      padding: 0;
+    .home-text{
+      >p{
+        padding: 0;
+      }
     }
   }
   
@@ -45,6 +59,7 @@ export const HomeSection = styled.section`
       gap: 1rem;
     }
   }
+
 `;
 
 //------------------ABOUT SECTION------------------
