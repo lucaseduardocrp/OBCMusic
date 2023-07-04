@@ -146,8 +146,7 @@ export const GalerySection = styled.section`
   background: url(/GaleryBG.svg);
   background-repeat: no-repeat;
   background-color: ${({theme}) => theme.colors.gray};
-  padding-left: 0;
-  padding-right: 0;
+  padding: 10rem 0 0;
   position: relative;
 
   h2{
