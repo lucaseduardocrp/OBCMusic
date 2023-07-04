@@ -11,6 +11,7 @@ export default function TimerCount(props: Props){
   const [mainTime, setMainTime] = useState(props.defaultTime)
   
   useInterval(() => {
+
     setMainTime(mainTime - 1)
   }, 1000)
 

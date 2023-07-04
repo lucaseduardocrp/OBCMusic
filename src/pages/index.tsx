@@ -86,6 +86,7 @@ export default function Home() {
 
       <PartnerCompaniesSection>
         <h2>Nossos investidores</h2>
+        
         <CompaniesGrid />
         <Button href="" background="White">Se torne um Investidor</Button>
       </PartnerCompaniesSection>

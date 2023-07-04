@@ -5,7 +5,7 @@ export const Programming = [
     
     artists:[
       {
-        image: '/Yui.png',
+        image: '/artists-image/Yui.png',
         name: 'Yui Ronald',
         id: 'Booth: 2F12', 
       },
@@ -20,19 +20,19 @@ export const Programming = [
 
     artists: [
       {
-        image: '/Bob.png',
+        image: '/artists-image/Bob.png',
         name: 'Bob John',
         id: 'Booth: 3G12', 
       },
   
       {
-        image: '/Yui.png',
+        image: '/artists-image/Yui.png',
         name: 'Yui Ronald',
         id: 'Booth: 2F12', 
       },
   
       {
-        image: '/Emma.png',
+        image: '/artists-image/Emma.png',
         name: 'Emma Satoshi',
         id: 'Booth: 2A35', 
       },
@@ -47,12 +47,12 @@ export const Programming = [
 
     artists: [
     {
-      image: '/Sasha.png',
+      image: '/artists-image/Sasha.png',
       name: 'Sasha Jackson',
       id: 'Booth: 2F18', 
     },
     {
-      image: '/Diana.png',
+      image: '/artists-image/Diana.png',
       name: 'Diana Brock',
       id: 'Booth: 2F24', 
     },

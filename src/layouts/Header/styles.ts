@@ -2,16 +2,24 @@ import { FlexCSS } from './../../styles/Mixins';
 import { css, styled } from "styled-components";
 
 export const HeaderContainer = styled.header`
-  position: absolute;
-  z-index: 1000;
+  position: fixed;
   width: 100%;
-  padding: 2.2rem 20%;
-  background: transparent;
-
+  z-index: 1000;
+  
+  .active{
+    padding: 1rem 20%;
+    background: ${({theme}) => theme.colors.gray};
+    border-bottom: 0.1rem solid #a1a1a1;
+  }
+  
+  
   nav{
     ${FlexCSS};
     justify-content: space-between;
-
+    padding: 2.2rem 20%;
+    position: relative;
+    transition: all .25s ease;
+    
     .Navlinks{
       ${FlexCSS};
       gap: 4rem;
@@ -37,7 +45,13 @@ export const HeaderContainer = styled.header`
   }
   
   @media (max-width: 90rem) {
-    padding: 3.2rem 4%;
+    .active{
+      padding: 2rem 4%;
+    }
+
+    nav{
+      padding: 3.2rem 4%;
+    }
   }
 
   @media (max-width: 64rem) {
@@ -47,10 +61,10 @@ export const HeaderContainer = styled.header`
         width: 100%;
         flex-direction: column;
         align-items: start;
-        top: 8rem;
+        top: 7rem;
         left: 0;
         padding: 2.5rem;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(1rem); 
       }
       .Close{
         display: none;
