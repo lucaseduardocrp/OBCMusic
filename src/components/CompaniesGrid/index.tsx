@@ -4,7 +4,7 @@ import { CompaniesImages } from "@/modules/CompaniesImages";
 
 export default function CompaniesGrid() {
   return(
-    <Container>
+    <Container data-aos="zoom-in">
       {CompaniesImages.map((item, id) => 
         <Image src={item.src} alt={item.alt} width={item.width} height={item.height} key={id} />
       )}

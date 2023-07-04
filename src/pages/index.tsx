@@ -1,15 +1,10 @@
+import { useEffect } from "react";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
 import Button from "@/components/Button";
 import { 
-  Container,
-  HomeSection,
-  AboutSection,
-  ProgrammingSection,
-  TicketsSection,
-  PartnerCompaniesSection,
-  ReportsSection,
-  GalerySection,
-  ContactSection,
-  ContactContainer,   
+  Container, HomeSection, AboutSection, ProgrammingSection, TicketsSection, PartnerCompaniesSection, ReportsSection, GalerySection, ContactSection, ContactContainer,   
 } from "./styles";
 
 import PlayIcon from "@/components/Icons/PlayIcon";
@@ -29,27 +24,31 @@ import LetterIcon from "@/components/Icons/LetterIcon";
 import Form from "@/components/Form";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, [])
+
   return (
     <Container>
       <HomeSection id="home">
         <div className="home-text">
-          <h1>A Sua Melhor Experiência <br /> <b>Musical Digital</b></h1>
-          <p>
+          <h1 data-aos="zoom-in">A Sua Melhor Experiência <br /> <b>Musical Digital</b></h1>
+          <p data-aos="zoom-in">
             Prepare-se para uma experiência incrível e envolvente, onde a arte se une à performance para criar momentos inesquecíveis. Nossos shows artísticos são projetados para encantar, inspirar e transportar você para um mundo de criatividade e expressão.
           </p>
-          <div className="ButtonsContainer">
+          <div className="ButtonsContainer" data-aos="zoom-in">
             <Button href="" background="Red" color="White">Começar</Button>
             <Button href="" background="Transparent" color="White">
               <PlayIcon width="56" height="56"/> Assistir Video
             </Button>
           </div>
         </div>
-        <TimerCount defaultTime={518400}/>
+        <TimerCount defaultTime={518400} />
       </HomeSection>
       
       <AboutSection id="artists">
         {aboutUsText.map((index, key) =>
-          <div className="about-container" key={key}>
+          <div className="about-container" key={key} data-aos="zoom-out-right">
             <Image 
               src={index.src}
               alt={index.title} 
@@ -94,7 +93,9 @@ export default function Home() {
       <ReportsSection>
         <h2>Relatos</h2>
         
-        <SlideMensager />
+        <div data-aos="zoom-in">
+          <SlideMensager />
+        </div>
       </ReportsSection>
 
       <GalerySection>

@@ -7,7 +7,7 @@ export default function TicketsCard() {
   return (
     <Container>
       {TicketsInformations.map((item, key) => 
-        <CardContainer bordertop={item.cardBorderTop} emphasis={item.emphasis} key={key}>
+        <CardContainer bordertop={item.cardBorderTop} emphasis={item.emphasis} key={key} data-aos="flip-left">
           <div className="text-container">
             <h3>{item.title}</h3>
             <h1>{item.price}</h1>

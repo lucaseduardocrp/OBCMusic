@@ -16,7 +16,10 @@ export default function TimerCount(props: Props){
   }, 1000)
 
   return (
-    <Container>
+    <Container 
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+    >
       <span>{secondsToTime(mainTime)}</span>
     </Container>
   )

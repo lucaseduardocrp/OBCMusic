@@ -4,7 +4,7 @@ import { Programming } from '@/modules/Programming';
 
 export default function Schedule() {
   return (
-    <Container>
+    <Container data-aos="zoom-in">
       <div className="content">
         <p>Hora</p>
         <p>Conteúdo</p>

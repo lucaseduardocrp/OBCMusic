@@ -10,7 +10,7 @@ export default function FilterBar() {
   };
 
   return (
-    <FilterBarContainer>
+    <FilterBarContainer data-aos="zoom-in">
       <FilterItem selected={type === FilterType.DAY} onClick={() => handleChange(FilterType.DAY)}>
         <h3>Dia 01</h3>
         <h4>23 setembro</h4>
