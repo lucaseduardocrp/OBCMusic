@@ -48,21 +48,21 @@ export default function Header() {
           {!active ? <BurgerMenuIcon width='30' height='30'/> : <CloseIcon width='30' height='30' />}
         </MobileMenu>
 
-        <ul className={(active ? 'Navlinks' : 'Navlinks Close')}>
+        <ul className={(active ? 'Navlinks' : 'Navlinks Close')} >
           <li>
-            <a href='#home'>INÍCIO</a>
+            <a href='#home' data-aos="fade-right">INÍCIO</a>
           </li>
           <li>
-            <a href='#artists'>ARTISTAS</a>
+            <a href='#artists' data-aos="fade-right">ARTISTAS</a>
           </li>
           <li>
-            <a href='#schedule'>PROGRAMAÇÃO</a>
+            <a href='#schedule' data-aos="fade-right">PROGRAMAÇÃO</a>
           </li>
           <li>
-            <a href='#contact'>CONTATO</a>
+            <a href='#contact' data-aos="fade-right">CONTATO</a>
           </li>
           
-          <Button background="White" href="#ticket">COMPRAR INGRESSOS</Button>
+          <Button background="White" href="#ticket" data-aos="fade-right">COMPRAR INGRESSOS</Button>
         </ul>
       </nav>
     </HeaderContainer>

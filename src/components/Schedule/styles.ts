@@ -58,9 +58,10 @@ export const Grid = styled.div`
     .preview-container{
       ${FlexCSS}
       gap: 0.8rem;
-
+      
       p{
         font-weight: 700;
+        cursor: pointer;
       }
     }
   `}
