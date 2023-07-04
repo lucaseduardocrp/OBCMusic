@@ -14,5 +14,5 @@ export const aboutUsText = [
     src: '/Artist.png',
     width: 670,
     height: 712,
-  },
+  }
 ]

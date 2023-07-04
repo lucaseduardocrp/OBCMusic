@@ -61,5 +61,5 @@ export const TicketsInformations = [
     color: 'Red',
     btnBorder: 'Red',
     cardBorderTop: 'Red',
-  },
+  }
 ]

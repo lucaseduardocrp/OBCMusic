@@ -60,5 +60,5 @@ export const Programming = [
     
     preview: 'Em breve',
     icon: '/svg/Icons-Clock.svg',
-  },  
+  }, 
 ]
