@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Container } from "./styles";
 import useInterval from "@/hooks/useInterval";
 import { secondsToTime } from "@/utils/seconds-to-time";
+import { Container } from "./styles";
 
 interface Props {
   defaultTime: number,
