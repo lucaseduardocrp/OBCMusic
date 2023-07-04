@@ -53,17 +53,6 @@ const GlobalStyles = createGlobalStyle`
     color: ${({theme}) => theme.colors.primary};
   }
 
-  ::-webkit-scrollbar{
-    width: 0.5rem;
-  }
-  ::-webkit-scrollbar-thumb{
-    background: ${({theme}) => theme.colors.primary};
-    border-radius: 30px;
-  }
-  ::-webkit-scrollbar-track{
-      background: ${({theme}) => theme.colors.gray};
-  }
-
   @media (max-width: 90rem) {
     :root{
       --5xl: 6.2rem;
