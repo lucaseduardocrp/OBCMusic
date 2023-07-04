@@ -25,7 +25,7 @@ export const HomeSection = styled.section`
       padding-bottom: 0;
       font-size: var(--5xl);
     }
-    
+
     p{
       ${Paragraph};
       font-size: var(--xl);
@@ -35,6 +35,7 @@ export const HomeSection = styled.section`
     .ButtonsContainer{
       ${FlexCSS};
       gap: 4rem;
+      margin-bottom: 1rem;
     }
   }
   
@@ -55,7 +56,7 @@ export const HomeSection = styled.section`
   }
   
   @media (max-width: 26.563rem) {
-    padding-top: 8rem;
+    padding-top: 2rem;
 
     .ButtonsContainer{
       flex-direction: column;
