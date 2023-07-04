@@ -35,8 +35,6 @@ export default function Header() {
     };
   }, [])
 
-
-
   return (
     <HeaderContainer>
       <nav className={navbar ? 'active' : ''}>

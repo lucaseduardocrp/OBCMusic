@@ -8,7 +8,7 @@ export const themes = {
     gray100: '#C4C4C4',
     primary: '#F64348',
     paragraph: '#F9F9F9',
-    blueGradient: 'linear-gradient(180deg, #48474c 50%, #464646 100%)',
+    blueGradient: 'linear-gradient(180deg, #49494f 40%, #464646 100%)',
     blackOpacity: 'rgba(0,0,0,0.15)',
   },
 

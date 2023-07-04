@@ -31,6 +31,7 @@ export default function GaleryCarousel() {
             height={370} 
           />
           <IconContainer>
+            <Liked />
 
             <div className="feedback">
               <MensageIcon />

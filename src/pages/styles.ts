@@ -154,6 +154,12 @@ export const GalerySection = styled.section`
   h2{
     padding: 6rem 20%;
   }
+
+  @media (max-width: 48rem){
+    h2{
+      padding: 0 4% 6rem;
+    }
+  }
 `;
 
 export const ContactSection = styled.section`
