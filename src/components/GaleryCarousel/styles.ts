@@ -78,7 +78,6 @@ export const IconContainer = styled.div`
   .feedback{
     ${FlexCSS}
     gap: 1rem;
-    cursor: pointer;
 
     h5{
       font-size: var(--base);
