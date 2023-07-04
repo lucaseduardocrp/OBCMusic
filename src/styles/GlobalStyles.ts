@@ -56,7 +56,7 @@ const GlobalStyles = createGlobalStyle`
   @media (max-width: 90rem) {
     :root{
       --5xl: 6.2rem;
-      --timer-size: 12rem;
+      --timer-size: 14rem;
     }
     
     section{

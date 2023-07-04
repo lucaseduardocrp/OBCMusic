@@ -10,7 +10,7 @@ export const Container = styled.div`
     }
     font-family: timerFont;
     font-size: var(--timer-size);
-    -webkit-text-stroke-color: #acacac;
-    -webkit-text-stroke-width: 0.1rem;    
+    color: #acacac;
+    opacity: 0.6;
   }
 `;
