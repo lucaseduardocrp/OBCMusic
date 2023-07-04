@@ -9,12 +9,17 @@ export default function Liked() {
 
   useEffect(() => {
     setLike(Math.floor(Math.random() * (4000 - 300 + 1) + 300))
-  }, [])
 
+  }, []);
+  
   const onLikeButtonClick = () => {
     setLike(like + (isLike ? -1 : 1));
     setIsLike(!isLike)
+
+    localStorage.setItem('@likes', JSON.stringify(like))
+    localStorage.getItem('@likes')
   }
+
   
   return (
     <Container onClick={onLikeButtonClick}>
