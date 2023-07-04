@@ -50,19 +50,19 @@ export default function Header() {
 
         <ul className={(active ? 'Navlinks' : 'Navlinks Close')} >
           <li>
-            <a href='#home' data-aos="fade-right">INÍCIO</a>
+            <a href='#home' data-aos="zoom-in">INÍCIO</a>
           </li>
           <li>
-            <a href='#artists' data-aos="fade-right">ARTISTAS</a>
+            <a href='#artists' data-aos="zoom-in">ARTISTAS</a>
           </li>
           <li>
-            <a href='#schedule' data-aos="fade-right">PROGRAMAÇÃO</a>
+            <a href='#schedule' data-aos="zoom-in">PROGRAMAÇÃO</a>
           </li>
           <li>
-            <a href='#contact' data-aos="fade-right">CONTATO</a>
+            <a href='#contact' data-aos="zoom-in">CONTATO</a>
           </li>
           
-          <Button background="White" href="#ticket" data-aos="fade-right">COMPRAR INGRESSOS</Button>
+          <Button background="White" href="#ticket">COMPRAR INGRESSOS</Button>
         </ul>
       </nav>
     </HeaderContainer>
