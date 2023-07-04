@@ -9,7 +9,7 @@ type ContainerProps = {
 
 export const Container = styled.a<ContainerProps>`
   ${({ theme, background, color, border }) => css`
-    ${FlexCSS};
+    ${FlexCSS}
     display: inline-flex;
     gap: 1.2rem;
     padding: 1.8rem 3.4rem;

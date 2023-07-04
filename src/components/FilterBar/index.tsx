@@ -7,7 +7,7 @@ export default function FilterBar() {
 
   const handleChange = (value: FilterType) => {
     setType(value)
-  }
+  };
 
   return (
     <FilterBarContainer>
@@ -25,4 +25,4 @@ export default function FilterBar() {
       </FilterItem>
     </FilterBarContainer>
   )
-}
+};

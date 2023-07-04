@@ -18,4 +18,4 @@ export default function FilterContextProvider({children}: ProviderProps) {
       {children}
     </FilterContext.Provider>
   )
-}
+};

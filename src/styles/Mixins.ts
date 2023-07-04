@@ -7,20 +7,24 @@ export const FlexCSS = css`
 `;
 
 export const Title = css`
-  font-size: var(--3xl);
-  font-weight: 700;
-  font-family: ${({theme}) => theme.fonts.headlines};
-  color: ${({theme}) => theme.colors.white};
-  line-height: 1.3;
-  padding-bottom: 6rem;
+  ${({ theme }) => css`
+    font-size: var(--3xl);
+    font-weight: 700;
+    font-family: ${theme.fonts.headlines};
+    color: ${theme.colors.white};
+    line-height: 1.3;
+    padding-bottom: 6rem;
+  `}
 `;
 
 export const Paragraph = css`
-  font-size: var(--base);
-  font-weight: 500;
-  font-family: ${({theme}) => theme.fonts.text};
-  color: ${({theme}) => theme.colors.paragraph};
-  line-height: 1.6;
+  ${({ theme }) => css`
+    font-size: var(--base);
+    font-weight: 500;
+    font-family: ${theme.fonts.text};
+    color: ${theme.colors.paragraph};
+    line-height: 1.6;
+  `}
 `;
 
 

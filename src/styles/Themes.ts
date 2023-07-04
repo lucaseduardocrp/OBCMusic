@@ -16,4 +16,4 @@ export const themes = {
     headlines: "'Montserrat', sans-serif",
     text: "'Raleway', sans-serif",
   },
-}
+};

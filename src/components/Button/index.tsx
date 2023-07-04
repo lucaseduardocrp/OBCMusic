@@ -15,4 +15,4 @@ export default function Button({href, children, background, color, border}: Butt
       {children}
     </Container>
   )
-}
+};

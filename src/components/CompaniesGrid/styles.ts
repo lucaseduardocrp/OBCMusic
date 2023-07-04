@@ -11,6 +11,7 @@ export const Container = styled.div`
   @media (max-width: 64rem) {
     grid-template-columns: repeat(2, 1fr);
   }
+  
   @media (max-width: 26.563rem) {
    grid-template-columns: 1fr;
   }

@@ -8,4 +8,4 @@ export function secondsToTime(sec: number): string {
 
 
   return `${day}d ${hour}h ${minuts}m ${seconds}s`
-}
+};

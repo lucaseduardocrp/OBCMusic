@@ -1,4 +1,4 @@
-import { FlexCSS, Title } from "@/styles/Mixins";
+import { Title } from "@/styles/Mixins";
 import { styled } from "styled-components";
 
 export const Container = styled.div`

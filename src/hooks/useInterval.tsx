@@ -18,6 +18,6 @@ function useInterval<C extends CallableFunction>(callback: C, delay: number | nu
       return () => clearInterval(id);
     }
   }, [delay]);
-}
+};
 
-export default useInterval
+export default useInterval;

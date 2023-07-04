@@ -2,7 +2,7 @@ import { FlexCSS } from "@/styles/Mixins";
 import { styled } from "styled-components";
 
 interface FilterItemProps {
-  selected: boolean
+  selected: boolean,
 }
 
 export const FilterBarContainer = styled.ul`
