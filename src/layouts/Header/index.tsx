@@ -45,7 +45,7 @@ export default function Header() {
         </a>
 
         <MobileMenu onClick={handleMenu}>
-          {!active ? <BurgerMenuIcon width='30' height='30'/> : <CloseIcon width='30' height='30' />}
+          {!active ? <BurgerMenuIcon /> : <CloseIcon />}
         </MobileMenu>
 
         <ul className={(active ? 'Navlinks' : 'Navlinks Close')} >
