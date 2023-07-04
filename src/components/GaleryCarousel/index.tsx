@@ -5,9 +5,15 @@ import HeartIcon from "../Icons/HeartIcon";
 import MensageIcon from "../Icons/MensageIcon";
 import ArrowLeftIcon from "../Icons/ArrowLeftIcon";
 import ArrowRightIcon from "../Icons/ArrowRightIcon";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function GaleryCarousel() {
+  const [like, setLike] = useState(false)
+
+  const handleLike = () => {
+    setLike(!false)
+  }
+
   const carousel = useRef<any>(null);
   
   const handleLeft = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -31,9 +37,9 @@ export default function GaleryCarousel() {
             height={370} 
           />
           <IconContainer>
-            <div className="feedback">
-              <HeartIcon />
-              <h5>{item.like}</h5>
+            <div className="feedback" onClick={handleLike}>
+              {like ? <HeartIcon fill="#F9F9F9"/> : <HeartIcon fill="#f36151" />}
+              <h5 onClick={handleLike}>{item.like}</h5>
             </div>
             <div className="feedback">
               <MensageIcon />
