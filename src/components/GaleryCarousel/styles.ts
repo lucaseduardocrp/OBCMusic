@@ -8,7 +8,7 @@ export const Carousel = styled.div`
   gap: 3rem;
   width: 100%;
   overflow: auto;
-  position: relative;
+  scroll-behavior: smooth;
 
   &::-webkit-scrollbar{
     width: 0;
@@ -20,7 +20,7 @@ export const Carousel = styled.div`
 
   .arrow-left, .arrow-right{
     position: absolute;
-    top: 25%;
+    top: 46%;
   }
   .arrow-left{
     left: 11rem;
