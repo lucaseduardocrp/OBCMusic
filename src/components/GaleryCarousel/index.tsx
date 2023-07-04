@@ -13,20 +13,23 @@ export default function GaleryCarousel() {
   const handleLeft = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault()
     carousel.current.scrollLeft -= carousel.current.offsetWidth;
-    console.log(carousel.current.offsetWidth)
   }
 
   const handleRight = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault()
     carousel.current.scrollLeft += carousel.current.offsetWidth;
-    console.log(carousel.current.offsetWidth)
   }
 
   return (
     <Carousel ref={carousel}>      
       {GaleryInfos.map((item, id) =>
         <Container key={id}>
-          <Image src={item.image} alt={item.title} width={370} height={370} />
+          <Image 
+            src={item.image} 
+            alt={item.title} 
+            width={370} 
+            height={370} 
+          />
           <IconContainer>
             <div className="feedback">
               <HeartIcon />
