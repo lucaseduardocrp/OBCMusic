@@ -6,6 +6,5 @@ export function secondsToTime(sec: number): string {
   const hour = zeroLeft((sec / 3600) % 24);
   const day = zeroLeft((sec / 86400));
 
-
   return `${day}d ${hour}h ${minuts}m ${seconds}s`
 };
