@@ -25,6 +25,7 @@ export const HomeSection = styled.section`
       padding-bottom: 0;
       font-size: var(--5xl);
     }
+    
     p{
       ${Paragraph};
       font-size: var(--xl);
