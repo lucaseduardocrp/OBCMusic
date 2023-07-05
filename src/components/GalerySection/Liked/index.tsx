@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import HeartIconFill from "../Icons/HeartIconFill";
-import HeartIcon from "../Icons/HeartIcon";
+import HeartIconFill from "../../Icons/HeartIconFill";
+import HeartIcon from "../../Icons/HeartIcon";
 import { Container } from "./styles";
 
 type Props = {
@@ -12,6 +12,9 @@ export default function Liked({liked}: Props) {
 
   const onLikeButtonClick = () => {
     setIsLike(!isLike)
+
+    localStorage.setItem('@likes', JSON.stringify(isLike))
+    localStorage.getItem('@likes')
   }
   
   return (

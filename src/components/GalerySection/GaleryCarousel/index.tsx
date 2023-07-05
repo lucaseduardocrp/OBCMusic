@@ -5,7 +5,7 @@ import MensageIcon from "../../Icons/MensageIcon";
 import ArrowLeftIcon from "../../Icons/ArrowLeftIcon";
 import ArrowRightIcon from "../../Icons/ArrowRightIcon";
 import { useRef } from "react";
-import Liked from "../../Liked";
+import Liked from "../Liked";
 
 export default function GaleryCarousel() {
   const carousel = useRef<any>(null);

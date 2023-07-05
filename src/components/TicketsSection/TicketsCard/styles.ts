@@ -3,7 +3,7 @@ import { css, styled } from "styled-components";
 
 type Props = { 
   bordertop: 'Black' | '',
-  emphasis: boolean,
+  emphasis: 'Red' | '',
 }
 
 export const Container = styled.div`
@@ -33,7 +33,7 @@ export const CardContainer = styled.div<Props>`
         font-size: var(--2xl);
         font-family: ${theme.fonts.headlines};
         font-weight: 800;
-        color: ${emphasis === true && theme.colors.primary};
+        color: ${emphasis === 'Red' && theme.colors.primary};
       }
       
       h1{
@@ -43,7 +43,7 @@ export const CardContainer = styled.div<Props>`
     }
 
     ul li p{
-      color: ${emphasis === true ? theme.colors.primary : theme.colors.black};
+      color: ${emphasis === 'Red' ? theme.colors.primary : theme.colors.black};
       margin-bottom: 1.5rem;
     }
   `}

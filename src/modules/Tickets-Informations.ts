@@ -4,7 +4,7 @@ type TicketsType = {
   list: {
     item: string,
   }[],
-  emphasis: boolean,
+  emphasis: 'Red' | '',
   btnBG: 'Red' | 'Black' | 'Transparent' | 'White',
   color: 'Red' | 'White' | '',
   btnBorder: 'Red' | 'Black',
@@ -27,7 +27,7 @@ export const TicketsInformations: TicketsType[] = [
       },
     ],
 
-    emphasis: false,
+    emphasis: '',
     btnBG: 'Transparent',
     color: '',
     btnBorder: 'Black',
@@ -48,7 +48,7 @@ export const TicketsInformations: TicketsType[] = [
       },
     ],
     
-    emphasis: false,
+    emphasis: '',
     btnBG: 'Black',
     color: 'White',
     btnBorder: 'Black',
@@ -69,7 +69,7 @@ export const TicketsInformations: TicketsType[] = [
       },
     ],
     
-    emphasis: true,
+    emphasis: 'Red',
     btnBG: 'Transparent',
     color: 'Red',
     btnBorder: 'Red',

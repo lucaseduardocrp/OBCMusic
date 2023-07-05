@@ -1,7 +1,8 @@
-import Image from "next/image";
-import { HeaderContainer, MobileMenu } from "./styles";
-import Button from "@/components/Button";
 import { useEffect, useState } from "react";
+import { HeaderContainer, MobileMenu } from "./styles";
+
+import Image from "next/image";
+import Button from "@/components/Button";
 import BurgerMenuIcon from "@/components/Icons/BurgerMenuIcon";
 import CloseIcon from "@/components/Icons/CloseIcon";
 
