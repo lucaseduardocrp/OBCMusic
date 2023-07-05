@@ -9,7 +9,7 @@ import Liked from "../Liked";
 
 export default function GaleryCarousel() {
   const carousel = useRef<any>(null);
-  
+
   const handleLeft = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault()
     carousel.current.scrollLeft -= carousel.current.offsetWidth;
@@ -24,14 +24,12 @@ export default function GaleryCarousel() {
     <Carousel ref={carousel}>       
       {GaleryInfos.map((item, id) =>
         <Container key={id}>
-          <div className="image">
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={370}
-              height={370}
-            />
-          </div>
+          <Image
+            src={item.image}
+            alt={item.title}
+            width={370}
+            height={370}
+          />
           <IconContainer>
             <Liked liked={item.like} />
 

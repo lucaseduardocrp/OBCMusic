@@ -9,6 +9,10 @@ export const Carousel = styled.div`
   width: 100%;
   overflow: auto;
   scroll-behavior: smooth;
+
+  .current-item{
+    opacity: 1;
+  }
   
   &::-webkit-scrollbar-thumb{
     background: ${({theme}) => theme.colors.gray};
@@ -50,12 +54,10 @@ export const Carousel = styled.div`
 
 export const Container = styled.div`
   width: 37rem;
+  opacity: 0.5;
 
-  .image{
-    img{
-      margin-bottom: 4rem;
-    }
-
+  img{
+    margin-bottom: 4rem;
   }
 
   p{
