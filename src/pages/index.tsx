@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-import { Container } from "./styles";
+import { Container } from "./_styles";
 
 import FilterContextProvider from "@/context/filter-context";
 
