@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "@/components/Button";
 import { Container } from "./styles";
 
 export default function Form() {
