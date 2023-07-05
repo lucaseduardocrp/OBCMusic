@@ -14,7 +14,10 @@ export const Container = styled.div`
       grid-template-columns: 1fr 2fr 1fr 1fr;
       padding: 4rem;
       gap: 3rem;
-      border-bottom: 0.1rem solid ${theme.colors.gray100};
+      background: rgba(34,34,34,0.08);
+      border-top-left-radius: 2.4rem;
+      border-top-right-radius: 2.4rem;
+
 
       p{
         font-size: var(--2xl);
