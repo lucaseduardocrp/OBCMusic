@@ -1,8 +1,9 @@
-import Image from 'next/image';
-import { Container, Grid } from './styles';
-import { Programming } from '@/modules/Programming';
-import FilterBar from '../FilterBar';
 import { useState } from 'react';
+import { Programming } from '@/modules/Programming';
+import { Container, Grid } from './styles';
+
+import Image from 'next/image';
+import FilterBar from '../FilterBar';
 
 export default function Schedule() {
   const [day, setDay] = useState(Programming.dayOne)
@@ -10,7 +11,6 @@ export default function Schedule() {
   const changePage = (dayEvent: 'dayOne' | 'dayTwo' | 'dayThree') => {
     setDay(Programming[dayEvent])
   }
-
 
   return (
     <>

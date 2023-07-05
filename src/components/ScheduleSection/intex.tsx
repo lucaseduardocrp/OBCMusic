@@ -1,4 +1,4 @@
-import Schedule from "../Schedule";
+import Schedule from "./Schedule";
 import { ProgrammingSection } from "./styles";
 
 export default function ScheduleSection() {

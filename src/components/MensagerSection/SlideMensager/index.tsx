@@ -1,9 +1,9 @@
 import Image from "next/image";
-import QuotesCloseIcon from "../Icons/QuotesCloseIcon";
-import QuotesOpenIcon from "../Icons/QuotesOpenIcon";
 import { Container, Mensager, Text, FlexContainer } from "./styles";
 import { PeopleReports } from "@/modules/PeopleReports";
 import { useEffect, useState } from "react";
+import QuotesOpenIcon from "@/components/Icons/QuotesOpenIcon";
+import QuotesCloseIcon from "@/components/Icons/QuotesCloseIcon";
 
 export default function SlideMensager() {
   const [index, setIndex] = useState(0);

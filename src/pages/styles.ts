@@ -3,20 +3,8 @@ import { styled } from "styled-components";
 
 export const Container = styled.div``;
 
-//------------------PARTNER COMPANIES SECTION------------------
-
-export const PartnerCompaniesSection = styled.section`
-  text-align: center;
-`;
-
 //------------------REPORTS SECTION------------------
 
-export const ReportsSection = styled.section`
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  height: 90vh;
-`;
 
 //------------------GALERY CAROUSEL SECTION------------------
 
