@@ -12,9 +12,6 @@ export default function Liked({liked}: Props) {
 
   const onLikeButtonClick = () => {
     setIsLike(!isLike)
-
-    localStorage.setItem('@likes', JSON.stringify(isLike))
-    localStorage.getItem('@likes')
   }
   
   return (
