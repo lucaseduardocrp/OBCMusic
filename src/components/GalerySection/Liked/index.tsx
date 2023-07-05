@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import HeartIconFill from "../../Icons/HeartIconFill";
 import HeartIcon from "../../Icons/HeartIcon";
 import { Container } from "./styles";
