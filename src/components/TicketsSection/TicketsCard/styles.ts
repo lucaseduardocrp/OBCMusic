@@ -2,7 +2,7 @@ import { FlexCSS } from "@/styles/Mixins";
 import { css, styled } from "styled-components";
 
 type Props = { 
-  bordertop: 'Black',
+  bordertop: 'Black' | '',
   emphasis: boolean,
 }
 

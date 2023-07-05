@@ -5,7 +5,7 @@ interface ButtonProps {
   children: ReactNode,
   href: string,
   background: 'Red' | 'Black' | 'Transparent' | 'White',
-  color?: 'Red' | 'White',
+  color?: 'Red' | 'White' | '',
   border?: 'Red' | 'Black',
 }
 

@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "@/components/Button";
 import { CardContainer, Container } from "./styles";
 
 import { TicketsInformations } from "@/modules/Tickets-Informations";

@@ -1,4 +1,17 @@
-export const TicketsInformations = [
+type TicketsType = {
+  title: string,
+  price: string,
+  list: {
+    item: string,
+  }[],
+  emphasis: boolean,
+  btnBG: 'Red' | 'Black' | 'Transparent' | 'White',
+  color: 'Red' | 'White' | '',
+  btnBorder: 'Red' | 'Black',
+  cardBorderTop: 'Black' | '',
+}
+
+export const TicketsInformations: TicketsType[] = [
   {
     title: 'Basico',
     price: 'R$100',
@@ -16,7 +29,7 @@ export const TicketsInformations = [
 
     emphasis: false,
     btnBG: 'Transparent',
-    color: 'Black',
+    color: '',
     btnBorder: 'Black',
     cardBorderTop: 'Black',
   },
@@ -38,7 +51,7 @@ export const TicketsInformations = [
     emphasis: false,
     btnBG: 'Black',
     color: 'White',
-    btnBorder: 'Transparent',
+    btnBorder: 'Black',
     cardBorderTop: 'Black',
   },
   {
@@ -60,6 +73,6 @@ export const TicketsInformations = [
     btnBG: 'Transparent',
     color: 'Red',
     btnBorder: 'Red',
-    cardBorderTop: 'Red',
+    cardBorderTop: '',
   }
 ]

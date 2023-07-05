@@ -33,7 +33,7 @@ export const Container = styled.div`
   transition: 500ms;
 
   .people-reports{
-    margin-top: -0.4rem;
+    margin-top: -0.2rem;
 
     h4{
       ${Title}

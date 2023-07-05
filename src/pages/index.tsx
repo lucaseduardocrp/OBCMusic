@@ -3,25 +3,21 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 
 import Button from "@/components/Button";
-import { 
-  Container, HomeSection, AboutSection, ProgrammingSection, TicketsSection, PartnerCompaniesSection, ReportsSection, GalerySection, ContactSection, ContactContainer,   
-} from "./styles";
+import { Container, PartnerCompaniesSection, ReportsSection, GalerySection, ContactSection, ContactContainer } from "./styles";
 
-import PlayIcon from "@/components/Icons/PlayIcon";
-import TimerCount from "@/components/TimerCount";
 import Image from "next/image";
-import { aboutUsText } from "@/modules/aboutUsText";
-import RightArrow from "@/components/Icons/RightArrow";
-import Schedule from "@/components/Schedule";
+
 import FilterContextProvider from "@/context/filter-context";
-import FilterBar from "@/components/FilterBar";
-import TicketsCard from "@/components/TicketsCard";
 import CompaniesGrid from "@/components/CompaniesGrid";
 import SlideMensager from "@/components/SlideMensager";
 import GaleryCarousel from "@/components/GaleryCarousel";
 import PhoneIcon from "@/components/Icons/PhoneIcon";
 import LetterIcon from "@/components/Icons/LetterIcon";
 import Form from "@/components/Form";
+import HomeSection from "@/components/HomeSection";
+import AboutSection from "@/components/AboutSection";
+import ScheduleSection from "@/components/ScheduleSection/intex";
+import TicketsSection from "@/components/TicketsSection";
 
 export default function Home() {
   useEffect(() => {
@@ -30,58 +26,15 @@ export default function Home() {
 
   return (
     <Container>
-      <HomeSection id="home">
-        <div className="home-text">
-          <h1 data-aos="zoom-in">A Sua Melhor Experiência <br /> <b>Musical Digital</b></h1>
-          <p data-aos="zoom-in">
-            Prepare-se para uma experiência incrível e envolvente, onde a arte se une à performance para criar momentos inesquecíveis. Nossos shows artísticos são projetados para encantar, inspirar e transportar você para um mundo de criatividade e expressão.
-          </p>
-          <div className="ButtonsContainer" data-aos="zoom-in">
-            <Button href="" background="Red" color="White">Começar</Button>
-            <Button href="" background="Transparent" color="White">
-              <PlayIcon width="56" height="56"/> Assistir Video
-            </Button>
-          </div>
-        </div>
-        <TimerCount defaultTime={518400} />
-      </HomeSection>
+      <HomeSection />
       
-      <AboutSection id="artists">
-        {aboutUsText.map((index, key) =>
-          <div className="about-container" key={key} data-aos="zoom-out-right">
-            <Image 
-              src={index.src}
-              alt={index.title} 
-              width={index.width} 
-              height={index.height}
-              quality={100}
-            />
-            <div className="text">
-              <h2>{index.title}</h2>
-              <p>{index.description}</p>
-              <Button href="" background="White">{index.buttonText} <RightArrow /></Button>
-            </div>
-          </div>
-        )}
-      </AboutSection>
+     <AboutSection />
 
       <FilterContextProvider>
-        <ProgrammingSection id="schedule">
-          <h2>Nossa programação</h2>
-
-          <div className="filter-container">
-            <FilterBar />
-          </div>
-          <Schedule />
-
-        </ProgrammingSection>
+        <ScheduleSection />
       </FilterContextProvider>
 
-      <TicketsSection id="ticket">
-        <h2>Escolha o tipo de ingresso</h2>
-        
-        <TicketsCard />
-      </TicketsSection>
+      <TicketsSection />
 
       <PartnerCompaniesSection>
         <h2>Nossos investidores</h2>

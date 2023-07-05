@@ -11,7 +11,7 @@ export default function Liked({liked}: Props) {
   const [isLike, setIsLike] = useState(false)
 
   const onLikeButtonClick = () => {
-    setIsLike(!isLike)  
+    setIsLike(!isLike)
   }
   
   return (
