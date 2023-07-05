@@ -21,17 +21,19 @@ export default function GaleryCarousel() {
   }
 
   return (
-    <Carousel ref={carousel}>      
+    <Carousel ref={carousel}>       
       {GaleryInfos.map((item, id) =>
         <Container key={id}>
-          <Image 
-            src={item.image} 
-            alt={item.title} 
-            width={370} 
-            height={370} 
-          />
+          <div className="image">
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={370}
+              height={370}
+            />
+          </div>
           <IconContainer>
-            <Liked />
+            <Liked liked={item.like} />
 
             <div className="feedback">
               <MensageIcon />
@@ -42,7 +44,8 @@ export default function GaleryCarousel() {
           <span>{item.description}</span>
         </Container>
       )}
-      <div className="buttons-container">        
+
+      <div className="buttons-container">
         <button className="arrow-left" onClick={handleLeft}><ArrowLeftIcon /></button>        
         <button className="arrow-right" onClick={handleRight}><ArrowRightIcon /></button>
       </div>

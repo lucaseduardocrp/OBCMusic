@@ -9,15 +9,12 @@ export const Carousel = styled.div`
   width: 100%;
   overflow: auto;
   scroll-behavior: smooth;
-
+  
   &::-webkit-scrollbar{
     width: 0;
   }
 
 .buttons-container{
-  ${FlexCSS}
-  justify-content: space-between;
-
   .arrow-left, .arrow-right{
     position: absolute;
     top: 46%;
@@ -54,8 +51,11 @@ export const Carousel = styled.div`
 export const Container = styled.div`
   width: 37rem;
 
-  img{
-    margin-bottom: 4rem;
+  .image{
+    img{
+      margin-bottom: 4rem;
+    }
+
   }
 
   p{

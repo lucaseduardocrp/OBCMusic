@@ -3,28 +3,21 @@ import HeartIconFill from "../Icons/HeartIconFill";
 import HeartIcon from "../Icons/HeartIcon";
 import { Container } from "./styles";
 
-export default function Liked() { 
-  const [like, setLike] = useState(Number)
+type Props = {
+  liked: number;
+}
+
+export default function Liked({liked}: Props) { 
   const [isLike, setIsLike] = useState(false)
 
-  useEffect(() => {
-    setLike(Math.floor(Math.random() * (4000 - 300 + 1) + 300))
-
-  }, []);
-  
   const onLikeButtonClick = () => {
-    setLike(like + (isLike ? -1 : 1));
-    setIsLike(!isLike)
-
-    localStorage.setItem('@likes', JSON.stringify(like))
-    localStorage.getItem('@likes')
+    setIsLike(!isLike)  
   }
-
   
   return (
     <Container onClick={onLikeButtonClick}>
       {isLike ? <HeartIconFill /> : <HeartIcon />}
-      <h5>{like}</h5>
+      <h5>{liked + (isLike ? 1 : 0)}</h5>
     </Container>
   )
 }
