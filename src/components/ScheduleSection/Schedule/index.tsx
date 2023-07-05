@@ -1,20 +1,53 @@
 import { useState } from 'react';
 import { Programming } from '@/modules/Programming';
-import { Container, Grid } from './styles';
+import { Container, FilterBarContainer, FilterItem, Grid } from './styles';
 
 import Image from 'next/image';
-import FilterBar from '../FilterBar';
+import useFilter from '@/hooks/useFilter';
+import { FilterType } from '@/types/FilterType';
 
 export default function Schedule() {
+  const { type, setType } = useFilter();
   const [day, setDay] = useState(Programming.dayOne)
   
-  const changePage = (dayEvent: 'dayOne' | 'dayTwo' | 'dayThree') => {
-    setDay(Programming[dayEvent])
+  const changePage = (day: 'dayOne' | 'dayTwo' | 'dayThree') => {
+    setDay(Programming[day])
   }
 
+  const handleChangeFilter = (value: FilterType) => {
+    setType(value)
+  };
   return (
     <>
-      <FilterBar />
+      <FilterBarContainer data-aos="zoom-in">
+        <FilterItem selected={type === FilterType.DAY} 
+          onClick={() => {
+            handleChangeFilter(FilterType.DAY)
+            changePage('dayOne')
+          }
+        }>
+          <h3>Dia 01</h3>
+          <h4>23 setembro</h4>
+        </FilterItem>
+        <FilterItem selected={type === FilterType.DAYTWO} 
+          onClick={() => {
+            handleChangeFilter(FilterType.DAYTWO)
+            changePage('dayTwo')
+            } 
+        }>
+          <h3>Dia 02</h3>
+          <h4>24 setembro</h4>
+        </FilterItem>
+        <FilterItem selected={type === FilterType.DAYTRHEE}
+          onClick={() => {
+            handleChangeFilter(FilterType.DAYTRHEE)
+            changePage('dayThree')
+          } 
+        }>
+          <h3>Dia 03</h3>
+          <h4>25 setembro</h4>
+        </FilterItem>
+      </FilterBarContainer>
         
       <Container data-aos="zoom-in">
         <div className="content">

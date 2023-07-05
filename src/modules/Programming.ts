@@ -87,21 +87,6 @@ dayTwo: [
   hour: '11:00 AM to 12:00 PM',
   description: 'Desfrute de uma performance emocionante com Yui Ronald, um artista solo que encanta o público com sua voz cativante e letras inspiradoras. Prepare-se para uma noite de músicas envolventes e momentos emocionantes.',
   
-  artists:[
-    {
-      image: '/artists-image/Yui.png',
-      name: 'Yui Ronald',
-      id: 'Booth: 2F12', 
-    },
-  ], 
-
-  preview: 'Previa',
-  icon: '/svg/Icons-Play.svg',
-},
-{
-  hour: '12:00 PM to 03:00 PM',
-  description: 'O trio que vai levar você a uma jornada musical com suas harmonias vocais encantadoras e arranjos instrumentais cativantes. Prepare-se para desfrutar de um repertório diversificado que abrange diversos estilos musicais e emocione seus sentidos.',      
-
   artists: [
     {
       image: '/artists-image/Bob.png',
@@ -121,6 +106,21 @@ dayTwo: [
       id: 'Booth: 2A35', 
     },
   ] ,
+ 
+  preview: 'Previa',
+  icon: '/svg/Icons-Play.svg',
+},
+{
+  hour: '12:00 PM to 03:00 PM',
+  description: 'O trio que vai levar você a uma jornada musical com suas harmonias vocais encantadoras e arranjos instrumentais cativantes. Prepare-se para desfrutar de um repertório diversificado que abrange diversos estilos musicais e emocione seus sentidos.',      
+
+  artists:[
+    {
+      image: '/artists-image/Yui.png',
+      name: 'Yui Ronald',
+      id: 'Booth: 2F12', 
+    },
+  ], 
 
     preview: 'AO VIVO',
     icon: '/svg/Icons-LiveCamera.svg',

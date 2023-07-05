@@ -10,8 +10,8 @@ export const Carousel = styled.div`
   overflow: auto;
   scroll-behavior: smooth;
   
-  &::-webkit-scrollbar{
-    width: 0;
+  &::-webkit-scrollbar-thumb{
+    background: ${({theme}) => theme.colors.gray};
   }
 
 .buttons-container{

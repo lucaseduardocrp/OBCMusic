@@ -14,6 +14,18 @@ const GlobalStyles = createGlobalStyle`
     --5xl: 7.2rem;
     --timer-size: 18rem;
   }
+
+  ::-webkit-scrollbar{
+      width: 0.5rem;
+  }
+  ::-webkit-scrollbar-thumb{
+      background: ${({theme}) => theme.colors.dark};
+      border-radius: 3rem;
+  }
+  ::-webkit-scrollbar-track{
+      background: ${({theme}) => theme.colors.gray};
+  }
+
   
   *{
     margin: 0;
