@@ -18,7 +18,7 @@ export default function SlideMensager() {
   useEffect(() => {
     setTimeout(() => {
       setIndex((index + 1) % PeopleReports.length )
-    }, 3000)
+    }, 6000)
   }, [index])
 
   return (
