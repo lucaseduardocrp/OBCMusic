@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
   .active{
     padding: 1rem 20%;
     background: ${({theme}) => theme.colors.gray};
-    border-bottom: 0.1rem solid #595959;
+    border-bottom: 0.1rem solid #565656;
   }
   
   
