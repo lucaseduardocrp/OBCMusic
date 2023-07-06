@@ -5,10 +5,6 @@ export const Container = styled.div`
   width: 37rem;
   opacity: 0.5;
 
-  .active{
-    opacity: 1;
-  }
-
   img{
     margin-bottom: 4rem;
   }

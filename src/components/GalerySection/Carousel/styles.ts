@@ -8,18 +8,17 @@ ${FlexCSS}
   gap: 3rem;
   width: 100%;
   overflow: auto;
-
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  
-  .active{
-    opacity: 1;
-  }
 
   &::-webkit-scrollbar-thumb{
     background: ${({theme}) => theme.colors.gray};
   }
-
+  
+  .active{
+    opacity: 1;
+  }
+  
   .arrow-left, .arrow-right{
     position: absolute;
     top: 46%;
