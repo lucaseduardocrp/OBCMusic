@@ -13,7 +13,7 @@ export default function Carousel() {
 
   useEffect(() => {
     setActivePost(() => {
-      const currentPost = Math.floor(GaleryInfos.length / 2);
+      const currentPost = Math.floor(GaleryInfos.length / 5);
       return [currentPost - 1, currentPost, currentPost + 1]
     })
   }, [post])
