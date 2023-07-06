@@ -68,7 +68,8 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
 
-          <title> Onebitmusic — A musical immersion </title>
+          <link rel="shortcut icon" href="/Favicon.svg" type="image/x-icon" />
+          <title> Onebitmusic - Musical Immersion </title>
         </Head>
         <body>
           <Main />
