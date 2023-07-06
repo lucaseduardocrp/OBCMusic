@@ -39,7 +39,7 @@ export default function Carousel() {
         <PostCard 
           key={index} 
           item={item}
-          active={!activePost?.includes(index)}
+          active={activePost?.includes(index)}
         />  
       )}
 

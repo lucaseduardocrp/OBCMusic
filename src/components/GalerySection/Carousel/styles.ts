@@ -1,4 +1,4 @@
-import { FlexCSS, Paragraph } from "@/styles/Mixins";
+import { FlexCSS } from "@/styles/Mixins";
 import { styled } from "styled-components";
 
 export const Container = styled.div`
