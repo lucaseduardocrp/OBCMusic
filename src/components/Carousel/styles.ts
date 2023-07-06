@@ -16,7 +16,7 @@ ${FlexCSS}
     background: ${({theme}) => theme.colors.gray};
   }
 
-  .current-item{
+  .active{
     opacity: 1;
   }
 

@@ -39,7 +39,7 @@ export default function Carousel() {
   return (
     <Container>
        {post.map((item, id) => 
-        <Post key={id}>
+        <Post key={id} className={activePost ? 'active' : ''}>
           <Image
             src={item.image}
             alt={item.title}
