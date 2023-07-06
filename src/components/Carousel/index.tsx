@@ -38,30 +38,25 @@ export default function Carousel() {
 
   return (
     <Container>
-       {post.map((item, id) => {
+       {post.map((item, id) => 
+        <Post key={id}>
+          <Image
+            src={item.image}
+            alt={item.title}
+            width={370}
+            height={370}
+          />
+          <IconContainer>
+            <Liked liked={item.like} />
 
-
-        return(
-          <Post key={id}>
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={370}
-              height={370}
-            />
-            <IconContainer>
-              <Liked liked={item.like} />
-
-              <div className="feedback">
-                <MensageIcon />
-                <h5>{item.comment}</h5>
-              </div>
-            </IconContainer>
-            <p>{item.title}</p>
-            <span>{item.description}</span>
-          </Post>
-        )
-       }
+            <div className="feedback">
+              <MensageIcon />
+              <h5>{item.comment}</h5>
+            </div>
+          </IconContainer>
+          <p>{item.title}</p>
+          <span>{item.description}</span>
+        </Post>
       )}
 
       <button className="arrow-left" onClick={handlePrevPost}><ArrowLeftIcon /></button>   
