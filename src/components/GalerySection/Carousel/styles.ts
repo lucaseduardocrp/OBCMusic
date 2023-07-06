@@ -11,12 +11,12 @@ ${FlexCSS}
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 
-  &::-webkit-scrollbar-thumb{
-    background: ${({theme}) => theme.colors.gray};
-  }
-  
   .active{
     opacity: 1;
+  }
+
+  &::-webkit-scrollbar-thumb{
+    background: ${({theme}) => theme.colors.gray};
   }
   
   .arrow-left, .arrow-right{

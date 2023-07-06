@@ -13,7 +13,6 @@ import CompaniesSection from "@/components/CompaniesSection/intex";
 import MensagerSection from "@/components/MensagerSection";
 import ContactSection from "@/components/ContactSection";
 import GalerySection from "@/components/GalerySection";
-import { Container } from "./styles";
 
 export default function Home() {
   useEffect(() => {
@@ -21,7 +20,7 @@ export default function Home() {
   }, [])
 
   return (
-    <Container>
+    <>
       <HomeSection />
       <AboutSection />
 
@@ -35,6 +34,6 @@ export default function Home() {
       <GalerySection />
 
       <ContactSection />
-    </Container>
+    </>
   )
 }
