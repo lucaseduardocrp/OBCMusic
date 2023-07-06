@@ -170,12 +170,12 @@ dayThree: [
     artists: [
       {
         image: '/artists-image/Alexandre.png',
-        name: 'Alexandre Back',
+        name: 'Xandin Back',
         id: 'Booth: 2F18', 
       },
       {
         image: '/artists-image/Paulo.png',
-        name: 'Paulo Dialise',
+        name: 'Paulo Diálise',
         id: 'Booth: 8G12', 
       },
 
@@ -196,7 +196,7 @@ dayThree: [
       artists: [
         {
           image: '/artists-image/Paulo.png',
-          name: 'Paulo Dialise',
+          name: 'Paulo Diálise',
           id: 'Booth: 8G12', 
         },
   

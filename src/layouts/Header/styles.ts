@@ -11,8 +11,6 @@ export const HeaderContainer = styled.header`
     background: ${({theme}) => theme.colors.gray};
     border-bottom: 0.1rem solid #565656;
   }
-  
-  
   nav{
     ${FlexCSS};
     justify-content: space-between;

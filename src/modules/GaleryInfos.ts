@@ -49,14 +49,6 @@ export const GaleryInfos: GaleryPostTypes[] = [
     id: 4,
   },
   {
-    image: '/galery-images/Image16.png',
-    title: 'A Magia da OneBitMusic ao Vivo',
-    description: 'Uma imagem que retrata a magia dos shows ao vivo da #OneBitMusic. Os efeitos visuais impressionantes e a batida pulsante nos levaram a uma jornada musical inesquecível. Compartilhe suas imagens e faça parte da nossa galeria de fãs!',
-    like: 734,
-    comment: 2129,
-    id: 10,
-  },
-  {
     image: '/galery-images/Image17.png',
     title: 'Explorando Novos Horizontes Musicais',
     description: 'Essa foto captura o momento em que mergulhamos na realidade virtual da #OneBitMusic. Foi uma experiência incrível explorar novos horizontes musicais e nos conectar com artistas de todo o mundo. Veja como nossos fãs estão aproveitando essa jornada musical!',

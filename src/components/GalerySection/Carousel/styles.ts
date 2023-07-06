@@ -4,10 +4,8 @@ import { styled } from "styled-components";
 export const Container = styled.div`
 ${FlexCSS}
   align-items: start;
-  justify-content: start;
   gap: 3rem;
   width: 100%;
-  overflow: auto;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 
