@@ -21,18 +21,18 @@ export default function Carousel() {
     })
   }, [post])
 
-  const handlePrevPost = () => {
+  const handleNextPost = () => {
     setPost((currentPost) => {
-      const [prevPost, ...updatePost] = currentPost;
-      return [...updatePost, prevPost];
+      const [nextPost, ...updatePost] = currentPost;
+      return [...updatePost, nextPost];
     });
   }
 
-  const handleNextPost = () => {
+  const handlePrevPost = () => {
     setPost((currentPost) => {
       const updatePost = [...currentPost];
-      const nextPost = updatePost.pop()!;
-      return [nextPost, ...updatePost];
+      const prevPost = updatePost.pop()!;
+      return [prevPost, ...updatePost];
     });
   }
 
