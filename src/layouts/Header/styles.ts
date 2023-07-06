@@ -26,20 +26,24 @@ export const HeaderContainer = styled.header`
       text-transform: uppercase;
     }
     
-    a{
-      ${({ theme }) => css`
-        font-family: ${theme.fonts.headlines};
-        font-size: var(--sm);
-        font-weight: 600;
-      `}
-    }
     
-    li > a{
-      color: ${({theme}) => theme.colors.white};
-      transition: all .40s ease;
-
-      &:hover{
-        color: ${({theme}) => theme.colors.primary}
+    li{
+      &:last-child a {
+        color: ${({theme}) => theme.colors.black};
+      }
+      
+      a{
+        ${({ theme }) => css`
+          font-family: ${theme.fonts.headlines};
+          font-size: var(--sm);
+          font-weight: 600;
+          color: ${({theme}) => theme.colors.white};
+          transition: all .40s ease;
+          
+          &:hover{
+            color: ${({theme}) => theme.colors.primary}
+          }
+        `}
       }
     }
   }

@@ -43,8 +43,8 @@ export default function Carousel() {
         />  
       )}
 
-      <button className="arrow-left" onClick={handlePrevPost}><ArrowLeftIcon /></button>   
-      <button className="arrow-right" onClick={handleNextPost}><ArrowRightIcon /></button>
+      <button className="arrow-left" aria-label="Preview Galery Image" onClick={handlePrevPost}><ArrowLeftIcon /></button>   
+      <button className="arrow-right" aria-label="Next Galery Image" onClick={handleNextPost}><ArrowRightIcon /></button>
     </Container>
   )
 }
