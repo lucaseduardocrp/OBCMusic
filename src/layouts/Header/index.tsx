@@ -16,7 +16,7 @@ export default function Header() {
 
   useEffect(() => {
     let changeBackground = () => {
-      if(window.scrollY >= 80) {
+      if(window.scrollY >= 200) {
         setNavbar(true)
       } else {
         setNavbar(false)
