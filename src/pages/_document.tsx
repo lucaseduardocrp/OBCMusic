@@ -32,6 +32,11 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta name="keywords" content="Frontend, Desenvolvedor Front-end, Freelancer, UI Designer, Developer" />
+          <meta name="robots" content="index,follow" />
+          <meta name="author" content="Lucas Eduardo Crespo de Carvalho" />
+
           {/* Primary Meta Tags */}
           <meta name="title" content="Onebitmusic — A musical immersion" />
           <meta name="description" content="A Sua Melhor Experiência
