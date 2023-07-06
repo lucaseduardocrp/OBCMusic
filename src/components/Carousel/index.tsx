@@ -38,8 +38,8 @@ export default function Carousel() {
 
   return (
     <Container>
-       {post.map((item, id) => 
-        <Post key={id} className={activePost ? 'active' : ''}>
+       {post.map((item, index) => 
+        <Post key={index} className={`${!activePost?.includes(index) ? 'active' : ''}`}>
           <Image
             src={item.image}
             alt={item.title}
