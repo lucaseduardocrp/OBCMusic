@@ -9,7 +9,7 @@ export default function CompaniesSection() {
     <h2>Nossos investidores</h2>
     
     <CompaniesGrid />
-    <Button href="" background="White">Se torne um Investidor</Button>
+    <Button href="#contact" background="White">Se torne um Investidor</Button>
   </Container>
   )
 }

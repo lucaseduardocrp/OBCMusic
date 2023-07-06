@@ -15,7 +15,7 @@ export default function TicketsCard() {
           <ul>
             <li>{item.list.map((listItem, key) => <p key={key}>{listItem.item}</p>)}</li>
           </ul>
-          <Button href="" background={item.btnBG} border={item.btnBorder} color={item.color} >Saber mais</Button>
+          <Button href="#ticket" background={item.btnBG} border={item.btnBorder} color={item.color} >Saber mais</Button>
         </CardContainer>
       )}
     </Container>
