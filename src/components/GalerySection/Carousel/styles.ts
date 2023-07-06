@@ -6,6 +6,7 @@ ${FlexCSS}
   align-items: start;
   gap: 3rem;
   width: 100%;
+  overflow: auto;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 

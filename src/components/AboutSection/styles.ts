@@ -6,7 +6,6 @@ export const Container = styled.section`
 
   .about-container{
     ${FlexCSS};
-    gap: 7rem;
     overflow: hidden;
     
     .text{
