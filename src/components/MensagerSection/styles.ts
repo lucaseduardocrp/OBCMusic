@@ -4,5 +4,5 @@ export const Container = styled.section`
   text-align: center;
   overflow: hidden;
   position: relative;
-  height: 90vh;
+  height: 100vh;
 `;
