@@ -39,7 +39,7 @@ export default function Header() {
   return (
     <HeaderContainer>
       <nav className={navbar ? 'active' : ''}>
-        <a href="#home">
+        <a href="#home" aria-label="Logo Image">
           <Image src={'/Logo.png'} alt="Onebitmusic" width={153.46} height={29} />
         </a>
 

@@ -8,27 +8,27 @@ import InstagramIcon from "@/components/Icons/InstagramIcon";
 export default function Footer() {
   return(
     <Container>
-      <a href="#home">
+      <a href="#home" aria-label="Logo Image"> 
         <Image src={'/Logo.png'} alt="Onebitmusic" width={153.46} height={29} />
       </a>
 
       <RightContent>
         <SocialMedia>
-          <a href="https://www.facebook.com/onebitcode/">
+          <a href="https://www.facebook.com/onebitcode/" aria-label="Facebook">
             <FacebookIcon />
           </a>
           <a href="#">
             <TwitterIcon />
           </a>
-          <a href="https://www.linkedin.com/school/onebitcode/">
+          <a href="https://www.linkedin.com/school/onebitcode/" aria-label="LinkedIn">
             <LinkedInIcon />
           </a>
-          <a href="https://www.instagram.com/onebitcode/">
+          <a href="https://www.instagram.com/onebitcode/" aria-label="Instagram">
             <InstagramIcon />
           </a>
         </SocialMedia>
 
-        <a href="https://onebitcode.com/lp/">
+        <a href="https://onebitcode.com/lp/" aria-label="One Bit Code">
           <p>© onebitcode.com, 2023 </p>
         </a>
       </RightContent>
