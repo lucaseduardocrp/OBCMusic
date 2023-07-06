@@ -1,4 +1,4 @@
-type GaleryPost = {
+export type GaleryPostTypes = {
   image: string,
   title: string,
   description: string,
@@ -7,7 +7,7 @@ type GaleryPost = {
   id: number,
 }
 
-export const GaleryInfos: GaleryPost[] = [
+export const GaleryInfos: GaleryPostTypes[] = [
   {
     image: '/galery-images/Image.png',
     title: 'Explorando Novos Horizontes Musicais',

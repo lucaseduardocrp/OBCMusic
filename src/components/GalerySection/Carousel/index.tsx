@@ -1,13 +1,10 @@
-import Image from "next/image";
-
 import { GaleryInfos } from "@/modules/GaleryInfos";
-import { Container, IconContainer, Post } from "./styles";
+import { Container } from "./styles";
 
-import Liked from "../GalerySection/Liked";
-import ArrowLeftIcon from "../Icons/ArrowLeftIcon";
-import ArrowRightIcon from "../Icons/ArrowRightIcon";
-import MensageIcon from "../Icons/MensageIcon";
+import ArrowLeftIcon from "../../Icons/ArrowLeftIcon";
+import ArrowRightIcon from "../../Icons/ArrowRightIcon";
 import { useEffect, useState } from "react";
+import PostCard from "../PostCard";
 
 
 export default function Carousel() {
@@ -39,24 +36,11 @@ export default function Carousel() {
   return (
     <Container>
        {post.map((item, index) => 
-        <Post key={index} className={`${!activePost?.includes(index) ? 'active' : ''}`}>
-          <Image
-            src={item.image}
-            alt={item.title}
-            width={370}
-            height={370}
-          />
-          <IconContainer>
-            <Liked liked={item.like} />
-
-            <div className="feedback">
-              <MensageIcon />
-              <h5>{item.comment}</h5>
-            </div>
-          </IconContainer>
-          <p>{item.title}</p>
-          <span>{item.description}</span>
-        </Post>
+        <PostCard 
+          key={index} 
+          item={item}
+          active={!activePost?.includes(index)}
+        />  
       )}
 
       <button className="arrow-left" onClick={handlePrevPost}><ArrowLeftIcon /></button>   
