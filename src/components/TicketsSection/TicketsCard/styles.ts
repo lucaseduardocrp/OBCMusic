@@ -26,7 +26,19 @@ export const CardContainer = styled.div<Props>`
     text-align: center;
     background: ${theme.colors.white};
     border-radius: 2rem;
-    border-top: 0.5rem solid ${bordertop === 'Black' ? theme.colors.black : theme.colors.primary};
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+      content: '';
+      position: absolute;
+      height: 0.4rem;
+      width: 100%;
+      background: ${bordertop === 'Black' ? theme.colors.black : theme.colors.primary};
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
   
     .text-container{
       h1, h3{
