@@ -36,7 +36,7 @@ export const HeaderContainer = styled.header`
     
     li > a{
       color: ${({theme}) => theme.colors.white};
-      transition: all .30s ease;
+      transition: all .40s ease;
 
       &:hover{
         color: ${({theme}) => theme.colors.primary}

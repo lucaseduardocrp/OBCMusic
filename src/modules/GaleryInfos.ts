@@ -1,10 +1,20 @@
-export const GaleryInfos = [
+type GaleryPost = {
+  image: string,
+  title: string,
+  description: string,
+  like: number,
+  comment: number,
+  id: number,
+}
+
+export const GaleryInfos: GaleryPost[] = [
   {
     image: '/galery-images/Image.png',
     title: 'Explorando Novos Horizontes Musicais',
     description: 'Essa foto captura o momento em que mergulhamos na realidade virtual da #OneBitMusic. Foi uma experiência incrível explorar novos horizontes musicais e nos conectar com artistas de todo o mundo. Veja como nossos fãs estão aproveitando essa jornada musical!',
     like: 1234,
     comment: 11,
+    id: 0,
   },
   {
     image: '/galery-images/Image2.png',
@@ -12,6 +22,7 @@ export const GaleryInfos = [
     description: 'Uma imagem que captura a energia contagiante do show digital da #OneBitMusic. Os visuais hipnotizantes e a batida pulsante nos transportaram para uma jornada musical incrível. Compartilhe suas fotos e faça parte da nossa galeria de fãs!',
     like: 2434,
     comment: 140,
+    id: 1,
   },
   {
     image: '/galery-images/Image3.png',
@@ -19,6 +30,7 @@ export const GaleryInfos = [
     description: 'Uma foto do incrível show de realidade virtual da #OneBitMusic, onde a música e a tecnologia se encontram para criar uma experiência única. Obrigado a todos que compartilharam esse momento conosco!',
     like: 5234,
     comment: 29,
+    id: 2,
   },
   {
     image: '/galery-images/Image4.png',
@@ -26,6 +38,7 @@ export const GaleryInfos = [
     description: 'Essa foto é um lembrete da magia que encontramos nos shows digitais da #OneBitMusic. Os óculos de realidade virtual nos transportam para um mundo sonoro único, onde a música ganha vida. Veja como nossos fãs estão aproveitando essa experiência imersiva!',
     like: 3334,
     comment: 12,
+    id: 3,
   },
   {
     image: '/galery-images/Image5.png',
@@ -33,6 +46,7 @@ export const GaleryInfos = [
     description: 'Essa imagem representa a alegria e a emoção que experimentamos nos shows da #OneBitMusic. A música nos conecta, nos inspira e nos proporciona momentos inesquecíveis. Compartilhe suas fotos conosco e faça parte dessa galeria de momentos especiais!',
     like: 1034,
     comment: 19,
+    id: 4,
   },
   {
     image: '/galery-images/Image6.png',
@@ -40,6 +54,7 @@ export const GaleryInfos = [
     description: 'Uma foto que captura a energia eletrizante da #ElectroWaveParty da #OneBitMusic. Os visuais arrebatadores e a batida pulsante nos conduziram a uma jornada musical inesquecível. Compartilhe suas imagens e faça parte da nossa galeria de fãs!',
     like: 734,
     comment: 39,
+    id: 5,
   },
   {
     image: '/galery-images/Image7.png',
@@ -47,6 +62,7 @@ export const GaleryInfos = [
     description: 'Uma imagem que registra os momentos hipnotizantes do show ao vivo da #OneBitMusic. Os efeitos visuais cativantes e a batida pulsante nos envolveram em uma experiência musical única. Compartilhe suas fotos conosco e faça parte de nossa galeria de fãs!',
     like: 8234,
     comment: 111,
+    id: 6,
   },
   {
     image: '/galery-images/Image8.png',
@@ -54,6 +70,7 @@ export const GaleryInfos = [
     description: 'Uma foto que retrata a euforia contagiante da turnê #OneBitMusic. Os visuais deslumbrantes e a batida pulsante nos conduziram por uma viagem musical emocionante. Compartilhe suas fotos conosco e faça parte de nossa galeria de fãs!',
     like: 2104,
     comment: 124,
+    id: 7,
   },
   {
     image: '/galery-images/Image9.png',
@@ -61,6 +78,7 @@ export const GaleryInfos = [
     description: 'Uma imagem que captura a energia contagiante do show digital da #OneBitMusic. Os visuais hipnotizantes e a batida pulsante nos transportaram para uma jornada musical incrível. Compartilhe suas fotos e faça parte da nossa galeria de fãs!',
     like: 1634,
     comment: 103,
+    id: 8,
   },
   {
     image: '/galery-images/Image10.png',
@@ -68,6 +86,7 @@ export const GaleryInfos = [
     description: 'Essa imagem representa a alegria e a emoção que experimentamos nos shows da #OneBitMusic. A música nos conecta, nos inspira e nos proporciona momentos inesquecíveis. Compartilhe suas fotos conosco e faça parte dessa galeria de momentos especiais!',
     like: 834,
     comment: 139,
+    id: 9,
   },
   {
     image: '/galery-images/Image11.png',
@@ -75,6 +94,7 @@ export const GaleryInfos = [
     description: 'Uma imagem que retrata a magia dos shows ao vivo da #OneBitMusic. Os efeitos visuais impressionantes e a batida pulsante nos levaram a uma jornada musical inesquecível. Compartilhe suas imagens e faça parte da nossa galeria de fãs!',
     like: 734,
     comment: 2129,
+    id: 10,
   },
   {
     image: '/galery-images/Image12.png',
@@ -82,6 +102,7 @@ export const GaleryInfos = [
     description: 'Essa foto captura o momento em que mergulhamos na realidade virtual da #OneBitMusic. Foi uma experiência incrível explorar novos horizontes musicais e nos conectar com artistas de todo o mundo. Veja como nossos fãs estão aproveitando essa jornada musical!',
     like: 8234,
     comment: 151,
+    id: 11,
   },
   {
     image: '/galery-images/Image13.png',
@@ -89,6 +110,7 @@ export const GaleryInfos = [
     description: 'Essa foto é um lembrete da magia que encontramos nos shows digitais da #OneBitMusic. Os óculos de realidade virtual nos transportam para um mundo sonoro único, onde a música ganha vida. Veja como nossos fãs estão aproveitando essa experiência imersiva!',
     like: 2104,
     comment: 612,
+    id: 12,
   },
   {
     image: '/galery-images/Image14.png',
@@ -96,6 +118,7 @@ export const GaleryInfos = [
     description: 'Uma imagem que captura a energia contagiante do show digital da #OneBitMusic. Os visuais hipnotizantes e a batida pulsante nos transportaram para uma jornada musical incrível. Compartilhe suas fotos e faça parte da nossa galeria de fãs!',
     like: 1634,
     comment: 5140,
+    id: 13,
   },
   {
     image: '/galery-images/Image15.png',
@@ -103,5 +126,6 @@ export const GaleryInfos = [
     description: 'Essa imagem representa a alegria e a emoção que experimentamos nos shows da #OneBitMusic. A música nos conecta, nos inspira e nos proporciona momentos inesquecíveis. Compartilhe suas fotos conosco e faça parte dessa galeria de momentos especiais!',
     like: 834,
     comment: 719,
+    id: 14,
   },
 ]

@@ -1,11 +1,13 @@
-import Image from "next/image";
-import { Container, IconContainer, Carousel } from "./styles";
-import { GaleryInfos } from "@/modules/GaleryInfos";
-import MensageIcon from "../../Icons/MensageIcon";
-import ArrowLeftIcon from "../../Icons/ArrowLeftIcon";
-import ArrowRightIcon from "../../Icons/ArrowRightIcon";
 import { useRef } from "react";
+import { GaleryInfos } from "@/modules/GaleryInfos";
+
+import { Container, IconContainer, Carousel } from "./styles";
+import Image from "next/image";
+
 import Liked from "../Liked";
+import MensageIcon from "@/components/Icons/MensageIcon";
+import ArrowLeftIcon from "@/components/Icons/ArrowLeftIcon";
+import ArrowRightIcon from "@/components/Icons/ArrowRightIcon";
 
 export default function GaleryCarousel() {
   const carousel = useRef<any>(null);
@@ -24,12 +26,14 @@ export default function GaleryCarousel() {
     <Carousel ref={carousel}>       
       {GaleryInfos.map((item, id) =>
         <Container key={id}>
-          <Image
-            src={item.image}
-            alt={item.title}
-            width={370}
-            height={370}
-          />
+          <div className="image">
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={370}
+              height={370}
+            />
+          </div>
           <IconContainer>
             <Liked liked={item.like} />
 
@@ -44,7 +48,8 @@ export default function GaleryCarousel() {
       )}
 
       <div className="buttons-container">
-        <button className="arrow-left" onClick={handleLeft}><ArrowLeftIcon /></button>        
+        <button className="arrow-left" onClick={handleLeft}><ArrowLeftIcon /></button>   
+
         <button className="arrow-right" onClick={handleRight}><ArrowRightIcon /></button>
       </div>
     </Carousel>
