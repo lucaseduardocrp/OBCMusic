@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
     --3xl: 3.4rem;
     --4xl: 6rem;
     --5xl: 7.2rem;
-    --timer-size: 18rem;
+    --timer-size: 16rem;
   }
 
   ::-webkit-scrollbar{
@@ -67,7 +67,7 @@ const GlobalStyles = createGlobalStyle`
   @media (max-width: 90rem) {
     :root{
       --5xl: 6.2rem;
-      --timer-size: 14rem;
+      --timer-size: 13rem;
     }
     
     section{

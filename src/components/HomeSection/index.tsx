@@ -4,7 +4,8 @@ import Button from "../Button";
 import PlayIcon from "../Icons/PlayIcon";
 import TimerCount from "../TimerCount";
 
-export default function Home() {
+export default function Home() {  
+
   return (
     <HomeSection id="home">
     <div className="home-text">

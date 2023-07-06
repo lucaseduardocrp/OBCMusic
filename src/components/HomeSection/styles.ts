@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 
 export const HomeSection = styled.section`
   ${FlexCSS}
-  height: 100%;
+  height: 100vh;
   flex-direction: column;
   padding: 0 0 14rem;
   gap: 4rem;
@@ -16,7 +16,7 @@ export const HomeSection = styled.section`
     ${FlexCSS}
     flex-direction: column;
     gap: 4rem;
-    padding: 18rem 20% 0;
+    padding: 28rem 20% 0;
 
     h1{
       ${Title};
@@ -44,6 +44,8 @@ export const HomeSection = styled.section`
   }
 
   @media (max-width: 64rem) {
+    height: 100%;
+
     .home-text{
       padding: 12rem 4% 0;
 

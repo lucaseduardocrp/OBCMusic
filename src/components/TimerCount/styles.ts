@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-  padding-top: 4rem;
+  padding-top: 3rem;
 
   span{
     @font-face {
