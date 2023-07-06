@@ -21,7 +21,7 @@ export default function AboutSection() {
           <div className="text">
             <h2>{index.title}</h2>
             <p>{index.description}</p>
-            <Button href="" background="White">{index.buttonText} <RightArrow /></Button>
+            <Button href="#about" background="White">{index.buttonText} <RightArrow /></Button>
           </div>
         </div>
       )}
