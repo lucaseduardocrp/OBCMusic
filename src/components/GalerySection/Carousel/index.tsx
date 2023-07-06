@@ -32,7 +32,7 @@ export default function Carousel() {
       return [prevPost, ...updatePost];
     });
   }
-
+  
   return (
     <Container>
        {post.map((item, index) => 
