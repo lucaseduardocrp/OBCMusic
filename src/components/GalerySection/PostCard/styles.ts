@@ -18,6 +18,10 @@ export const Container = styled.div`
     color: ${({theme}) => theme.colors.gray100};
     opacity: 0.7;
   }
+
+  @media (max-width: 64rem) {
+    opacity: 1;
+  }
 `;
 
 export const IconContainer = styled.div`
