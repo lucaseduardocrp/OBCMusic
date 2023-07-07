@@ -5,6 +5,7 @@ import { aboutUsText } from "@/modules/aboutUsText";
 
 import Button from "../Button";
 import RightArrow from "../Icons/RightArrow";
+import GridImages from "../GridImages";
 
 export default function AboutSection() {
   return (
@@ -25,6 +26,7 @@ export default function AboutSection() {
           </div>
         </div>
       )}
+      <GridImages />
     </Container>
   )
 }
