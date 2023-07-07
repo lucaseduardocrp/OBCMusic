@@ -29,8 +29,8 @@ export const Grid = styled.div`
       background: linear-gradient(-45deg, #7C2626 60%, #242424 40%, #c23d3d 100%);
     }
     &::after{
-      top: -1.4rem;
-      left: -1.4rem;
+      top: -1.6rem;
+      left: -1.6rem;
       border-radius: 25%;
       background: linear-gradient(-45deg, #7C2626 40%, #242424 40%, #c23d3d 100%);
       animation: flasher 3s infinite;
@@ -39,7 +39,7 @@ export const Grid = styled.div`
 
     @keyframes flasher {
       0%, 100% {
-        opacity: 0.6;
+        opacity: 0.8;
       }
       50% {
         opacity: 0;
