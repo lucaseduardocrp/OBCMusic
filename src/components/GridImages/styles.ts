@@ -16,22 +16,30 @@ export const Grid = styled.div`
     position: relative;
     z-index: 2;
 
-    &::before{
+    &::before, &::after{
       content: '';
       position: absolute;
       width: 100%;
       height: 100%;
-      background: url('/grid-images/ImgBlur.png');
       bottom: -3rem;
+      right: -1.4rem;
+      opacity: 0.3;
       z-index: -1;
-      animation: flasher 2s infinite;
+      filter: blur(1.6rem);
+      background: linear-gradient(-45deg, #7C2626 60%, #242424 40%, #c23d3d 100%);
+    }
+    &::after{
+      top: -1.4rem;
+      left: -1.4rem;
+      border-radius: 25%;
+      background: linear-gradient(-45deg, #7C2626 40%, #242424 40%, #c23d3d 100%);
+      animation: flasher 3s infinite;
+      opacity: 0.5;
     }
 
     @keyframes flasher {
       0%, 100% {
-        opacity: 1;
-        filter: blur(1rem);
-        transform: t;
+        opacity: 0.6;
       }
       50% {
         opacity: 0;
@@ -47,7 +55,10 @@ export const Grid = styled.div`
     margin-top: -5rem;
   
     &::before{
-      background: url('/grid-images/ImgBlur2.png');
+      background: linear-gradient(145deg, #ff00c3 40%, #00f2ff 100%, #a400c3 30%);
+    }
+    &::after{
+      background: linear-gradient(-45deg, #ff00c3 40%, #00f2ff 100%, #a400c3 30%);
     }
   }
   
@@ -55,12 +66,20 @@ export const Grid = styled.div`
     margin-top: 2rem; 
   
     &::before{
-      background: url('/grid-images/ImgBlur3.png');
+      background: linear-gradient(145deg, #393955 65%, #c23d3d 100%, #393955 40%)
+    }
+    &::after{
+      background: linear-gradient(-45deg, #393955 65%, #c23d3d 100%, #393955 40%);
     }
   }
 
-  .imageFour::before{
-    background: url('/grid-images/ImgBlur4.png');
+  .imageFour{
+    &::before{
+      background: linear-gradient(135deg, #EDEDA4 60%, #008080 90%, #EDEDA4 30%);
+    }
+    &::after{
+      background: linear-gradient(-35deg, #EDEDA4 60%, #008080 90%, #EDEDA4 30%);
+    }
   }
   
   @media (max-width: 48rem) {
