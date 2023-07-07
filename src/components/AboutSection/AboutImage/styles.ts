@@ -8,12 +8,12 @@ export const Container = styled.div`
   
   &:hover{
     .imageTwo{
-      transition: all 1s ease-in-out;
+      transition: all .30s ease-in-out;
       z-index: 10;
       opacity: 1;
     }
     .imageOne{
-      transition: all 1s ease-in-out;
+      transition: all .30s ease-in-out;
       opacity: 0.3;
     }
   }

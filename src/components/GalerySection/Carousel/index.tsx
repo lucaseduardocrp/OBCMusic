@@ -55,7 +55,6 @@ export default function Carousel() {
     <Container>
        {post.map((item, index) => 
         <PostCard 
-          index={index}
           key={index} 
           item={item}
           onClickLike={() => {handleLike(index)}}

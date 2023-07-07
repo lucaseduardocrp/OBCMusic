@@ -11,14 +11,19 @@ export const Grid = styled.div`
   align-items: start;
   gap: 3rem;
 
+  
   .imageOne, .imageTwo, .imageThree, .imageFour{
     position: relative;
     z-index: 2;
-    transition: all .40s ease;
 
-    &:hover{
-      transform: translateY(-1rem);
+    img{
+      transition: all .40s ease;
+
+      &:hover{
+        transform: scale(1.05);
+      }
     }
+
 
     &::before, &::after{
       content: '';
