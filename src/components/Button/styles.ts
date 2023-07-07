@@ -15,6 +15,7 @@ export const Container = styled.a<ContainerProps>`
     padding: 1.8rem 3.4rem;
     border-radius: 0.8rem;
     ${ButtonText};
+    position: relative;
 
     background-color: ${
       background === 'Red' ? theme.colors.primary : 
@@ -29,7 +30,6 @@ export const Container = styled.a<ContainerProps>`
     transition: all .30s ease;
 
     &:hover{
-      opacity: 80%;
     }
   `}
 `;

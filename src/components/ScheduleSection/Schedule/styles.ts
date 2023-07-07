@@ -13,12 +13,13 @@ export const FilterBarContainer = styled.ul`
 export const FilterItem = styled.li<FilterItemProps>`
   width: 30rem;
   cursor: pointer;
-
+  
   h3{
     font-size: var(--2xl);
     font-weight: 800;
     line-height: 1.8;
     color: ${(props) => props.selected ? '#222' : '#C9C9C9'};
+    transition: all .20s ease;
   }
   
   h4{
@@ -28,6 +29,7 @@ export const FilterItem = styled.li<FilterItemProps>`
     opacity: ${props => props.selected ? '100%' : '40%'};
     border-bottom: ${props => props.selected ? '0.5rem solid #222' : '0.5rem solid #333333'};
     padding-bottom: 2rem;
+    transition: all .50s ease;
   }
 `;
 
