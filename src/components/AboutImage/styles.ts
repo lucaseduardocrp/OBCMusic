@@ -56,10 +56,10 @@ export const Container = styled.div`
 
   @keyframes floating {
     0%, 100%{
-      transform: translateY(3px);
+      transform: translateY(0.6rem);
     }
     50%{
-      transform: translateY(-3px);
+      transform: translateY(-0.6rem);
     }
   }
 
