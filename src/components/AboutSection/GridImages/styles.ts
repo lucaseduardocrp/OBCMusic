@@ -30,11 +30,11 @@ export const Grid = styled.div`
       position: absolute;
       width: 100%;
       height: 100%;
-      bottom: -3rem;
-      right: -1.4rem;
+      bottom: -2rem;
+      right: -1rem;
       opacity: 0.3;
       z-index: -1;
-      filter: blur(2rem);
+      filter: blur(1.4rem);
       background: linear-gradient(-45deg, #ce0521 60%, #242424 100%, #c23d3d 100%);
     }
     &::after{
@@ -86,7 +86,7 @@ export const Grid = styled.div`
     animation: floatingOne 3s infinite; 
   
     &::before{
-      background: linear-gradient(105deg, #196a9a 75%, #c23d3d 100%)
+      background: linear-gradient(105deg, #196a9a 45%, #c23d3d 40%, #000 100%)
     }
     &::after{
       background: linear-gradient(-45deg, #196a9a 35%, #c23d3d 100%, #196a9a 85%);
