@@ -20,6 +20,15 @@ export default function Carousel() {
     })
   }, [post])
 
+  useEffect(() => {
+   const storageValue = localStorage.getItem('@liked-post')
+
+    if (storageValue) {
+      setPost(JSON.parse(storageValue))
+    }
+
+  }, [])
+
   // Carousel Change Function
 
   const handleNextPost = () => {
@@ -43,13 +52,12 @@ export default function Carousel() {
     setPost(currentPost  => {
       const postList = [...currentPost];
       const likedStatus = postList[index].liked;
-    
+      
       const updatedPost = { ...postList[index], liked: !likedStatus };
       postList[index] = updatedPost;
-    
+      localStorage.setItem('@liked-post', JSON.stringify(postList))
+      
       return [...postList];
-
-      localStorage.setItem('@liked-post', JSON.stringify(updatedPost))
     })
   }
 
