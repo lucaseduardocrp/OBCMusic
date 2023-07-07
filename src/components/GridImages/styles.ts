@@ -25,7 +25,7 @@ export const Grid = styled.div`
       right: -1.4rem;
       opacity: 0.3;
       z-index: -1;
-      filter: blur(1.6rem);
+      filter: blur(2rem);
       background: linear-gradient(-45deg, #7C2626 60%, #242424 40%, #c23d3d 100%);
     }
     &::after{
@@ -34,12 +34,11 @@ export const Grid = styled.div`
       border-radius: 25%;
       background: linear-gradient(-45deg, #7C2626 40%, #242424 40%, #c23d3d 100%);
       animation: flasher 3s infinite;
-      opacity: 0.5;
     }
 
     @keyframes flasher {
       0%, 100% {
-        opacity: 0.8;
+        opacity: 0.6;
       }
       50% {
         opacity: 0;
@@ -55,7 +54,7 @@ export const Grid = styled.div`
     margin-top: -5rem;
   
     &::before{
-      background: linear-gradient(145deg, #ff00c3 40%, #00f2ff 100%, #a400c3 30%);
+      background: linear-gradient(105deg, #ff00c3 10%, #00f2ff 100%, #a400c3 30%);
     }
     &::after{
       background: linear-gradient(-45deg, #ff00c3 40%, #00f2ff 100%, #a400c3 30%);
@@ -66,7 +65,7 @@ export const Grid = styled.div`
     margin-top: 2rem; 
   
     &::before{
-      background: linear-gradient(145deg, #393955 65%, #c23d3d 100%, #393955 40%)
+      background: linear-gradient(105deg, #393955 75%, #c23d3d 100%, #393955 40%)
     }
     &::after{
       background: linear-gradient(-45deg, #393955 65%, #c23d3d 100%, #393955 40%);
