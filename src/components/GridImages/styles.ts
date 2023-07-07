@@ -10,7 +10,6 @@ export const Grid = styled.div`
   ${FlexCSS}
   align-items: start;
   gap: 3rem;
-  flex-wrap: wrap;
 
   .imageOne, .imageTwo, .imageThree, .imageFour{
     position: relative;
@@ -82,6 +81,8 @@ export const Grid = styled.div`
   }
   
   @media (max-width: 48rem) {
+    flex-wrap: wrap;
+
     .imageOne, .imageFour{
       img{
         width: 23.3rem;

@@ -2,12 +2,17 @@ import { FlexCSS } from "@/styles/Mixins";
 import { styled } from "styled-components";
 
 export const Container = styled.section`
+  ${FlexCSS}
+  flex-direction: column;
+  gap: 20rem;
+  padding-top: 14rem;
+  padding-bottom: 20rem;
   background: ${({theme}) => theme.colors.gray};
 
   .about-container{
     ${FlexCSS};
-    overflow: hidden;
-    
+    gap: 7rem;
+
     .text{
       h2{
         padding-bottom: 3.2rem;
@@ -20,6 +25,7 @@ export const Container = styled.section`
 
     &:nth-child(even){
       flex-direction: row-reverse;
+      gap: 4rem;
     }
   }
 
@@ -38,9 +44,10 @@ export const Container = styled.section`
   }
 
   @media (max-width: 48rem){
+    
     .about-container img{
-      width: 44rem;
-      height: 40rem;
+      width: 32rem;
+      height: 34rem;
     }
   }
 `;
