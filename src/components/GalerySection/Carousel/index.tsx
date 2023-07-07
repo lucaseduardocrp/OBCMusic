@@ -48,6 +48,8 @@ export default function Carousel() {
       postList[index] = updatedPost;
     
       return [...postList];
+
+      localStorage.setItem('@liked-post', JSON.stringify(updatedPost))
     })
   }
 
