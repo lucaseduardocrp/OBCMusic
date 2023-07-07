@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-  width: 53rem;
-  height: 55rem;
+  min-width: 53rem;
+  min-height: 55rem;
   position: relative;
   transition: all .30s ease-in-out;
   animation: floating 3s infinite;
@@ -64,12 +64,14 @@ export const Container = styled.div`
   }
 
   @media (max-width: 48rem) {
-    width: 32rem;
-    height: 34rem;
+    min-width: 32rem;
+    min-height: 34rem;
 
-    img{
-      width: 28rem;
-      height: 30rem;
+    .imageOne, .imageTwo{
+      img{
+        width: 28rem;
+        height: 30rem;
+      }
     }
   }
 `;

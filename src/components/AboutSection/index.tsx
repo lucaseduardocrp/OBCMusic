@@ -31,7 +31,6 @@ export default function AboutSection() {
               <Button href="#about" background="White">{item2.buttonText} <RightArrow /></Button>
             </div>
         </div>
-
     </Container>
   )
 }
