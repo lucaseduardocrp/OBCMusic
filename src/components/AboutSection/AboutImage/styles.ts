@@ -4,15 +4,16 @@ export const Container = styled.div`
   min-width: 53rem;
   min-height: 55rem;
   position: relative;
-  transition: all .30s ease-in-out;
   animation: floating 3s infinite;
-
+  
   &:hover{
     .imageTwo{
+      transition: all 1s ease-in-out;
       z-index: 10;
       opacity: 1;
     }
     .imageOne{
+      transition: all 1s ease-in-out;
       opacity: 0.3;
     }
   }
