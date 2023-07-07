@@ -62,11 +62,12 @@ export const HeaderContainer = styled.header`
         position: absolute;
         width: 100%;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         top: 7rem;
         left: 0;
         padding: 2.5rem;
-        backdrop-filter: blur(1rem); 
+        background: ${({theme}) => theme.colors.gray};
+        border-bottom: 0.1rem solid #565656;
       }
       .Close{
         display: none;
