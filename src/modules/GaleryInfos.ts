@@ -5,6 +5,7 @@ export type GaleryPostTypes = {
   like: number,
   comment: number,
   id: number,
+  liked: boolean,
 }
 
 export const GaleryInfos: GaleryPostTypes[] = [
@@ -15,6 +16,7 @@ export const GaleryInfos: GaleryPostTypes[] = [
     like: 1234,
     comment: 11,
     id: 0,
+    liked: false,
   },
   {
     image: '/galery-images/Image2.png',
@@ -23,6 +25,7 @@ export const GaleryInfos: GaleryPostTypes[] = [
     like: 2434,
     comment: 140,
     id: 1,
+    liked: false,
   },
   {
     image: '/galery-images/Image3.png',
@@ -31,6 +34,7 @@ export const GaleryInfos: GaleryPostTypes[] = [
     like: 5234,
     comment: 29,
     id: 2,
+    liked: false,
   },
   {
     image: '/galery-images/Image4.png',
@@ -39,6 +43,7 @@ export const GaleryInfos: GaleryPostTypes[] = [
     like: 3334,
     comment: 12,
     id: 3,
+    liked: false,
   },
   {
     image: '/galery-images/Image5.png',
@@ -47,6 +52,7 @@ export const GaleryInfos: GaleryPostTypes[] = [
     like: 1034,
     comment: 19,
     id: 4,
+    liked: false,
   },
   {
     image: '/galery-images/Image17.png',
@@ -55,6 +61,7 @@ export const GaleryInfos: GaleryPostTypes[] = [
     like: 8234,
     comment: 151,
     id: 11,
+    liked: false,
   },
   {
     image: '/galery-images/Image18.png',
@@ -63,6 +70,7 @@ export const GaleryInfos: GaleryPostTypes[] = [
     like: 2104,
     comment: 612,
     id: 12,
+    liked: false,
   },
   {
     image: '/galery-images/Image19.png',
@@ -71,6 +79,7 @@ export const GaleryInfos: GaleryPostTypes[] = [
     like: 1634,
     comment: 5140,
     id: 13,
+    liked: false,
   },
   {
     image: '/galery-images/Image20.png',
@@ -79,5 +88,6 @@ export const GaleryInfos: GaleryPostTypes[] = [
     like: 834,
     comment: 719,
     id: 14,
+    liked: false,
   },
 ]

@@ -4,20 +4,16 @@ import HeartIcon from "../../Icons/HeartIcon";
 import { Container } from "./styles";
 
 type Props = {
-  liked: number;
+  like: number,
+  isLike: boolean,
+  onClick: () => void,
 }
 
-export default function Liked({liked}: Props) { 
-  const [isLike, setIsLike] = useState(false)
-
-  const onLikeButtonClick = () => {
-    setIsLike(!isLike)
-  }
-  
+export default function Liked({like, isLike, onClick}: Props) {
   return (
-    <Container onClick={onLikeButtonClick}>
+    <Container onClick={onClick}>
       {isLike ? <HeartIconFill /> : <HeartIcon />}
-      <h5>{liked + (isLike ? 1 : 0)}</h5>
+      <h5>{like + (isLike ? 1 : 0)}</h5>
     </Container>
   )
 }

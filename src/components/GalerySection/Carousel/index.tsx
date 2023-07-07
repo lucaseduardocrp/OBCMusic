@@ -11,12 +11,16 @@ export default function Carousel() {
   const [post, setPost] = useState(GaleryInfos)
   const [activePost, setActivePost] = useState<number[]>([])
 
+  // index that returns from the carousel
+
   useEffect(() => {
     setActivePost(() => {
       const currentPost = Math.floor(GaleryInfos.length / 2);
       return [currentPost - 1, currentPost, currentPost + 1]
     })
   }, [post])
+
+  // Carousel Change Function
 
   const handleNextPost = () => {
     setPost((currentPost) => {
@@ -32,13 +36,29 @@ export default function Carousel() {
       return [prevPost, ...updatePost];
     });
   }
+
+  //Like Function 
   
+  const handleLike = (index: number) => {    
+    setPost(currentPost  => {
+      const postList = [...currentPost];
+      const likedStatus = postList[index].liked;
+    
+      const updatedPost = { ...postList[index], liked: !likedStatus };
+      postList[index] = updatedPost;
+    
+      return [...postList];
+    })
+  }
+
   return (
     <Container>
        {post.map((item, index) => 
         <PostCard 
+          index={index}
           key={index} 
           item={item}
+          onClickLike={() => {handleLike(index)}}
           active={activePost?.includes(index)}
         />  
       )}

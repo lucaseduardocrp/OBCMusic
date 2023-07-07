@@ -43,10 +43,10 @@ ${FlexCSS}
     }
   }
 
-
+/* 
 @media (max-width: 64rem){
   button{
     display: none;
   }
-}
+} */
 `;

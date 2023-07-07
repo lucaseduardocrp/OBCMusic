@@ -5,13 +5,16 @@ import Image from "next/image";
 import MensageIcon from "@/components/Icons/MensageIcon";
 import Liked from "../Liked";
 import { GaleryPostTypes } from "@/modules/GaleryInfos";
+import { Dispatch, SetStateAction } from "react";
 
 type PostProps = {
   item: GaleryPostTypes,
   active?: boolean,
+  index: number,
+  onClickLike: () => void,
 }
 
-export default function PostCard({active, item}: PostProps) {
+export default function PostCard({active, item, index, onClickLike}: PostProps) {
   return (
     <Container className={active ? 'active' : ''}>
       <Image
@@ -21,7 +24,12 @@ export default function PostCard({active, item}: PostProps) {
         height={370}
       />
       <IconContainer>
-        <Liked liked={item.like} />
+        <Liked
+          key={item.id}
+          isLike={item.liked}
+          onClick={() => onClickLike()}
+          like={item.like} 
+        />
 
         <div className="feedback">
           <MensageIcon />
