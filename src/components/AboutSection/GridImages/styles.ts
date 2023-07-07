@@ -52,10 +52,21 @@ export const Grid = styled.div`
 
   .imageOne{
     margin-bottom: 3rem;
+    animation: floatingOne 3s infinite;
+
+    @keyframes floatingOne {
+      0%, 100% {
+        transform: translateY(0.6rem);
+      }
+      50% {
+        transform: translateY(-0.6rem);
+      }
+    }
   }
 
   .imageTwo{
     margin-top: -5rem;
+    animation: floatingOne 3s infinite;
   
     &::before{
       background: linear-gradient(105deg, #ff00c3 10%, #00f2ff 100%, #a400c3 30%);
@@ -66,7 +77,8 @@ export const Grid = styled.div`
   }
   
   .imageThree{
-    margin-top: 2rem; 
+    margin-top: 2rem;
+    animation: floatingOne 3s infinite; 
   
     &::before{
       background: linear-gradient(105deg, #196a9a 75%, #c23d3d 100%)
@@ -77,6 +89,17 @@ export const Grid = styled.div`
   }
 
   .imageFour{
+    animation: floatingFour 3s infinite;
+
+    @keyframes floatingFour {
+      0%, 100% {
+        transform: translateY(0.6rem);
+      }
+      50% {
+        transform: translateY(-0.6rem);
+      }
+    }
+
     &::before{
       background: linear-gradient(135deg, #EDEDA4 60%, #008080 90%, #EDEDA4 30%);
     }

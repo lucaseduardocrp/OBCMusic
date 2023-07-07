@@ -1,12 +1,10 @@
-import Image from "next/image";
-
 import { Container } from "./styles";
 
 import Button from "../Button";
 import RightArrow from "../Icons/RightArrow";
-import GridImages from "../GridImages";
 import { aboutUsText } from "@/modules/aboutUsText";
-import AboutImage from "../AboutImage";
+import AboutImage from "./AboutImage";
+import GridImages from "./GridImages";
 
 const item = aboutUsText[0]
 const item2 = aboutUsText[1]
