@@ -8,7 +8,7 @@ export const HomeSection = styled.section`
   padding: 0 0 14rem;
   gap: 4rem;
   text-align: center;
-  background: linear-gradient(180deg, transparent 100%, black 100%), url(/HomeBackground.png);
+  background: linear-gradient(180deg, transparent 100%, black 100%), url(/HomeBackground.webp);
   background-position: center;
   background-size: cover;
 

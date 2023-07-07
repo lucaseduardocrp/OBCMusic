@@ -6,6 +6,7 @@ import Button from "../Button";
 import RightArrow from "../Icons/RightArrow";
 import GridImages from "../GridImages";
 import { aboutUsText } from "@/modules/aboutUsText";
+import AboutImage from "../AboutImage";
 
 const item = aboutUsText[0]
 const item2 = aboutUsText[1]
@@ -14,13 +15,7 @@ export default function AboutSection() {
   return (
     <Container id="artists">
         <div className="about-container" data-aos="zoom-out-right">
-          <Image 
-            src={'/AboutImage2.png'}
-            alt={item.title} 
-            width={460} 
-            height={480}
-            quality={100}
-          />
+          <AboutImage />
           <div className="text">
             <h2>{item.title}</h2>
             <p>{item.description}</p>
@@ -36,6 +31,7 @@ export default function AboutSection() {
               <Button href="#about" background="White">{item2.buttonText} <RightArrow /></Button>
             </div>
         </div>
+
     </Container>
   )
 }

@@ -14,6 +14,11 @@ export const Grid = styled.div`
   .imageOne, .imageTwo, .imageThree, .imageFour{
     position: relative;
     z-index: 2;
+    transition: all .40s ease;
+
+    &:hover{
+      transform: translateY(-1rem);
+    }
 
     &::before, &::after{
       content: '';
