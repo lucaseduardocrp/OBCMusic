@@ -66,7 +66,7 @@ export const HeaderContainer = styled.header`
         top: 7rem;
         left: 0;
         padding: 2.5rem;
-        background: ${({theme}) => theme.colors.gray};
+        backdrop-filter: blur(2rem);
         border-bottom: 0.1rem solid #565656;
       }
       .Close{
