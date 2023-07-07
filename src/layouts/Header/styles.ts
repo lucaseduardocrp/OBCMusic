@@ -11,6 +11,7 @@ export const HeaderContainer = styled.header`
     background: ${({theme}) => theme.colors.gray};
     border-bottom: 0.1rem solid #565656;
   }
+
   nav{
     ${FlexCSS};
     justify-content: space-between;
@@ -66,7 +67,7 @@ export const HeaderContainer = styled.header`
         top: 7rem;
         left: 0;
         padding: 2.5rem;
-        backdrop-filter: blur(2rem);
+        background: ${({theme}) => theme.colors.gray};
         border-bottom: 0.1rem solid #565656;
       }
       .Close{

@@ -60,10 +60,6 @@ const GlobalStyles = createGlobalStyle`
     ${Paragraph}
   }
 
-  b{
-    color: ${({theme}) => theme.colors.primary};
-  }
-
   @media (max-width: 90rem) {
     :root{
       --5xl: 6.2rem;
