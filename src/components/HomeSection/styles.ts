@@ -11,18 +11,14 @@ export const HomeSection = styled.section`
   background: linear-gradient(180deg, transparent 100%, black 100%), url(/HomeBackground.webp);
   background-position: center;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
 
   .home-text{
     ${FlexCSS}
     flex-direction: column;
     gap: 4rem;
     padding: 28rem 20% 0;
-
-    h1{
-      ${Title};
-      padding-bottom: 0;
-      font-size: var(--5xl);
-    }
 
     p{
       ${Paragraph};
@@ -62,5 +58,32 @@ export const HomeSection = styled.section`
       flex-direction: column;
       gap: 1rem;
     }
+  }
+`;
+
+export const LightShow = styled.div`
+  width: 100%;
+  height: 100%;
+
+  &::before, &::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 100rem;
+    width: 4rem;
+    height: 100%;
+    background: linear-gradient(rgba(82, 116, 168, 0.5), rgba(82, 116, 168, 0.2), rgba(82, 116, 168, 0));
+    z-index: 100;
+    animation: light-motion 4s infinite;
+  }
+
+  &::before{
+    
+  }
+
+  @keyframes light-motion {
+   0%, 100%{
+    transform: rotate(45deg);
+   } 
   }
 `;

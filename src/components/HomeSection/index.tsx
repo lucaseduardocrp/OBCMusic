@@ -1,4 +1,4 @@
-import { HomeSection } from "./styles";
+import { HomeSection, LightShow } from "./styles";
 
 import Button from "../Button";
 import PlayIcon from "../Icons/PlayIcon";
@@ -22,6 +22,9 @@ export default function Home() {
       </div>
     </div>
     <TimerCount defaultTime={18400} />
+    <LightShow>
+      <div className="light"></div>
+    </LightShow>
   </HomeSection>
   )
 }
