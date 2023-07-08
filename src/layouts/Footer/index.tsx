@@ -20,10 +20,10 @@ export default function Footer() {
           <a href="#">
             <TwitterIcon />
           </a>
-          <a href="https://www.linkedin.com/school/onebitcode/" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/lucaseccarvalho/" aria-label="LinkedIn">
             <LinkedInIcon />
           </a>
-          <a href="https://www.instagram.com/onebitcode/" aria-label="Instagram">
+          <a href="https://www.instagram.com/lucaseduardo_crp/" aria-label="Instagram">
             <InstagramIcon />
           </a>
         </SocialMedia>

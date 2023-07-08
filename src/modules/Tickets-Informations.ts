@@ -13,7 +13,7 @@ type TicketsType = {
 
 export const TicketsInformations: TicketsType[] = [
   {
-    title: 'Basico',
+    title: 'Básico',
     price: 'R$100',
     list: [
       {
@@ -34,7 +34,7 @@ export const TicketsInformations: TicketsType[] = [
     cardBorderTop: 'Black',
   },
   {
-    title: 'Padrao',
+    title: 'Padrão',
     price: 'R$150',
     list: [
       {
