@@ -10,7 +10,6 @@ export const Grid = styled.div`
   ${FlexCSS}
   align-items: start;
   gap: 3rem;
-
   
   .imageOne, .imageTwo, .imageThree, .imageFour{
     position: relative;

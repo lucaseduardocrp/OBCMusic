@@ -5,15 +5,14 @@ export const Container = styled.div`
   min-height: 55rem;
   position: relative;
   animation: floating 3s infinite;
+  transition: all 3s ease;
   
   &:hover{
     .imageTwo{
-      transition: all .30s ease-in-out;
       z-index: 10;
       opacity: 1;
     }
     .imageOne{
-      transition: all .30s ease-in-out;
       opacity: 0.3;
     }
   }
@@ -23,6 +22,7 @@ export const Container = styled.div`
     bottom: 0;
     right: 0;
     z-index: 2;
+    transition: all .50s ease-in-out;
   }
 
   .imageTwo{
