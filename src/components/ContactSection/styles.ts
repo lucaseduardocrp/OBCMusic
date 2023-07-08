@@ -8,7 +8,8 @@ export const Container = styled.section`
 
   .left-container{
     max-width: 84.5rem;
-    height: 66.2rem;
+    min-height: 66.2rem;
+    height: 100%;
     padding: 12rem 8rem;
     display: flex;
     align-items: start;

@@ -1,5 +1,5 @@
-import { Title } from "@/styles/Mixins";
-import { styled } from "styled-components";
+import { ButtonText, Paragraph, Title } from "@/styles/Mixins";
+import { css, styled } from "styled-components";
 
 export const Container = styled.div`
   max-width: 57rem;
@@ -13,21 +13,45 @@ export const Container = styled.div`
   }
 
   form{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    ${({ theme}) => css`
+      display: flex;
+      flex-direction: column;
 
-    input{
-      height: 5rem;
-      background: transparent;
-      color: ${({theme}) => theme.colors.white};
-      border: none;
-      border-bottom: 0.1rem solid ${({theme}) => theme.colors.gray100};
-      padding-bottom: 2rem;
-      
-      &:focus{
-        outline: 0;
+      label{
+        ${Paragraph}
+        font-weight: 700;
+        opacity: 0.5;
       }
-    }
+
+      input{
+        font-size: var(--base);
+        background: transparent;
+        color: ${({theme}) => theme.colors.white};
+        border: none;
+        border-bottom: 0.1rem solid ${({theme}) => theme.colors.gray100};
+        padding: 1rem 0;
+        margin-bottom: 3rem;
+        
+        &:focus{
+          outline: 0;
+        }
+      }
+
+      .submitBtn{
+        padding: 1.8rem 3.4rem;
+        border-radius: 0.8rem;
+        ${ButtonText};
+        position: relative;
+        background-color: ${theme.colors.primary};
+        border: none;
+        color: ${theme.colors.white};
+        transition: all .30s ease;
+        margin-top: 1rem;
+
+        &:hover{
+          box-shadow: 0 0 1rem ${theme.colors.primary};
+        }
+      }
+    `}
   }
 `;
