@@ -91,6 +91,10 @@ export const Container2 = styled.div`
   width: 100%;
   height: 100%;
 
+  b{
+    color: ${({theme}) => theme.colors.primary};
+  }
+
   h1, span{
     ${Title};
     padding-bottom: 0;
@@ -98,168 +102,161 @@ export const Container2 = styled.div`
     position: relative;
 
     &::before, &::after{
-      padding: 30px;
-      color: white;
+      color: transparent;
       content: attr(data-text);
       position: absolute;
       width: 100%;
       height: 100%;
-      background: black;
-      overflow: hidden;
+      background: transparent;
       top: 0;
       left: 0;
+      z-index: 10;
     }
 
     &::before{
-      left: 3px;
-      text-shadow: -2px;
+      text-shadow: -0.2rem 0 0.3rem red;
       animation: glitch-1 2s infinite reverse;
+      z-index: -1;
     }
-
+    
     &::after{
-      left: -3px;
-      text-shadow: -2px 0 blue;
+      text-shadow: -0.2rem 0 0.3rem cyan;
       animation: glitch-2 2s linear infinite reverse;
-    }
-
-    span{
-      &::after, &::before{
-        color: ${({theme}) => theme.colors.primary};
-        z-index: 100;
-      }
-    }
-
-    @keyframes glitch-1{
-      0% {
-        clip: rect(132px, auto, 101px, 30px);
-      }
-      5% {
-        clip: rect(17px, auto, 94px, 30px);
-      }
-      10% {
-        clip: rect(40px, auto, 66px, 30px);
-      }
-      15% {
-        clip: rect(87px, auto, 82px, 30px);
-      }
-      20% {
-        clip: rect(137px, auto, 61px, 30px);
-      }
-      25% {
-        clip: rect(34px, auto, 14px, 30px);
-      }
-      30% {
-        clip: rect(133px, auto, 74px, 30px);
-      }
-      35% {
-        clip: rect(76px, auto, 107px, 30px);
-      }
-      40% {
-        clip: rect(59px, auto, 130px, 30px);
-      }
-      45% {
-        clip: rect(29px, auto, 84px, 30px);
-      }
-      50% {
-        clip: rect(22px, auto, 67px, 30px);
-      }
-      55% {
-        clip: rect(67px, auto, 62px, 30px);
-      }
-      60% {
-        clip: rect(10px, auto, 105px, 30px);
-      }
-      65% {
-        clip: rect(78px, auto, 115px, 30px);
-      }
-      70% {
-        clip: rect(105px, auto, 13px, 30px);
-      }
-      75% {
-        clip: rect(15px, auto, 75px, 30px);
-      }
-      80% {
-        clip: rect(66px, auto, 39px, 30px);
-      }
-      85% {
-        clip: rect(133px, auto, 73px, 30px);
-      }
-      90% {
-        clip: rect(36px, auto, 128px, 30px);
-      }
-      95% {
-        clip: rect(68px, auto, 103px, 30px);
-      }
-      100% {
-        clip: rect(14px, auto, 100px, 30px);
-      }
-    }
-
-    @keyframes glitch-2 {
-      0% {
-        clip: rect(129px, auto, 36px, 30px);
-      }
-      5% {
-        clip: rect(36px, auto, 4px, 30px);
-      }
-      10% {
-        clip: rect(85px, auto, 66px, 30px);
-      }
-      15% {
-        clip: rect(91px, auto, 91px, 30px);
-      }
-      20% {
-        clip: rect(148px, auto, 138px, 30px);
-      }
-      25% {
-        clip: rect(38px, auto, 122px, 30px);
-      }
-      30% {
-        clip: rect(69px, auto, 54px, 30px);
-      }
-      35% {
-        clip: rect(98px, auto, 71px, 30px);
-      }
-      40% {
-        clip: rect(146px, auto, 34px, 30px);
-      }
-      45% {
-        clip: rect(134px, auto, 43px, 30px);
-      }
-      50% {
-        clip: rect(102px, auto, 80px, 30px);
-      }
-      55% {
-        clip: rect(119px, auto, 44px, 30px);
-      }
-      60% {
-        clip: rect(106px, auto, 99px, 30px);
-      }
-      65% {
-        clip: rect(141px, auto, 74px, 30px);
-      }
-      70% {
-        clip: rect(20px, auto, 78px, 30px);
-      }
-      75% {
-        clip: rect(133px, auto, 79px, 30px);
-      }
-      80% {
-        clip: rect(78px, auto, 52px, 30px);
-      }
-      85% {
-        clip: rect(35px, auto, 39px, 30px);
-      }
-      90% {
-        clip: rect(67px, auto, 70px, 30px);
-      }
-      95% {
-        clip: rect(71px, auto, 103px, 30px);
-      }
-      100% {
-        clip: rect(83px, auto, 40px, 30px);
-      }
+      z-index: -2;
     }
   }
+
+  @keyframes glitch-1{
+  0% {
+    clip: rect(13.2rem, auto, 10.1rem, 3rem);
+  }
+  5% {
+    clip: rect(1.7rem, auto, 9.4rem, 3rem);
+  }
+  10% {
+    clip: rect(4rem, auto, 6.6rem, 3rem);
+  }
+  15% {
+    clip: rect(8.7rem, auto, 8.2rem, 3rem);
+  }
+  20% {
+    clip: rect(13.7rem, auto, 6.1rem, 3rem);
+  }
+  25% {
+    clip: rect(3.4rem, auto, 1.4rem, 3rem);
+  }
+  30% {
+    clip: rect(13.3rem, auto, 7.4rem, 3rem);
+  }
+  35% {
+    clip: rect(7.6rem, auto, 10.7rem, 3rem);
+  }
+  40% {
+    clip: rect(5.9rem, auto, 13rem, 3rem);
+  }
+  45% {
+    clip: rect(2.9rem, auto, 8.4rem, 3rem);
+  }
+  50% {
+    clip: rect(2.2rem, auto, 6.7rem, 3rem);
+  }
+  55% {
+    clip: rect(6.7rem, auto, 6.2rem, 3rem);
+  }
+  60% {
+    clip: rect(1rem, auto, 10.5rem, 3rem);
+  }
+  65% {
+    clip: rect(7.8rem, auto, 11.5rem, 3rem);
+  }
+  70% {
+    clip: rect(10.5rem, auto, 1.3rem, 3rem);
+  }
+  75% {
+    clip: rect(1.5rem, auto, 7.5rem, 3rem);
+  }
+  80% {
+    clip: rect(6.6rem, auto, 3.9rem, 3rem);
+  }
+  85% {
+    clip: rect(13.3rem, auto, 7.3rem, 3rem);
+  }
+  90% {
+    clip: rect(3.6rem, auto, 12.8rem, 3rem);
+  }
+  95% {
+    clip: rect(6.8rem, auto, 10.3rem, 3rem);
+  }
+  100% {
+    clip: rect(1.4rem, auto, 10rem, 3rem);
+  }
+}
+
+@keyframes glitch-2 {
+  0% {
+    clip: rect(12.9rem, auto, 3.6rem, 3rem);
+  }
+  5% {
+    clip: rect(3.6rem, auto, 0.4rem, 3rem);
+  }
+  10% {
+    clip: rect(8.5rem, auto, 6.6rem, 3rem);
+  }
+  15% {
+    clip: rect(9.1rem, auto, 9.1rem, 3rem);
+  }
+  20% {
+    clip: rect(14.8rem, auto, 13.8rem, 3rem);
+  }
+  25% {
+    clip: rect(3.8rem, auto, 12.2rem, 3rem);
+  }
+  30% {
+    clip: rect(6.9rem, auto, 5.4rem, 3rem);
+  }
+  35% {
+    clip: rect(9.8rem, auto, 7.1rem, 3rem);
+  }
+  40% {
+    clip: rect(14.6rem, auto, 3.4rem, 3rem);
+  }
+  45% {
+    clip: rect(13.4rem, auto, 4.3rem, 3rem);
+  }
+  50% {
+    clip: rect(10.2rem, auto, 8rem, 3rem);
+  }
+  55% {
+    clip: rect(11.9rem, auto, 4.4rem, 3rem);
+  }
+  60% {
+    clip: rect(10.6rem, auto, 9.9rem, 3rem);
+  }
+  65% {
+    clip: rect(14.1rem, auto, 7.4rem, 3rem);
+  }
+  70% {
+    clip: rect(2rem, auto, 7.8rem, 3rem);
+  }
+  75% {
+    clip: rect(13.3rem, auto, 7.9rem, 3rem);
+  }
+  80% {
+    clip: rect(7.8rem, auto, 5.2rem, 3rem);
+  }
+  85% {
+    clip: rect(3.5rem, auto, 3.9rem, 3rem);
+  }
+  90% {
+    clip: rect(6.7rem, auto, 7rem, 3rem);
+  }
+  95% {
+    clip: rect(7.1rem, auto, 10.3rem, 3rem);
+  }
+  100% {
+    clip: rect(8.3rem, auto, 4rem, 3rem);
+  }
+}
+
 `;
 
