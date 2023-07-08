@@ -29,5 +29,9 @@ export const Container = styled.div`
   
   @media (max-width: 48rem) {
     gap: 2rem;
+
+    span{
+      min-width: 6rem;
+    }
   }
 `;
