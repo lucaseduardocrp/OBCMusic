@@ -24,7 +24,6 @@ export const Grid = styled.div`
       }
     }
 
-
     &::before, &::after{
       content: '';
       position: absolute;
@@ -34,7 +33,7 @@ export const Grid = styled.div`
       right: -1rem;
       opacity: 0.3;
       z-index: -1;
-      filter: blur(1.4rem);
+      filter: blur(1.6rem);
       background: linear-gradient(-45deg, #ce0521 60%, #242424 100%, #c23d3d 100%);
     }
     &::after{
