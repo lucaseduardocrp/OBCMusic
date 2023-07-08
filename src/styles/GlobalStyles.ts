@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
     --3xl: 3.4rem;
     --4xl: 6rem;
     --5xl: 7.2rem;
-    --timer-size: 16rem;
+    --timer-size: 14rem;
   }
 
   ::-webkit-scrollbar{

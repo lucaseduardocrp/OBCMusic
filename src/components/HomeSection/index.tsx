@@ -21,7 +21,7 @@ export default function Home() {
         </Button>
       </div>
     </div>
-    <TimerCount defaultTime={518400} />
+    <TimerCount defaultTime={18400} />
   </HomeSection>
   )
 }
