@@ -75,4 +75,16 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 26.563rem) {
+    min-width: 28rem;
+    min-height: 30rem;
+
+    .imageOne, .imageTwo{
+      img{
+        width: 24rem;
+        height: 26rem;
+      }
+    }
+  }
 `;

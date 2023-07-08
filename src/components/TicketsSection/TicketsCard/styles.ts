@@ -59,7 +59,10 @@ export const CardContainer = styled.div<Props>`
     }
   `}
 
-@media (max-width: 90rem){
-    width: 34rem;
-}
+  @media (max-width: 90rem){
+      width: 34rem;
+  }
+  @media (max-width: 90rem){
+      width: 28rem;
+  }
 `;

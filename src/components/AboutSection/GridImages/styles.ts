@@ -137,12 +137,16 @@ export const Grid = styled.div`
       margin-bottom: 3rem;
     }
 
-    .imageOne, .imageTwo, .imageThree, .imageFour{
-      animation: none;
-
+    .imageOne, .imageFour{
       img{
         width: 24rem;
-        height: 26rem;
+        height: 20rem;
+      }
+    }
+    .imageTwo, .imageThree{
+      img{
+        width: 20rem;
+        height: 22rem;
       }
     }
   }
