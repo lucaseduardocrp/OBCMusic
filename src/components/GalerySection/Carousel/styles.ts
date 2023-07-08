@@ -43,10 +43,21 @@ ${FlexCSS}
     }
   }
 
-/* 
+
 @media (max-width: 64rem){
-  button{
-    display: none;
+  .arrow-left, .arrow-right{
+    top: 50%;
   }
-} */
+  .arrow-left{
+    left: 1rem;
+  }
+  .arrow-right{
+    right: 1rem;
+  }
+
+  button{
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+}
 `;
