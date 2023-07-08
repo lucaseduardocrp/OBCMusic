@@ -21,6 +21,22 @@ export const Grid = styled.div`
 
       &:hover{
         transform: scale(1.05);
+        animation: grayscales 1s ease-in-out infinite;
+      }
+
+      @keyframes grayscales {
+        0%, 100% {
+          filter: grayscale(0);
+        }
+        25%{
+          filter: grayscale(50%);
+        }
+        50%{
+          filter: grayscale(100%);
+        }
+        75%{
+          filter: grayscale(50%);
+        }
       }
     }
 
