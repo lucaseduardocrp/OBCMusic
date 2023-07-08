@@ -44,7 +44,6 @@ export const CardContainer = styled.div<Props>`
       h1, h3{
         font-size: var(--2xl);
         font-family: ${theme.fonts.headlines};
-        font-weight: 700;
         color: ${emphasis === 'Red' && theme.colors.primary};
       }
       
