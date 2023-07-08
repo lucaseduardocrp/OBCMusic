@@ -3,7 +3,7 @@ const umMinuto = 60 * umSegundo
 const umaHora = 60 * umMinuto 
 const umDia = 24 * umaHora 
 
-export function calcTimer(FinalDate: Date) {
+export function timerCount(FinalDate: Date) {
   const currentDate = new Date()
   const finalDate = new Date(FinalDate)
 

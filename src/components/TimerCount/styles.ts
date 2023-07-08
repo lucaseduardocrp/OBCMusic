@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 export const Container = styled.div`
   padding-top: 3rem;
   ${FlexCSS}
-  gap: 12rem;
+  gap: 13.1rem;
   flex-wrap: wrap;
 
   span{

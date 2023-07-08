@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useInterval from "@/hooks/useInterval";
 import { Container } from "./styles";
-import { calcTimer } from "@/utils/calcTimer";
+import { timerCount } from "@/utils/timerCount";
 
 interface Props {
   defaultTime: number,
@@ -13,10 +13,10 @@ export default function TimerCount(props: Props){
     dias: 0,
     horas: 0,
     minutos: 0,
-    segundos: 0
+    segundos: 0,
   })
   const changeTimer = () => {
-    setTimeLeft(calcTimer(eventData))
+    setTimeLeft(timerCount(eventData))
   }
   useInterval(changeTimer, 1000)
 
