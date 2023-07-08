@@ -53,7 +53,12 @@ export const Container = styled.a<ContainerProps>`
         background === 'White' ? theme.colors.dark :
         background === '' && 'transparent'
       };
-      box-shadow: ${background === '' ? '' : `-0.45rem 0.45rem ${theme.colors.black}`};
+      box-shadow: ${background === '' ? '' : `-0.55rem 0.55rem ${theme.colors.black}`};
+      border-color: ${
+        background === '' ? 'none' : 
+        background === 'White' ? theme.colors.white : 
+        background === 'Black' ? theme.colors.black : ''
+      };
       transform: translate(0.25rem,-0.25rem);
     }
 

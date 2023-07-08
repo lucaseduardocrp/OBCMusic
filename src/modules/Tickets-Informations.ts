@@ -6,7 +6,7 @@ type TicketsType = {
   }[],
   emphasis: 'Red' | '',
   btnBG: 'Red' | 'Black' | 'Transparent' | 'White',
-  color: 'Red' | 'White' | '',
+  color: 'Red' | 'White' | 'Black',
   btnBorder: 'Red' | 'Black',
   cardBorderTop: 'Black' | '',
 }
@@ -28,8 +28,8 @@ export const TicketsInformations: TicketsType[] = [
     ],
 
     emphasis: '',
-    btnBG: 'Transparent',
-    color: '',
+    btnBG: 'White',
+    color: 'Black',
     btnBorder: 'Black',
     cardBorderTop: 'Black',
   },
