@@ -3,8 +3,7 @@ import { styled } from "styled-components";
 
 export const Container = styled.div``;
 
-export const PhotoGrid = styled.div`
-`;
+export const PhotoGrid = styled.div``;
 
 export const Grid = styled.div`
   ${FlexCSS}
@@ -129,17 +128,21 @@ export const Grid = styled.div`
   
   @media (max-width: 48rem) {
     flex-wrap: wrap;
-
-    .imageOne, .imageFour{
-      img{
-        width: 23.3rem;
-        height: 17rem;
-      }
+    
+    .imageOne, .imageTwo, .imageThree{
+      margin: 0;
     }
-    .imageTwo, .imageThree{
+
+    .imageTwo{
+      margin-bottom: 3rem;
+    }
+
+    .imageOne, .imageTwo, .imageThree, .imageFour{
+      animation: none;
+
       img{
-        width: 18rem;
-        height: 20rem;
+        width: 24rem;
+        height: 26rem;
       }
     }
   }

@@ -44,6 +44,7 @@ export const Container = styled.section`
   }
 
   @media (max-width: 48rem){
+    gap: 2rem;
     
     .about-container img{
       width: 32rem;
