@@ -5,92 +5,6 @@ export const Container = styled.div`
   ${FlexCSS}
   flex-direction: column;
 
-  h1, span{
-    ${Title};
-    padding-bottom: 0;
-    font-size: var(--5xl);
-    position: relative;
-    z-index: 10;
-
-    &::before, &::after{
-      content: 'A Sua Melhor Experiência';
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    &:hover::before{
-      animation: glitch 0.3s linear 6;
-      color: #e91e63;
-      z-index: -2;
-    }
-
-    &:hover::after{
-      animation: glitch 0.3s linear 6;
-      color: #2196f3;
-      z-index: -1;
-    }
-  }
-
-span{
-  &::before, &::after{
-    content: 'Musical Digital';
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: ${({theme}) => theme.colors.primary};
-    z-index: 1;
-  }
-
-  &:hover::before{
-    animation: glitch 0.3s linear 6;
-    color: #e91e63;
-    z-index: -2;
-  }
-
-  &:hover::after{
-    animation: glitch 0.3s linear 6;
-    color: #2196f3;
-    z-index: -1;
-  }
-
-  &:hover{
-    color: ${({theme}) => theme.colors.primary};
-  }
-}
-
-  @keyframes glitch {
-    0%, 100%{
-      top: 0;
-      left: 0;
-    }
-    20%{
-      top: 0;
-      left: 0;
-    }
-    40%{
-      top: 0.3rem;
-      left: 0.3rem;
-    }
-    60%{
-      top: -0.3rem;
-      left: 0.3rem;
-    }
-    80%{
-      top: 0.3rem;
-      left: -0.3rem;
-    }
-  }
-`;
-
-export const Container2 = styled.div`
-  ${FlexCSS}
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-
   b{
     color: ${({theme}) => theme.colors.primary};
   }
@@ -100,29 +14,35 @@ export const Container2 = styled.div`
     padding-bottom: 0;
     font-size: var(--5xl);
     position: relative;
+    z-index: 5;
 
     &::before, &::after{
-      color: transparent;
       content: attr(data-text);
       position: absolute;
       width: 100%;
       height: 100%;
-      background: transparent;
+      overflow: hidden;
       top: 0;
-      left: 0;
-      z-index: 10;
     }
 
     &::before{
-      text-shadow: -0.2rem 0 0.3rem red;
+      left: 0;
+      text-shadow: -0.2rem 0 0.2rem ${({theme}) => theme.colors.primary};
       animation: glitch-1 2s infinite reverse;
       z-index: -1;
     }
     
     &::after{
-      text-shadow: -0.2rem 0 0.3rem cyan;
-      animation: glitch-2 2s linear infinite reverse;
+      left: 0;
+      text-shadow: -0.2rem 0 0.2rem cyan;
+      animation: glitch-2 5s linear infinite reverse;
       z-index: -2;
+    }
+  }
+
+  span{
+    &::before, &::after{
+      color: ${({theme}) => theme.colors.primary};
     }
   }
 
