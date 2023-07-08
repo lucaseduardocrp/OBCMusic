@@ -28,6 +28,7 @@ export const HeaderContainer = styled.header`
     
     li{
       &:last-child a {
+        margin-left: 1rem;
         color: ${({theme}) => theme.colors.black};
       }
       
@@ -36,11 +37,11 @@ export const HeaderContainer = styled.header`
           font-family: ${theme.fonts.headlines};
           font-size: var(--sm);
           font-weight: 600;
-          color: ${({theme}) => theme.colors.white};
+          color: ${theme.colors.white};
           transition: all .40s ease;
           
           &:hover{
-            color: ${({theme}) => theme.colors.primary}
+            color: ${theme.colors.primary}
           }
         `}
       }

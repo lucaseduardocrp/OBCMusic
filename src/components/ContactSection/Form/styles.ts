@@ -31,9 +31,11 @@ export const Container = styled.div`
         border-bottom: 0.1rem solid ${({theme}) => theme.colors.gray100};
         padding: 1rem 0;
         margin-bottom: 3rem;
-        
+        transition: all .30s ease;
+  
         &:focus{
           outline: 0;
+          border-color: ${({theme}) => theme.colors.primary};
         }
       }
 

@@ -59,11 +59,13 @@ export default function Header() {
           </li>
           <li>
             <a href='#contact' data-aos="zoom-in">CONTATO</a>
-          </li>  
+          </li>
           <li>
-            <Button background="White" href="#ticket">COMPRAR INGRESSOS</Button>
+            <Button color="Black" background="White" href="#ticket">COMPRAR INGRESSOS</Button>
           </li>
         </ul>
+
+      
       </nav>
     </HeaderContainer>
   )

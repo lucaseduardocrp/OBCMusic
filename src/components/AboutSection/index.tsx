@@ -17,7 +17,7 @@ export default function AboutSection() {
           <div className="text">
             <h2>{item.title}</h2>
             <p>{item.description}</p>
-            <Button href="#about" background="White">{item.buttonText} <RightArrow /></Button>
+            <Button color="Black" href="#about" background="White">{item.buttonText} <RightArrow /></Button>
           </div>
         </div>
 
@@ -26,7 +26,7 @@ export default function AboutSection() {
             <div className="text">
               <h2>{item2.title}</h2>
               <p>{item2.description}</p>
-              <Button href="#about" background="White">{item2.buttonText} <RightArrow /></Button>
+              <Button color="Black" href="#about" background="White">{item2.buttonText} <RightArrow /></Button>
             </div>
         </div>
     </Container>

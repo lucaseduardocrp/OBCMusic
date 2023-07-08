@@ -3,7 +3,7 @@ import { css } from "styled-components";
 import { styled } from "styled-components";
 
 type ContainerProps = {
-  background?: 'Red' | 'Black' | 'Transparent' | 'White',
+  background?: 'Red' | 'Black' | 'Transparent' | 'White' | '',
   border?: 'Red' | 'Black',
 }
 
@@ -17,19 +17,49 @@ export const Container = styled.a<ContainerProps>`
     ${ButtonText};
     position: relative;
 
-    background-color: ${
-      background === 'Red' ? theme.colors.primary : 
-      background === 'Black' ? theme.colors.dark : 
-      background === 'Transparent' ? 'transparent' : theme.colors.white
+    background-color: ${`
+      ${
+        background === 'Red' ? theme.colors.primary : 
+        background === 'Black' ? theme.colors.dark : 
+        background === 'White' ? theme.colors.white :
+        background === '' && 'transparent'
+      }`  
     };
 
     border: 0.1rem solid ${border === 'Black' ? `${theme.colors.black}` : border === 'Red' ? `${theme.colors.primary}` : 'transparent'};
     
-    color: ${color === 'White' ? theme.colors.white : color === 'Red' ? theme.colors.primary : theme.colors.dark};
+    color: ${
+      color === 'White' ? theme.colors.white : 
+      color === 'Red' ? theme.colors.primary : 
+      color === 'Alternative' ? theme.colors.white :
+      color === '' ? theme.colors.white : theme.colors.dark
+    };
 
     transition: all .30s ease;
 
-    &:hover{
+    &:hover {
+      color: ${`
+        ${
+          color === 'Black' ? theme.colors.white : 
+          color === 'Red' ? theme.colors.white : 
+          color === 'White' ? theme.colors.black : 
+          color === 'Alternative' ? theme.colors.white :
+          color === '' ? theme.colors.white : ''
+        } !important`
+      };
+      background: ${
+        background === 'Black' ? theme.colors.white : 
+        background === 'Transparent' ? theme.colors.primary :
+        background === 'White' ? theme.colors.dark :
+        background === '' && 'transparent'
+      };
+      box-shadow: ${background === '' ? '' : `-0.45rem 0.45rem ${theme.colors.black}`};
+      transform: translate(0.25rem,-0.25rem);
+    }
+
+    &:active {
+      transform: translate(0);
+      box-shadow: none;
     }
   `}
 `;
