@@ -16,7 +16,10 @@ import GalerySection from "@/components/GalerySection";
 
 export default function Home() {
   useEffect(() => {
-    AOS.init({ duration: 800 });
+    AOS.init({ 
+      duration: 800, 
+      once: true,
+    });
   }, [])
 
   return (
