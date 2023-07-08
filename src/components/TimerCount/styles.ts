@@ -16,12 +16,17 @@ export const Container = styled.div`
     color: transparent;
     opacity: 0.6;
     display: inline-block;
+    min-width: 27rem;
   }
 
   @media (max-width: 90rem) {
-    gap: 4rem;
-  }
+    gap: 6rem;
 
+    span{
+      min-width: 10rem;
+    }
+  }
+  
   @media (max-width: 48rem) {
     gap: 2rem;
   }
