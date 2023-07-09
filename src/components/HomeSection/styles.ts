@@ -6,7 +6,7 @@ export const HomeSection = styled.section`
   height: 100vh;
   flex-direction: column;
   padding: 0 0 14rem;
-  gap: 4rem;
+  gap: 6rem;
   text-align: center;
   background: linear-gradient(180deg, transparent 100%, black 100%), url(/HomeBackground.webp);
   background-position: center;
@@ -33,7 +33,8 @@ export const HomeSection = styled.section`
     }
   }
   
-  @media (max-width: 90rem) {      
+  @media (max-width: 90rem) {   
+    gap: 2rem;
     .home-text{
       padding: 22rem 4% 0; 
     }

@@ -2,7 +2,6 @@ import { FlexCSS } from "@/styles/Mixins";
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-  padding-top: 3rem;
   ${FlexCSS}
   gap: 13.1rem;
   flex-wrap: wrap;
