@@ -6,18 +6,18 @@ export default function GridImages() {
     <Container>
       <Grid>
         <PhotoGrid className="imageOne">
-          <Image alt="Artist Photo" src={'/grid-images/Img1.png'} width={350} height={250} quality={100} />
+          <Image alt="Artist Photo" src={'/grid-images/Img1.png'} width={350} height={250} quality={100} data-aos="fade-down" />
         </PhotoGrid>
         <PhotoGrid  className="imageTwo">
-          <Image alt="Artist Photo" src={'/grid-images/Img2.png'} width={250} height={280} quality={100} />
+          <Image alt="Artist Photo" src={'/grid-images/Img2.png'} width={250} height={280} quality={100} data-aos="fade-right" />
         </PhotoGrid>
       </Grid>
       <Grid>
         <PhotoGrid className="imageThree">
-          <Image alt="Artist Photo" src={'/grid-images/Img3.png'} width={250} height={280} quality={100} />
+          <Image alt="Artist Photo" src={'/grid-images/Img3.png'} width={250} height={280} quality={100} data-aos="fade-left" />
         </PhotoGrid>
         <PhotoGrid className="imageFour">
-          <Image alt="Artist Photo" src={'/grid-images/Img4.png'} width={350} height={250} quality={100} />
+          <Image alt="Artist Photo" src={'/grid-images/Img4.png'} width={350} height={250} quality={100} data-aos="fade-up" />
         </PhotoGrid>
       </Grid>
     </Container>

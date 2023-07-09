@@ -46,7 +46,7 @@ export const Container = styled.div`
     }
   }
 
-  @keyframes glitch-1{
+@keyframes glitch-1{
   0% {
     clip: rect(13.2rem, auto, 10.1rem, 3rem);
   }
@@ -177,6 +177,5 @@ export const Container = styled.div`
     clip: rect(8.3rem, auto, 4rem, 3rem);
   }
 }
-
 `;
 

@@ -47,7 +47,7 @@ export default function Header() {
           {!active ? <BurgerMenuIcon /> : <CloseIcon />}
         </MobileMenu>
 
-        <ul className={(active ? 'Navlinks' : 'Navlinks Close')} >
+        <ul className={(active ? 'Navlinks' : 'Navlinks Close')} data-aos="fade-right">
           <li>
             <a href='#home' data-aos="zoom-in">INÍCIO</a>
           </li>

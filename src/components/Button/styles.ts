@@ -10,13 +10,12 @@ type ContainerProps = {
 export const Container = styled.a<ContainerProps>`
   ${({ theme, background, color, border }) => css`
     ${FlexCSS}
+    position: relative;
     display: inline-flex;
     gap: 1.2rem;
     padding: 1.8rem 3.4rem;
     border-radius: 0.8rem;
     ${ButtonText};
-    position: relative;
-
     background-color: ${`
       ${
         background === 'Red' ? theme.colors.primary : 
@@ -25,16 +24,13 @@ export const Container = styled.a<ContainerProps>`
         background === '' && 'transparent'
       }`  
     };
-
-    border: 0.1rem solid ${border === 'Black' ? `${theme.colors.black}` : border === 'Red' ? `${theme.colors.primary}` : 'transparent'};
-    
     color: ${
       color === 'White' ? theme.colors.white : 
       color === 'Red' ? theme.colors.primary : 
       color === 'Alternative' ? theme.colors.white :
       color === '' ? theme.colors.white : theme.colors.dark
     };
-
+    border: 0.1rem solid ${border === 'Black' ? `${theme.colors.black}` : border === 'Red' ? `${theme.colors.primary}` : 'transparent'};
     transition: all .30s ease;
 
     &:hover {

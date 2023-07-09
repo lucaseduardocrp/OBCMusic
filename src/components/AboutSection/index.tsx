@@ -14,7 +14,7 @@ export default function AboutSection() {
     <Container id="artists">
         <div className="about-container" data-aos="zoom-out-right">
           <AboutImage />
-          <div className="text">
+          <div className="text" data-aos="fade-left">
             <h2>{item.title}</h2>
             <p>{item.description}</p>
             <Button color="Black" href="#about" background="White">{item.buttonText} <RightArrow /></Button>
