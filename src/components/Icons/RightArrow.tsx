@@ -10,6 +10,5 @@ export default function RightArrow() {
         </clipPath>
       </defs>
     </svg>
-
   )
 }
