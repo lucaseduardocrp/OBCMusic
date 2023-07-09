@@ -5,6 +5,7 @@ import { Container } from "./styles";
 
 export default function Form() {
   const formRef = useRef<HTMLFormElement>(null)
+  const [loading, setLoading] = useState(false)
   const [dataForm, setDataForm] = useState({
     name: '',
     email: '',
@@ -13,7 +14,6 @@ export default function Form() {
 
   const handleChangeValue = ({currentTarget}: {currentTarget: HTMLInputElement}) => {
     setDataForm((dataForm) => ({...dataForm, [currentTarget.name]: currentTarget.value}));
-    console.log(currentTarget.name, currentTarget.value)
   };
 
   async function sendEmail(event: FormEvent){
@@ -21,7 +21,11 @@ export default function Form() {
 
     await emailjs.send('service_47t0keg', 'template_rgqho2i', dataForm, 'CVXQlpJ8y3ni4Rsms')
     .then(() => {
+      setLoading(true)
+
       alert('Email enviado com sucesso');
+
+      setLoading(false)
     })
     
     if(formRef.current) {
@@ -40,7 +44,7 @@ export default function Form() {
         <input type="email" name="email" id="email" required onChange={handleChangeValue} />
         <label htmlFor="text">Mensagem</label>
         <input type="message" name="message" id="message" required onChange={handleChangeValue} />
-        <input type="submit" value="Enviar" className='submitBtn' />
+        {loading ? <input type="submit" value="Enviando..." disabled={true} className='submitBtn' /> : <input type="submit" value="Enviar" className='submitBtn' />}
       </form>
     </Container>
   )

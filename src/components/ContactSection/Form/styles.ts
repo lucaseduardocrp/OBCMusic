@@ -50,6 +50,11 @@ export const Container = styled.div`
         transition: all .30s ease;
         margin-top: 1rem;
 
+        &:disabled{
+          cursor: wait;
+          opacity: 0.6;
+        }
+
         &:hover{
           box-shadow: 0 0 1rem ${theme.colors.primary};
         }
