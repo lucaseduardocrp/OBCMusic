@@ -61,39 +61,3 @@ export const HomeSection = styled.section`
     }
   }
 `;
-
-export const LightShow = styled.div`
-  width: 100%;
-  height: 100%;
-
-  &::before, &::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 4rem;
-    height: 100%;
-    background: linear-gradient(rgba(82, 116, 168, 0), rgba(82, 116, 168, 0.2), rgba(82, 116, 168, 0));
-    z-index: 100;
-    animation: light-motion 4s infinite;
-  }
-  
-  &::before{
-    left: 0;
-  }
-
-  @keyframes light-motion {
-    0%, 100%{
-      transform: translate(50rem);
-    }
-    25%{
-      transform: rotate(45deg);
-    }
-    50%{
-      transform: rotate(35deg);
-    } 
-    75%{
-      transform: rotate(25deg);
-    }  
-  }
-`;
