@@ -49,6 +49,7 @@ export const Container = styled.div`
         color: ${theme.colors.white};
         transition: all .30s ease;
         margin-top: 1rem;
+        cursor: pointer;
 
         &:disabled{
           cursor: wait;

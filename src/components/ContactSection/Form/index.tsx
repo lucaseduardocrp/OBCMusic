@@ -18,11 +18,10 @@ export default function Form() {
 
   async function sendEmail(event: FormEvent){
     event.preventDefault();
+    setLoading(true)
 
     await emailjs.send('service_47t0keg', 'template_rgqho2i', dataForm, 'CVXQlpJ8y3ni4Rsms')
     .then(() => {
-      setLoading(true)
-
       alert('Email enviado com sucesso');
 
       setLoading(false)
@@ -44,7 +43,10 @@ export default function Form() {
         <input type="email" name="email" id="email" required onChange={handleChangeValue} />
         <label htmlFor="text">Mensagem</label>
         <input type="message" name="message" id="message" required onChange={handleChangeValue} />
-        {loading ? <input type="submit" value="Enviando..." disabled={true} className='submitBtn' /> : <input type="submit" value="Enviar" className='submitBtn' />}
+        {loading ? 
+          <button type="submit" disabled={true} className='submitBtn'>Enviando...</button> : 
+          <button type="submit" className='submitBtn'>Enviar</button>
+        }
       </form>
     </Container>
   )
