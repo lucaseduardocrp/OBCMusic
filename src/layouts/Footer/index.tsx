@@ -17,7 +17,7 @@ export default function Footer() {
           <a href="https://www.facebook.com/onebitcode/" aria-label="Facebook">
             <FacebookIcon />
           </a>
-          <a href="#">
+          <a href="https://lucascrp.vercel.app/">
             <TwitterIcon />
           </a>
           <a href="https://www.linkedin.com/in/lucaseccarvalho/" aria-label="LinkedIn">
