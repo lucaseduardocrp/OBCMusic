@@ -10,14 +10,15 @@ export const HeaderContainer = styled.header`
     padding: 1rem 20%;
     background: ${({theme}) => theme.colors.gray};
     border-bottom: 0.1rem solid #565656;
+    transition: all .30s ease;
   }
-
+  
   nav{
     ${FlexCSS};
     justify-content: space-between;
     padding: 2.2rem 20%;
     position: relative;
-    transition: all .25s ease;
+    transition: all .30s ease;
     
     .Navlinks{
       ${FlexCSS};
